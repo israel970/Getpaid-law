@@ -174,5 +174,27 @@
             <p class="footer-disclaimer">GetPaid.law is a lawyer referral service. We are not a law firm and do not provide legal advice. By submitting your information, you consent to be contacted by a participating attorney. Past results do not guarantee future outcomes.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById('getpaid-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value || 'Not provided',
+                caseType: document.getElementById('case-type').value
+            };
+            fetch('https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec', {
+                method: 'POST',
+                body: JSON.stringify(formData)
+            })
+            .then(response => { alert('Thank you! We will be in touch shortly.'); document.getElementById('getpaid-form').reset(); })
+            .catch(error => { alert('Thank you! We will be in touch shortly.'); document.getElementById('getpaid-form').reset(); })
+            .finally(() => { submitBtn.textContent = originalText; submitBtn.disabled = false; });
+        });
+    </script>
 </body>
 </html>

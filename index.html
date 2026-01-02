@@ -736,8 +736,35 @@
         <div class="form-card">
             <h2>Free Case Review</h2>
             <p class="subtitle">Get matched with the right attorney in minutes.</p>
-            <script src="https://js-na2.hsforms.net/forms/embed/244500236.js" defer></script>
-            <div class="hs-form-frame" data-region="na2" data-form-id="ae0f796f-b842-4a0e-819e-fddf84eaa135" data-portal-id="244500236"></div>
+            <form id="getpaid-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Smith" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span style="color: #525252; font-weight: 400;">(optional)</span></label>
+                    <input type="email" id="email" name="email" placeholder="john@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="case-type">What Happened?</label>
+                    <select id="case-type" name="case-type" required>
+                        <option value="" disabled selected>Select your injury type</option>
+                        <option value="Car Accident">Car Accident</option>
+                        <option value="Truck Accident">Truck Accident</option>
+                        <option value="Motorcycle Accident">Motorcycle Accident</option>
+                        <option value="Workplace Injury">Workplace Injury</option>
+                        <option value="Slip & Fall">Slip & Fall</option>
+                        <option value="Wrongful Death">Wrongful Death</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Get My Free Review →</button>
+                <p class="form-disclaimer">By submitting, you agree to be contacted about your case. We respect your privacy.</p>
+            </form>
         </div>
     </section>
 
@@ -871,5 +898,39 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById('getpaid-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value || 'Not provided',
+                caseType: document.getElementById('case-type').value
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec', {
+                method: 'POST',
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                alert('Thank you! We\'ll be in touch shortly.');
+                document.getElementById('getpaid-form').reset();
+            })
+            .catch(error => {
+                alert('Thank you! We\'ll be in touch shortly.');
+                document.getElementById('getpaid-form').reset();
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
 </body>
 </html>
