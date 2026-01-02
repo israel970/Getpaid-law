@@ -907,21 +907,14 @@
             submitBtn.textContent = 'Submitting...';
             submitBtn.disabled = true;
             
-            const formData = {
-                name: document.getElementById('name').value,
-                phone: document.getElementById('phone').value,
-                email: document.getElementById('email').value || 'Not provided',
-                caseType: document.getElementById('case-type').value
-            };
+            const name = encodeURIComponent(document.getElementById('name').value);
+            const phone = encodeURIComponent(document.getElementById('phone').value);
+            const email = encodeURIComponent(document.getElementById('email').value || 'Not provided');
+            const caseType = encodeURIComponent(document.getElementById('case-type').value);
             
-            fetch('https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec', {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
+            const url = 'https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec?name=' + name + '&phone=' + phone + '&email=' + email + '&caseType=' + caseType;
+            
+            fetch(url, { method: 'GET', mode: 'no-cors' })
             .then(() => {
                 alert('Thank you! We\'ll be in touch shortly.');
                 document.getElementById('getpaid-form').reset();
