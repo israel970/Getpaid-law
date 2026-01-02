@@ -165,36 +165,8 @@
         <div class="form-card">
             <h2>Free Case Review</h2>
             <p>Get matched with a Houston personal injury attorney in minutes.</p>
-            <form id="getpaid-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Smith" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(713) 555-1234" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email <span style="color: #525252; font-weight: 400;">(optional)</span></label>
-                    <input type="email" id="email" name="email" placeholder="john@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="case-type">Type of Case</label>
-                    <select id="case-type" name="case-type" required>
-                        <option value="" disabled selected>Select your case type</option>
-                        <option value="Car Accident">Car Accident</option>
-                        <option value="Truck Accident">Truck / 18-Wheeler Accident</option>
-                        <option value="Motorcycle Accident">Motorcycle Accident</option>
-                        <option value="Slip and Fall">Slip and Fall</option>
-                        <option value="Workplace Injury">Workplace Injury</option>
-                        <option value="Wrongful Death">Wrongful Death</option>
-                        <option value="Offshore/Maritime">Offshore / Maritime Injury</option>
-                        <option value="Other">Other Injury</option>
-                    </select>
-                </div>
-                <button type="submit" class="submit-btn">Get My Free Consultation →</button>
-                <p class="form-disclaimer">By submitting, you agree to be contacted about your case.</p>
-            </form>
+            <script src="https://js-na2.hsforms.net/forms/embed/244500236.js" defer></script>
+            <div class="hs-form-frame" data-region="na2" data-form-id="ae0f796f-b842-4a0e-819e-fddf84eaa135" data-portal-id="244500236"></div>
         </div>
     </section>
 
@@ -299,37 +271,6 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('getpaid-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const submitBtn = this.querySelector('.submit-btn');
-            submitBtn.textContent = 'Submitting...';
-            submitBtn.disabled = true;
-            const fullName = document.getElementById('name').value.trim();
-            const nameParts = fullName.split(' ');
-            const firstName = nameParts[0] || '';
-            const lastName = nameParts.slice(1).join(' ') || '';
-            const emailValue = document.getElementById('email').value.trim();
-            const emailToSend = emailValue || 'noemail_' + Date.now() + '@placeholder.getpaid.law';
-            const fields = [
-                { objectTypeId: "0-1", name: "firstname", value: firstName },
-                { objectTypeId: "0-1", name: "lastname", value: lastName },
-                { objectTypeId: "0-1", name: "phone", value: document.getElementById('phone').value },
-                { objectTypeId: "0-1", name: "email", value: emailToSend },
-                { objectTypeId: "0-1", name: "case_type", value: document.getElementById('case-type').value },
-                { objectTypeId: "0-1", name: "lead_source", value: "Houston Area Landing Page" }
-            ];
-            fetch('https://forms.hsforms.com/submissions/v3/integration/secure/submit/244500236/237757e3-c46f-4dec-ab5c-840a921c81b3', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ fields: fields, context: { pageUri: window.location.href, pageName: document.title } })
-            }).finally(() => {
-                alert('Thank you! A Houston personal injury attorney will contact you shortly.');
-                document.getElementById('getpaid-form').reset();
-                submitBtn.textContent = 'Get My Free Consultation →';
-                submitBtn.disabled = false;
-            });
-        });
-    </script>
+    
 </body>
 </html>

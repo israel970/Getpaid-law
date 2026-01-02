@@ -787,37 +787,8 @@
         <div class="form-card">
             <h2>Free Truck Accident Case Review</h2>
             <p>Get matched with an experienced truck accident attorney.</p>
-            <form id="getpaid-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Smith" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(512) 555-1234" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email <span style="color: #525252; font-weight: 400;">(optional)</span></label>
-                    <input type="email" id="email" name="email" placeholder="john@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="truck-type">Type of Truck Involved</label>
-                    <select id="truck-type" name="truck-type" required>
-                        <option value="" disabled selected>Select truck type</option>
-                        <option value="18-Wheeler/Semi-Truck">18-Wheeler / Semi-Truck</option>
-                        <option value="Delivery Truck">Delivery Truck (Amazon, FedEx, UPS)</option>
-                        <option value="Garbage/Waste Truck">Garbage / Waste Truck</option>
-                        <option value="Concrete/Cement Mixer">Concrete / Cement Mixer</option>
-                        <option value="Tanker Truck">Tanker Truck</option>
-                        <option value="Dump Truck">Dump Truck</option>
-                        <option value="Tow Truck">Tow Truck</option>
-                        <option value="Box Truck">Box Truck</option>
-                        <option value="Other Commercial Vehicle">Other Commercial Vehicle</option>
-                    </select>
-                </div>
-                <button type="submit" class="submit-btn">Get My Free Consultation →</button>
-                <p class="form-disclaimer">By submitting, you agree to be contacted about your case. We respect your privacy.</p>
-            </form>
+            <script src="https://js-na2.hsforms.net/forms/embed/244500236.js" defer></script>
+            <div class="hs-form-frame" data-region="na2" data-form-id="ae0f796f-b842-4a0e-819e-fddf84eaa135" data-portal-id="244500236"></div>
         </div>
     </section>
 
@@ -1054,60 +1025,6 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('getpaid-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitBtn = this.querySelector('.submit-btn');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Submitting...';
-            submitBtn.disabled = true;
-            
-            const fullName = document.getElementById('name').value.trim();
-            const nameParts = fullName.split(' ');
-            const firstName = nameParts[0] || '';
-            const lastName = nameParts.slice(1).join(' ') || '';
-            const emailValue = document.getElementById('email').value.trim();
-            
-            const emailToSend = emailValue || 'noemail_' + Date.now() + '@placeholder.getpaid.law';
-            
-            const fields = [
-                { objectTypeId: "0-1", name: "firstname", value: firstName },
-                { objectTypeId: "0-1", name: "lastname", value: lastName },
-                { objectTypeId: "0-1", name: "phone", value: document.getElementById('phone').value },
-                { objectTypeId: "0-1", name: "email", value: emailToSend },
-                { objectTypeId: "0-1", name: "case_type", value: "Truck Accident - " + document.getElementById('truck-type').value },
-                { objectTypeId: "0-1", name: "lead_source", value: "Austin Truck Accident Page" }
-            ];
-            
-            const formData = {
-                fields: fields,
-                context: {
-                    pageUri: window.location.href,
-                    pageName: document.title
-                }
-            };
-            
-            fetch('https://forms.hsforms.com/submissions/v3/integration/secure/submit/244500236/237757e3-c46f-4dec-ab5c-840a921c81b3', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(response => {
-                alert('Thank you! A truck accident attorney will contact you shortly.');
-                document.getElementById('getpaid-form').reset();
-            })
-            .catch(error => {
-                alert('Thank you! A truck accident attorney will contact you shortly.');
-                document.getElementById('getpaid-form').reset();
-            })
-            .finally(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            });
-        });
-    </script>
+    
 </body>
 </html>
