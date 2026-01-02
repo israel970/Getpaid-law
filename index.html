@@ -916,13 +916,17 @@
             
             fetch('https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec', {
                 method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
                 body: JSON.stringify(formData)
             })
-            .then(response => {
+            .then(() => {
                 alert('Thank you! We\'ll be in touch shortly.');
                 document.getElementById('getpaid-form').reset();
             })
-            .catch(error => {
+            .catch(() => {
                 alert('Thank you! We\'ll be in touch shortly.');
                 document.getElementById('getpaid-form').reset();
             })
