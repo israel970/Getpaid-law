@@ -3,17 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetPaid.law | Find a Top Personal Injury Lawyer Near You</title>
-    <meta name="description" content="Injured in an accident? Get matched with an experienced personal injury attorney in minutes. Free case review. No fees unless you win your case.">
+    <title>GetPaid.law | Don't Let Insurance Companies Win</title>
+    <meta name="description" content="Injured? Get connected with top personal injury attorneys nationwide. Free consultation. No fee unless you win.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- HubSpot Tracking Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/244500236.js"></script>
-    
-    <!-- CallRail Call Tracking -->
-    <script type="text/javascript" src="//cdn.callrail.com/companies/362899256/4008e07fcf3ba5d73fc1/12/swap.js"></script>
     <style>
         * {
             margin: 0;
@@ -40,16 +34,6 @@
         }
 
         /* Header */
-        .header-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: var(--black);
-            border-bottom: 1px solid var(--gray);
-            z-index: 1000;
-        }
-
         header {
             padding: 1.25rem 1.5rem;
             display: flex;
@@ -59,12 +43,8 @@
             margin: 0 auto;
         }
 
-        .header-spacer {
-            height: 80px;
-        }
-
         .logo {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: 900;
             letter-spacing: -0.03em;
             text-decoration: none;
@@ -81,8 +61,8 @@
             gap: 0.5rem;
             color: var(--white);
             text-decoration: none;
-            font-weight: 700;
-            font-size: 1.2rem;
+            font-weight: 600;
+            font-size: 1.1rem;
             transition: color 0.2s;
         }
 
@@ -91,104 +71,26 @@
         }
 
         .header-phone svg {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
         }
 
-        /* Navigation */
-        .main-nav {
+        .header-nav {
             display: flex;
             align-items: center;
             gap: 2rem;
         }
 
-        .nav-item {
-            position: relative;
-        }
-
         .nav-link {
-            color: var(--white);
+            color: var(--light-gray);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 0.95rem;
-            padding: 0.5rem 0;
-            display: flex;
-            align-items: center;
-            gap: 0.35rem;
             transition: color 0.2s;
         }
 
         .nav-link:hover {
-            color: var(--accent);
-        }
-
-        .nav-link svg {
-            width: 14px;
-            height: 14px;
-            transition: transform 0.2s;
-        }
-
-        .nav-item:hover .nav-link svg {
-            transform: rotate(180deg);
-        }
-
-        .dropdown {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: var(--dark);
-            border: 1px solid var(--gray);
-            border-radius: 8px;
-            padding: 0.5rem 0;
-            min-width: 200px;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(10px);
-            transition: all 0.2s;
-            z-index: 1001;
-        }
-
-        .nav-item:hover .dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
-        .dropdown a {
-            display: block;
-            padding: 0.65rem 1.25rem;
-            color: var(--light-gray);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-
-        .dropdown a:hover {
-            background: var(--gray);
             color: var(--white);
-        }
-
-        .dropdown a.coming-soon {
-            color: #525252;
-            cursor: default;
-        }
-
-        .dropdown a.coming-soon:hover {
-            background: transparent;
-            color: #525252;
-        }
-
-        .dropdown a.coming-soon::after {
-            content: "Coming Soon";
-            font-size: 0.7rem;
-            margin-left: 0.5rem;
-            opacity: 0.7;
-        }
-
-        @media (max-width: 900px) {
-            .main-nav {
-                display: none;
-            }
         }
 
         /* Hero Section */
@@ -634,52 +536,17 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="header-wrapper">
-        <header>
-            <a href="/" class="logo">Get<span>Paid</span></a>
-            <nav class="main-nav">
-                <div class="nav-item">
-                    <a href="#" class="nav-link">
-                        Practice Areas
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                    <div class="dropdown">
-                        <a href="/austin-car-accident-lawyer/" class="coming-soon">Car Accidents</a>
-                        <a href="/austin-truck-accident-lawyer/" class="coming-soon">Truck Accidents</a>
-                        <a href="/austin-motorcycle-accident-lawyer/" class="coming-soon">Motorcycle Accidents</a>
-                        <a href="/austin-wrongful-death-lawyer/" class="coming-soon">Wrongful Death</a>
-                        <a href="/austin-slip-and-fall-lawyer/" class="coming-soon">Slip & Fall</a>
-                        <a href="/austin-workplace-injury-lawyer/" class="coming-soon">Workplace Injuries</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="#" class="nav-link">
-                        Locations
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                    <div class="dropdown">
-                        <a href="/austin-personal-injury-lawyer/">Central Texas</a>
-                        <a href="/houston-personal-injury-lawyer/" class="coming-soon">Greater Houston</a>
-                        <a href="/dallas-personal-injury-lawyer/" class="coming-soon">DFW Area</a>
-                        <a href="/san-antonio-personal-injury-lawyer/" class="coming-soon">South Texas</a>
-                        <a href="/west-texas-personal-injury-lawyer/" class="coming-soon">West Texas</a>
-                    </div>
-                </div>
-                <a href="process.html" class="nav-link">How It Works</a>
-            </nav>
-            <a href="tel:512-883-0012" class="header-phone">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <span>(512) 883-0012</span>
-            </a>
-        </header>
-    </div>
-    <div class="header-spacer"></div>
+    <header>
+        <a href="index.html" class="logo">Get<span>Paid</span></a>
+        <nav class="header-nav">
+            <a href="process.html" class="nav-link">Our Process</a>
+            <a href="tel:1-800-555-0199" class="header-phone">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span>1-800-555-0199</span>
+        </a>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -687,20 +554,20 @@
             <h1>Injured? <span class="highlight">Get What You Deserve.</span></h1>
             <p>Insurance companies have armies of lawyers. Now you do too. We connect you with top personal injury attorneys nationwide—for free.</p>
             <div class="hero-cta">
-                <a href="tel:512-883-0012" class="phone-cta">
+                <a href="tel:1-800-555-0199" class="phone-cta">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    Call Now: (512) 883-0012
+                    Call Now: 1-800-555-0199
                 </a>
                 <span class="cta-subtext">Free consultation • Available 24/7 • No fee unless you win</span>
             </div>
         </div>
 
         <div class="form-card">
-            <h2>Free Case Review</h2>
-            <p class="subtitle">Get matched with the right attorney in minutes.</p>
-            <form id="getpaid-form">
+            <h2>Get Your Free Case Review</h2>
+            <p class="subtitle">Find out what your case is worth in minutes.</p>
+            <form id="lead-form">
                 <div class="form-group">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="John Smith" required>
@@ -710,24 +577,23 @@
                     <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email <span style="color: #525252; font-weight: 400;">(optional)</span></label>
-                    <input type="email" id="email" name="email" placeholder="john@email.com">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@email.com" required>
                 </div>
                 <div class="form-group">
                     <label for="case-type">What Happened?</label>
                     <select id="case-type" name="case-type" required>
                         <option value="" disabled selected>Select your injury type</option>
-                        <option value="Car Accident">Car Accident</option>
-                        <option value="Commercial Vehicle Accident">Commercial Vehicle Accident</option>
-                        <option value="Motorcycle Accident">Motorcycle Accident</option>
-                        <option value="Workplace Injury">Workplace Injury</option>
-                        <option value="Slip & Fall">Slip & Fall</option>
-                        <option value="Premises Liability">Premises Liability</option>
-                        <option value="Civil Rights">Civil Rights</option>
-                        <option value="Other">Other</option>
+                        <option value="car-accident">Car Accident</option>
+                        <option value="truck-accident">Truck Accident</option>
+                        <option value="motorcycle">Motorcycle Accident</option>
+                        <option value="workplace">Workplace Injury</option>
+                        <option value="slip-fall">Slip & Fall</option>
+                        <option value="premises">Premises Liability</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
-                <button type="submit" class="submit-btn">Match Me →</button>
+                <button type="submit" class="submit-btn">Get My Free Case Review →</button>
                 <p class="form-disclaimer">By submitting, you agree to be contacted about your case. We respect your privacy.</p>
             </form>
         </div>
@@ -817,11 +683,11 @@
     <section class="cta-section">
         <h2>Stop Getting Pushed Around</h2>
         <p>Insurance companies lowball victims every single day. Don't let them do it to you. Get a real attorney who fights back.</p>
-        <a href="tel:512-883-0012" class="phone-cta">
+        <a href="tel:1-800-555-0199" class="phone-cta">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            Call Now: (512) 883-0012
+            Call Now: 1-800-555-0199
         </a>
     </section>
 
@@ -830,12 +696,10 @@
         <div class="footer-content">
             <div class="footer-logo">Get<span>Paid</span></div>
             <div class="footer-links">
-                <a href="/">Home</a>
-                <a href="/austin-personal-injury-lawyer/">Central Texas</a>
-                <a href="process.html">How It Works</a>
-                <a href="partners.html">Partner With Us</a>
+                <a href="process.html">Our Process</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
             </div>
             <p class="footer-disclaimer">
                 GetPaid.law is a lawyer referral service. We are not a law firm and do not provide legal advice. 
@@ -846,58 +710,26 @@
     </footer>
 
     <script>
-        document.getElementById('getpaid-form').addEventListener('submit', function(e) {
+        // Simple form handling
+        document.getElementById('lead-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const submitBtn = this.querySelector('.submit-btn');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Submitting...';
-            submitBtn.disabled = true;
-            
-            const fullName = document.getElementById('name').value.trim();
-            const nameParts = fullName.split(' ');
-            const firstName = nameParts[0] || '';
-            const lastName = nameParts.slice(1).join(' ') || '';
-            const emailValue = document.getElementById('email').value.trim();
-            
-            // If no email, generate a placeholder so HubSpot accepts it
-            const emailToSend = emailValue || 'noemail_' + Date.now() + '@placeholder.getpaid.law';
-            
-            const fields = [
-                { objectTypeId: "0-1", name: "firstname", value: firstName },
-                { objectTypeId: "0-1", name: "lastname", value: lastName },
-                { objectTypeId: "0-1", name: "phone", value: document.getElementById('phone').value },
-                { objectTypeId: "0-1", name: "email", value: emailToSend },
-                { objectTypeId: "0-1", name: "case_type", value: document.getElementById('case-type').value }
-            ];
-            
+            // Collect form data
             const formData = {
-                fields: fields,
-                context: {
-                    pageUri: window.location.href,
-                    pageName: document.title
-                }
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                caseType: document.getElementById('case-type').value
             };
             
-            fetch('https://forms.hsforms.com/submissions/v3/integration/secure/submit/244500236/237757e3-c46f-4dec-ab5c-840a921c81b3', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(response => {
-                alert('Thank you! We\'ll be in touch shortly.');
-                document.getElementById('getpaid-form').reset();
-            })
-            .catch(error => {
-                alert('Thank you! We\'ll be in touch shortly.');
-                document.getElementById('getpaid-form').reset();
-            })
-            .finally(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            });
+            // Here you would typically send this to your backend/CRM
+            console.log('Lead submitted:', formData);
+            
+            // Show success message
+            alert('Thank you! We\'ll be in touch within 24 hours.');
+            
+            // Reset form
+            this.reset();
         });
     </script>
 </body>
