@@ -85,11 +85,11 @@
 
         .article { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
         .article-header { margin-bottom: 2.5rem; }
-        .article-category { font-size: 0.85rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
         .article h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 900; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 1.25rem; }
-        .article-meta { color: var(--light-gray); font-size: 0.95rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+        .article-meta { color: var(--light-gray); font-size: 0.95rem; display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+        .article-meta .category { background: rgba(34, 197, 94, 0.15); color: var(--accent); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
         .article-meta .author { color: var(--white); font-weight: 500; }
-        .article-meta .divider { color: var(--gray); }
+        .article-meta .divider { color: #333; }
 
         .article-content h2 { font-size: 1.5rem; font-weight: 800; margin: 2.5rem 0 1rem; color: var(--white); }
         .article-content h3 { font-size: 1.25rem; font-weight: 700; margin: 2rem 0 0.75rem; color: var(--white); }
@@ -230,9 +230,14 @@
 
     <article class="article">
         <header class="article-header">
-            <div class="article-category">Car Accidents</div>
             <h1>What to Do After a Car Accident in Texas: A Step-by-Step Guide</h1>
-            <div class="article-meta"><span class="author">By Israel Medina, Esq.</span><span class="divider">|</span><span>January 2025</span></div>
+            <div class="article-meta">
+                <span class="category">Car Accidents</span>
+                <span class="divider">•</span>
+                <span class="author">By Israel Medina, Esq.</span>
+                <span class="divider">•</span>
+                <span>January 2025</span>
+            </div>
         </header>
 
         <div class="article-content">
