@@ -613,6 +613,9 @@
         .mobile-phone-btn svg { width: 24px; height: 24px; }
         @media (max-width: 900px) { .mobile-menu-btn { display: flex; } .header-phone span { display: none; } }
         @media (min-width: 901px) { .mobile-menu-btn { display: none; } .mobile-menu { display: none !important; } }
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
     </style>
 </head>
 <body>
@@ -729,7 +732,9 @@
     <!-- Why West Texas Is Different -->
     <section class="content-section">
         <h2>Why West Texas Car Accidents Are Different</h2>
-        <p>The Permian Basin oil boom has transformed West Texas roads into some of the most dangerous in America. The unique combination of factors in this region makes car accidents more frequent, more severe, and more complex than anywhere else in Texas.</p>
+        <p><figure class="content-image">
+    <img src="/images/content/car-damage.jpg" alt="Car accident damage">
+</figure>The Permian Basin oil boom has transformed West Texas roads into some of the most dangerous in America. The unique combination of factors in this region makes car accidents more frequent, more severe, and more complex than anywhere else in Texas.</p>
 
         <h3>The Oilfield Traffic Factor</h3>
         <p>The Permian Basin is one of the most productive oil fields in the world, and that means heavy truck traffic on roads never designed to handle it:</p>

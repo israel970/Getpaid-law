@@ -216,6 +216,9 @@
         .mobile-phone-btn svg { width: 24px; height: 24px; }
         @media (max-width: 900px) { .mobile-menu-btn { display: flex; } .header-phone span { display: none; } }
         @media (min-width: 901px) { .mobile-menu-btn { display: none; } .mobile-menu { display: none !important; } }
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
     </style>
 </head>
 <body>
@@ -318,7 +321,10 @@
     <!-- Why West Texas Motorcycling Is Different -->
     <section class="content-section">
         <h2>The Unique Dangers for West Texas Motorcyclists</h2>
-        <p>West Texas offers some of the most scenic riding in the state, but the Permian Basin oil boom has transformed these roads into some of the most dangerous for motorcyclists anywhere in America. Understanding these unique risks is essential to your case.</p>
+        <p><figure class="content-image">
+    <img src="/images/content/motorcycle-rider.jpg" alt="Motorcycle on Texas road">
+</figure>
+West Texas offers some of the most scenic riding in the state, but the Permian Basin oil boom has transformed these roads into some of the most dangerous for motorcyclists anywhere in America. Understanding these unique risks is essential to your case.</p>
 
         <h3>Oilfield Truck Traffic</h3>
         <p>The single biggest danger for West Texas motorcyclists is the constant stream of commercial oilfield vehicles:</p>

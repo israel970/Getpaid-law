@@ -225,6 +225,9 @@
         .mobile-phone-btn svg { width: 24px; height: 24px; }
         @media (max-width: 900px) { .mobile-menu-btn { display: flex; } .header-phone span { display: none; } }
         @media (min-width: 901px) { .mobile-menu-btn { display: none; } .mobile-menu { display: none !important; } }
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
     </style>
 </head>
 <body>
@@ -327,7 +330,9 @@
     <!-- Why Oilfield Trucks Are Different -->
     <section class="content-section">
         <h2>The Permian Basin Truck Accident Crisis</h2>
-        <p>The Permian Basin oil boom has created a trucking crisis on West Texas roads. Thousands of commercial vehicles flood highways designed for a fraction of the traffic, operated by drivers under intense pressure to meet demanding schedules. The result is predictable and tragic: West Texas has some of the highest truck accident rates in the nation.</p>
+        <p><figure class="content-image">
+    <img src="/images/content/semi-truck.jpg" alt="18-wheeler truck">
+</figure>The Permian Basin oil boom has created a trucking crisis on West Texas roads. Thousands of commercial vehicles flood highways designed for a fraction of the traffic, operated by drivers under intense pressure to meet demanding schedules. The result is predictable and tragic: West Texas has some of the highest truck accident rates in the nation.</p>
 
         <h3>Why Oilfield Truck Accidents Happen</h3>
         <p>The factors driving the oilfield trucking crisis include:</p>

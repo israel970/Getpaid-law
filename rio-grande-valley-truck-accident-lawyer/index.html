@@ -233,6 +233,9 @@
         .mobile-phone-btn svg { width: 24px; height: 24px; }
         @media (max-width: 900px) { .mobile-menu-btn { display: flex; } .header-phone span { display: none; } }
         @media (min-width: 901px) { .mobile-menu-btn { display: none; } .mobile-menu { display: none !important; } }
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
     </style>
 </head>
 <body>
@@ -335,7 +338,9 @@
     <!-- Why Border Trucking Is Dangerous -->
     <section class="content-section">
         <h2>Why the Rio Grande Valley Is a Trucking Danger Zone</h2>
-        <p>The Rio Grande Valley isn't just another Texas region—it's the gateway for billions of dollars in international trade. The Pharr-Reynosa International Bridge alone handles more than 1,800 trucks per day, making it the busiest produce crossing in North America. Add the Brownsville, Progreso, and other crossings, and you have one of the highest concentrations of commercial truck traffic anywhere in the country.</p>
+        <p><figure class="content-image">
+    <img src="/images/content/semi-truck.jpg" alt="18-wheeler truck">
+</figure>The Rio Grande Valley isn't just another Texas region—it's the gateway for billions of dollars in international trade. The Pharr-Reynosa International Bridge alone handles more than 1,800 trucks per day, making it the busiest produce crossing in North America. Add the Brownsville, Progreso, and other crossings, and you have one of the highest concentrations of commercial truck traffic anywhere in the country.</p>
         <p>This creates unique dangers for Valley residents:</p>
 
         <h3>International Trucking Complexity</h3>

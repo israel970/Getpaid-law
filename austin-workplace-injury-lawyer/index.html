@@ -186,7 +186,10 @@
         .footer-disclaimer { font-size: 0.8rem; color: #525252; max-width: 700px; margin: 0 auto; line-height: 1.6; }
         @media (max-width: 900px) { .hero { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 2rem; } .hero-image { order: -1; } .hero-image img { min-height: 250px; max-height: 300px; } .types-grid { grid-template-columns: 1fr; } }
         @media (max-width: 600px) { .header-phone span { display: none; } .hero-content h1 { font-size: 2rem; } }
-    
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
+
         /* Mobile Menu Styles */
         .mobile-menu-btn { display: none; align-items: center; justify-content: center; background: none; border: none; cursor: pointer; padding: 0.5rem; margin-left: 0.5rem; }
         .mobile-menu-btn svg { width: 28px; height: 28px; color: white; }
@@ -308,7 +311,9 @@
 
     <section class="content-section">
         <h2>Texas Workplace Injury Law Is Different</h2>
-        <p>Texas is the only state in the country where employers can opt out of workers' compensation insurance. This creates both challenges and opportunities for injured workers.</p>
+        <p><figure class="content-image">
+    <img src="/images/content/construction-site.jpg" alt="Construction site workplace">
+</figure>Texas is the only state in the country where employers can opt out of workers' compensation insurance. This creates both challenges and opportunities for injured workers.</p>
         
         <h3>Workers' Comp vs. Non-Subscriber Claims</h3>
         <p>There are two very different scenarios in Texas workplace injuries:</p>

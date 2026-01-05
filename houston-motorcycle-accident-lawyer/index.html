@@ -233,6 +233,9 @@
         .mobile-phone-btn svg { width: 24px; height: 24px; }
         @media (max-width: 900px) { .mobile-menu-btn { display: flex; } .header-phone span { display: none; } }
         @media (min-width: 901px) { .mobile-menu-btn { display: none; } .mobile-menu { display: none !important; } }
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
     </style>
 </head>
 <body>
@@ -332,7 +335,10 @@
 
     <section class="content-section">
         <h2>Why Motorcycle Accident Cases Are Different</h2>
-        <p>Motorcycle accidents aren't just car accidents on two wheels. They're fundamentally different—in severity, in how insurance companies treat them, and in the legal strategies needed to win.</p>
+        <p><figure class="content-image">
+    <img src="/images/content/motorcycle-rider.jpg" alt="Motorcycle on Texas road">
+</figure>
+Motorcycle accidents aren't just car accidents on two wheels. They're fundamentally different—in severity, in how insurance companies treat them, and in the legal strategies needed to win.</p>
 
         <h3>More Severe Injuries</h3>
         <p>Motorcyclists lack the protection of an enclosed vehicle. When a crash happens, there's no steel frame, no airbags, no crumple zones. This means:</p>
