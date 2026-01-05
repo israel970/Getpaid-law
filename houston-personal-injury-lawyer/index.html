@@ -154,7 +154,24 @@
         .footer-disclaimer { font-size: 0.8rem; color: #525252; max-width: 700px; margin: 0 auto; line-height: 1.6; }
         @media (max-width: 900px) { .hero { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 2rem; } .case-grid { grid-template-columns: 1fr; } }
         @media (max-width: 600px) { .header-phone span { display: none; } .hero-content h1 { font-size: 2rem; } }
-    
+
+        /* Practice Areas Section */
+        .practice-areas-section { padding: 4rem 1.5rem; background: var(--dark); }
+        .practice-areas-content { max-width: 1200px; margin: 0 auto; }
+        .practice-areas-content h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; text-align: center; }
+        .practice-areas-content > p { color: var(--light-gray); text-align: center; margin-bottom: 2.5rem; font-size: 1.05rem; }
+        .practice-areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .practice-area-card { background: var(--black); border: 1px solid var(--gray); border-radius: 12px; padding: 1.75rem; text-decoration: none; transition: all 0.3s ease; display: flex; flex-direction: column; }
+        .practice-area-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+        .practice-area-icon { width: 48px; height: 48px; margin-bottom: 1rem; color: var(--accent); }
+        .practice-area-card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--white); }
+        .practice-area-card p { color: var(--light-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1; }
+        .practice-area-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); font-weight: 600; font-size: 0.95rem; transition: gap 0.2s ease; }
+        .practice-area-card:hover .practice-area-link { gap: 0.75rem; }
+        .practice-area-link svg { width: 16px; height: 16px; }
+        @media (max-width: 900px) { .practice-areas-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .practice-areas-grid { grid-template-columns: 1fr; } }
+
         /* Mobile Menu Styles */
         .mobile-menu-btn { display: none; align-items: center; justify-content: center; background: none; border: none; cursor: pointer; padding: 0.5rem; margin-left: 0.5rem; }
         .mobile-menu-btn svg { width: 28px; height: 28px; color: white; }
@@ -188,12 +205,12 @@
                 <div class="nav-item">
                     <span class="nav-link" style="cursor: pointer;">Practice Areas <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></span>
                     <div class="dropdown">
-                        <a href="/austin-car-accident-lawyer/">Car Accidents</a>
-                        <a href="/austin-truck-accident-lawyer/">Truck Accidents</a>
-                        <a href="/austin-motorcycle-accident-lawyer/">Motorcycle Accidents</a>
-                        <a href="/austin-wrongful-death-lawyer/">Wrongful Death</a>
-                        <a href="/austin-slip-and-fall-lawyer/">Slip & Fall</a>
-                        <a href="/austin-workplace-injury-lawyer/">Workplace Injuries</a>
+                        <a href="/car-accident-lawyer/">Car Accidents</a>
+                        <a href="/truck-accident-lawyer/">Truck Accidents</a>
+                        <a href="/motorcycle-accident-lawyer/">Motorcycle Accidents</a>
+                        <a href="/wrongful-death-lawyer/">Wrongful Death</a>
+                        <a href="/slip-and-fall-lawyer/">Slip & Fall</a>
+                        <a href="/workplace-injury-lawyer/">Workplace Injuries</a>
                     </div>
                 </div>
                 <div class="nav-item">
@@ -228,12 +245,12 @@
         <div class="mobile-nav-section">
             <div class="mobile-nav-header" onclick="toggleMobileDropdown(this)">Practice Areas <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg></div>
             <div class="mobile-dropdown">
-                <a href="/austin-car-accident-lawyer/">Car Accidents</a>
-                <a href="/austin-truck-accident-lawyer/">Truck Accidents</a>
-                <a href="/austin-motorcycle-accident-lawyer/">Motorcycle Accidents</a>
-                <a href="/austin-wrongful-death-lawyer/">Wrongful Death</a>
-                <a href="/austin-slip-and-fall-lawyer/">Slip & Fall</a>
-                <a href="/austin-workplace-injury-lawyer/">Workplace Injuries</a>
+                <a href="/car-accident-lawyer/">Car Accidents</a>
+                <a href="/truck-accident-lawyer/">Truck Accidents</a>
+                <a href="/motorcycle-accident-lawyer/">Motorcycle Accidents</a>
+                <a href="/wrongful-death-lawyer/">Wrongful Death</a>
+                <a href="/slip-and-fall-lawyer/">Slip & Fall</a>
+                <a href="/workplace-injury-lawyer/">Workplace Injuries</a>
             </div>
         </div>
         <div class="mobile-nav-section">
@@ -267,6 +284,64 @@
                     Call Now: (512) 883-0012
                 </a>
                 <p class="cta-subtext">Free consultation • Available 24/7 • No fee unless you win</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section class="practice-areas-section">
+        <div class="practice-areas-content">
+            <h2>Practice Areas We Handle in Houston</h2>
+            <p>Our network of Houston attorneys specializes in all types of personal injury cases. Click below for detailed information about your specific case type.</p>
+            <div class="practice-areas-grid">
+                <a href="/car-accident-lawyer/" class="practice-area-card">
+                    <svg class="practice-area-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                    </svg>
+                    <h3>Car Accidents</h3>
+                    <p>From rear-end collisions to T-bone crashes, our attorneys fight for maximum compensation after Houston car accidents.</p>
+                    <span class="practice-area-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg></span>
+                </a>
+                <a href="/truck-accident-lawyer/" class="practice-area-card">
+                    <svg class="practice-area-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25m-2.25 0V6.375c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h1.5m8.25-10.5h3.75a.75.75 0 01.671.415l1.644 3.287A.75.75 0 0118 11.25v3.375" />
+                    </svg>
+                    <h3>Truck Accidents</h3>
+                    <p>18-wheeler crashes cause devastating injuries. We hold trucking companies and negligent drivers accountable.</p>
+                    <span class="practice-area-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg></span>
+                </a>
+                <a href="/motorcycle-accident-lawyer/" class="practice-area-card">
+                    <svg class="practice-area-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                    </svg>
+                    <h3>Motorcycle Accidents</h3>
+                    <p>Riders deserve justice when negligent drivers cause crashes. We protect motorcyclists' rights to fair compensation.</p>
+                    <span class="practice-area-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg></span>
+                </a>
+                <a href="/wrongful-death-lawyer/" class="practice-area-card">
+                    <svg class="practice-area-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <h3>Wrongful Death</h3>
+                    <p>Compassionate representation for families who have lost loved ones due to another's negligence or recklessness.</p>
+                    <span class="practice-area-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg></span>
+                </a>
+                <a href="/slip-and-fall-lawyer/" class="practice-area-card">
+                    <svg class="practice-area-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                    </svg>
+                    <h3>Slip & Fall</h3>
+                    <p>Property owners must maintain safe premises. We hold them accountable when hazardous conditions cause injuries.</p>
+                    <span class="practice-area-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg></span>
+                </a>
+                <a href="/workplace-injury-lawyer/" class="practice-area-card">
+                    <svg class="practice-area-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                    </svg>
+                    <h3>Workplace Injuries</h3>
+                    <p>Construction accidents, industrial injuries, and third-party claims beyond workers' compensation benefits.</p>
+                    <span class="practice-area-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg></span>
+                </a>
             </div>
         </div>
     </section>
