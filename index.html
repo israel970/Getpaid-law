@@ -682,11 +682,17 @@
             padding: 2rem;
             transition: transform 0.2s, border-color 0.2s;
             border: 1px solid transparent;
+            text-decoration: none;
+            display: block;
         }
 
         .case-card:hover {
             transform: translateY(-4px);
             border-color: var(--accent);
+        }
+
+        .case-card h3 {
+            color: var(--white);
         }
 
         .case-card svg {
@@ -854,53 +860,89 @@
             }
         }
 
-        /* News Ticker */
-        .news-ticker {
-            background: var(--black);
+        /* News Feed Section */
+        .news-feed {
+            background: var(--dark);
+            border-top: 1px solid var(--gray);
             border-bottom: 1px solid var(--gray);
+            padding: 2rem 1.5rem;
             overflow: hidden;
-            padding: 0.6rem 0;
         }
 
-        .news-track {
+        .news-feed-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .news-feed-header h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--light-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .news-scroll-container {
+            overflow: hidden;
+            mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+        }
+
+        .news-scroll-track {
             display: flex;
-            animation: newsScroll 50s linear infinite;
+            animation: newsScroll 40s linear infinite;
             width: max-content;
         }
 
-        .news-track:hover {
-            animation-play-state: paused;
-        }
 
         @keyframes newsScroll {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
 
-        .news-item {
-            display: flex;
+        .news-card {
+            background: var(--gray);
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 0 0.75rem;
+            min-width: 320px;
+            max-width: 380px;
+            transition: border-color 0.2s;
+        }
+
+        .news-card:hover {
+            border-color: var(--accent);
+        }
+
+        .news-source-badge {
+            display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0 2.5rem;
-            white-space: nowrap;
+            margin-bottom: 0.75rem;
         }
 
-        .news-source {
-            font-size: 0.8rem;
+        .source-logo {
+            height: 24px;
+            width: auto;
+        }
+
+        .source-logo svg {
+            height: 24px;
+            width: auto;
+        }
+
+        .source-name {
+            font-size: 0.85rem;
             font-weight: 700;
             color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
         }
 
-        .news-headline {
-            font-size: 0.9rem;
-            color: var(--light-gray);
-        }
-
-        .news-divider {
-            color: #333;
-            margin: 0 0.5rem;
+        .news-card-headline {
+            font-size: 0.95rem;
+            color: var(--white);
+            line-height: 1.5;
+            font-weight: 500;
         }
 
         /* Settlement Ticker */
@@ -918,9 +960,6 @@
             width: max-content;
         }
 
-        .ticker-track:hover {
-            animation-play-state: paused;
-        }
 
         @keyframes scroll {
             0% { transform: translateX(0); }
@@ -1194,19 +1233,6 @@
                     <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
                 </div>
                 <div class="form-group">
-                    <label for="case-type">What Happened?</label>
-                    <select id="case-type" name="case-type" required>
-                        <option value="" disabled selected>Select your injury type</option>
-                        <option value="Car Accident">Car Accident</option>
-                        <option value="Truck Accident">Truck Accident</option>
-                        <option value="Motorcycle Accident">Motorcycle Accident</option>
-                        <option value="Workplace Injury">Workplace Injury</option>
-                        <option value="Slip & Fall">Slip & Fall</option>
-                        <option value="Wrongful Death">Wrongful Death</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
                     <label for="story">Tell Us Your Story</label>
                     <textarea id="story" name="story" rows="3" placeholder="Briefly describe what happened..."></textarea>
                 </div>
@@ -1216,34 +1242,107 @@
         </div>
     </section>
 
-    <!-- News Ticker -->
-    <div class="news-ticker">
-        <div class="news-track">
-            <div class="news-item"><span class="news-source">Texas Tribune:</span><span class="news-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</span></div>
-            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</span></div>
-            <div class="news-item"><span class="news-source">FMCSA:</span><span class="news-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</span></div>
-            <div class="news-item"><span class="news-source">NHTSA:</span><span class="news-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</span></div>
-            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"Trucking Traffic Expected to Increase 22% by 2030 in Texas"</span></div>
-            <div class="news-item"><span class="news-source">NSC:</span><span class="news-headline">"Deaths in Truck Wrecks Increased 52% Since 2009"</span></div>
-            <!-- Duplicate for seamless loop -->
-            <div class="news-item"><span class="news-source">Texas Tribune:</span><span class="news-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</span></div>
-            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</span></div>
-            <div class="news-item"><span class="news-source">FMCSA:</span><span class="news-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</span></div>
-            <div class="news-item"><span class="news-source">NHTSA:</span><span class="news-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</span></div>
-            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"Trucking Traffic Expected to Increase 22% by 2030 in Texas"</span></div>
-            <div class="news-item"><span class="news-source">NSC:</span><span class="news-headline">"Deaths in Truck Wrecks Increased 52% Since 2009"</span></div>
+    <!-- News Feed -->
+    <section class="news-feed">
+        <div class="news-feed-header">
+            <h3>In The News</h3>
         </div>
-    </div>
+        <div class="news-scroll-container">
+            <div class="news-scroll-track">
+                <div class="news-card">
+                    <div class="news-source-badge">
+                        <div class="source-logo">
+                            <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="18" fill="#22c55e" font-family="Inter, sans-serif" font-weight="800" font-size="14">TEXAS TRIBUNE</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="news-card-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-source-badge">
+                        <div class="source-logo">
+                            <svg viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="18" fill="#22c55e" font-family="Inter, sans-serif" font-weight="800" font-size="14">TxDOT</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="news-card-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-source-badge">
+                        <div class="source-logo">
+                            <svg viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="18" fill="#22c55e" font-family="Inter, sans-serif" font-weight="800" font-size="14">FMCSA</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="news-card-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-source-badge">
+                        <div class="source-logo">
+                            <svg viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="18" fill="#22c55e" font-family="Inter, sans-serif" font-weight="800" font-size="14">NHTSA</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="news-card-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</p>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="news-card">
+                    <div class="news-source-badge">
+                        <div class="source-logo">
+                            <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="18" fill="#22c55e" font-family="Inter, sans-serif" font-weight="800" font-size="14">TEXAS TRIBUNE</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="news-card-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-source-badge">
+                        <div class="source-logo">
+                            <svg viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="18" fill="#22c55e" font-family="Inter, sans-serif" font-weight="800" font-size="14">TxDOT</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="news-card-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-source-badge">
+                        <div class="source-logo">
+                            <svg viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="18" fill="#22c55e" font-family="Inter, sans-serif" font-weight="800" font-size="14">FMCSA</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="news-card-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-source-badge">
+                        <div class="source-logo">
+                            <svg viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="18" fill="#22c55e" font-family="Inter, sans-serif" font-weight="800" font-size="14">NHTSA</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="news-card-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Trust Bar -->
     <section class="trust-bar">
         <div class="trust-content">
             <div class="trust-item">
-                <h3>500+</h3>
+                <h3>100+</h3>
                 <p>Partner Law Firms</p>
             </div>
             <div class="trust-item">
-                <h3>50</h3>
+                <h3>37</h3>
                 <p>States Covered</p>
             </div>
             <div class="trust-item">
@@ -1290,27 +1389,48 @@
                 <p>Our network of attorneys have recovered billions for injury victims.</p>
             </div>
             <div class="case-grid">
-                <div class="case-card">
+                <a href="/austin-car-accident-lawyer/" class="case-card">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
                     </svg>
                     <h3>Car Accidents</h3>
                     <p>Rear-end collisions, T-bone crashes, drunk drivers, distracted drivers, and more.</p>
-                </div>
-                <div class="case-card">
+                </a>
+                <a href="/austin-truck-accident-lawyer/" class="case-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25m-2.25 0V5.25A2.25 2.25 0 009.75 3H6.75A2.25 2.25 0 004.5 5.25v6m7.5-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                    </svg>
+                    <h3>Truck Accidents</h3>
+                    <p>18-wheeler crashes, semi-truck collisions, commercial vehicle accidents, and cargo spills.</p>
+                </a>
+                <a href="/austin-motorcycle-accident-lawyer/" class="case-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3>Motorcycle Accidents</h3>
+                    <p>Lane splitting accidents, left-turn collisions, road hazards, and helmet law cases.</p>
+                </a>
+                <a href="/austin-workplace-injury-lawyer/" class="case-card">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
                     </svg>
                     <h3>Workplace Injuries</h3>
                     <p>Construction accidents, machinery injuries, toxic exposure, and employer negligence.</p>
-                </div>
-                <div class="case-card">
+                </a>
+                <a href="/austin-slip-and-fall-lawyer/" class="case-card">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
                     </svg>
-                    <h3>Premises Liability</h3>
-                    <p>Slip and falls, unsafe conditions, negligent security, and property owner negligence.</p>
-                </div>
+                    <h3>Slip & Fall</h3>
+                    <p>Wet floors, unsafe conditions, negligent security, and property owner negligence.</p>
+                </a>
+                <a href="/austin-wrongful-death-lawyer/" class="case-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <h3>Wrongful Death</h3>
+                    <p>Fatal accidents, medical malpractice deaths, workplace fatalities, and survivor claims.</p>
+                </a>
             </div>
         </div>
     </section>
@@ -1376,10 +1496,9 @@
             
             const name = encodeURIComponent(document.getElementById('name').value);
             const phone = encodeURIComponent(document.getElementById('phone').value);
-            const caseType = encodeURIComponent(document.getElementById('case-type').value);
             const story = encodeURIComponent(document.getElementById('story').value || 'Not provided');
 
-            const url = 'https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec?name=' + name + '&phone=' + phone + '&email=Not%20provided&caseType=' + caseType + '&story=' + story;
+            const url = 'https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec?name=' + name + '&phone=' + phone + '&email=Not%20provided&caseType=Not%20provided&story=' + story;
             
             fetch(url, { method: 'GET', mode: 'no-cors' })
             .then(() => {
