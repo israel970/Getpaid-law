@@ -134,6 +134,9 @@
         .content-section p { color: var(--light-gray); margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.8; }
         .content-section ul { color: var(--light-gray); margin-bottom: 1.5rem; padding-left: 1.5rem; }
         .content-section li { margin-bottom: 0.5rem; font-size: 1.05rem; line-height: 1.7; }
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
         .case-types-section { background: var(--dark); padding: 4rem 1.5rem; }
         .case-types-content { max-width: 1200px; margin: 0 auto; }
         .case-types-content h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; text-align: center; }
@@ -354,7 +357,10 @@
     <section class="content-section">
         <h2>Why Rio Grande Valley Accident Victims Trust Our Network</h2>
         <p>The Rio Grande Valley is one of the fastest-growing regions in Texas, with over 1.3 million residents in Hidalgo, Cameron, Starr, and Willacy counties. With international commerce flowing through border crossings and heavy traffic on US-83 and US-281, accidents are a daily reality. When you're injured, you need attorneys who understand Valley communities and know how to fight for fair compensation.</p>
-        
+        <div class="content-image">
+            <img src="/images/content/lawyer-consultation.jpg" alt="Personal injury lawyer consultation">
+        </div>
+
         <h3>Serving the Rio Grande Valley</h3>
         <ul>
             <li><strong>McAllen</strong> — Hidalgo County's largest city and regional hub</li>
@@ -368,6 +374,9 @@
         </ul>
 
         <h3>Dangerous Roads in the RGV</h3>
+        <div class="content-image">
+            <img src="/images/content/highway-texas.jpg" alt="Texas highway">
+        </div>
         <ul>
             <li><strong>US-83 / Expressway 83</strong> — Main east-west corridor connecting all Valley cities</li>
             <li><strong>US-281</strong> — Major north-south route from the Valley to San Antonio</li>

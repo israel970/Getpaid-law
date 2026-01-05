@@ -135,6 +135,9 @@
         .content-section p { color: var(--light-gray); margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.8; }
         .content-section ul { color: var(--light-gray); margin-bottom: 1.5rem; padding-left: 1.5rem; }
         .content-section li { margin-bottom: 0.5rem; font-size: 1.05rem; line-height: 1.7; }
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
         .case-types-section { background: var(--dark); padding: 4rem 1.5rem; }
         .case-types-content { max-width: 1200px; margin: 0 auto; }
         .case-types-content h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; text-align: center; }
@@ -355,7 +358,10 @@
     <section class="content-section">
         <h2>Why Houston Accident Victims Trust Our Network</h2>
         <p>Houston is Texas's largest city and one of the most dangerous places to drive in America. With sprawling highways, massive 18-wheelers serving the Port of Houston, and over 7 million people in the metro area, accidents are inevitable. When you're injured, you need attorneys who know Houston courts and how to maximize your compensation.</p>
-        
+        <div class="content-image">
+            <img src="/images/content/lawyer-consultation.jpg" alt="Personal injury lawyer consultation">
+        </div>
+
         <h3>Serving the Houston Metro Area</h3>
         <p>Our network of personal injury attorneys serves clients throughout Greater Houston, including:</p>
         <ul>
@@ -371,6 +377,9 @@
         </ul>
 
         <h3>Dangerous Roads in the Houston Area</h3>
+        <div class="content-image">
+            <img src="/images/content/highway-texas.jpg" alt="Texas highway">
+        </div>
         <ul>
             <li><strong>I-45</strong> — One of the deadliest highways in America, running through downtown Houston</li>
             <li><strong>I-10</strong> — Major east-west corridor from Katy through downtown to Baytown</li>

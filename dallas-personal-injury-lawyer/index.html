@@ -135,6 +135,9 @@
         .content-section p { color: var(--light-gray); margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.8; }
         .content-section ul { color: var(--light-gray); margin-bottom: 1.5rem; padding-left: 1.5rem; }
         .content-section li { margin-bottom: 0.5rem; font-size: 1.05rem; line-height: 1.7; }
+        .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
+        .content-image img { width: 100%; border-radius: 10px; display: block; }
+        @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
         .case-types-section { background: var(--dark); padding: 4rem 1.5rem; }
         .case-types-content { max-width: 1200px; margin: 0 auto; }
         .case-types-content h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; text-align: center; }
@@ -355,7 +358,10 @@
     <section class="content-section">
         <h2>Why DFW Accident Victims Trust Our Network</h2>
         <p>The Dallas-Fort Worth Metroplex is one of the largest and fastest-growing metropolitan areas in America—with traffic congestion and accidents to match. From I-35 through Dallas to I-30 connecting to Fort Worth, millions of drivers share these roads every day. When you're injured, you need attorneys who know DFW courts and how to win.</p>
-        
+        <div class="content-image">
+            <img src="/images/content/lawyer-consultation.jpg" alt="Personal injury lawyer consultation">
+        </div>
+
         <h3>Serving the Dallas-Fort Worth Metroplex</h3>
         <ul>
             <li><strong>Dallas</strong> — Downtown, Uptown, Deep Ellum, Oak Lawn, North Dallas</li>
@@ -370,6 +376,9 @@
         </ul>
 
         <h3>Dangerous Roads in DFW</h3>
+        <div class="content-image">
+            <img src="/images/content/highway-texas.jpg" alt="Texas highway">
+        </div>
         <ul>
             <li><strong>I-35E</strong> — Major north-south corridor through Dallas</li>
             <li><strong>I-35W</strong> — Fort Worth's main north-south artery</li>
