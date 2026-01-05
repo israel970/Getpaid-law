@@ -611,13 +611,27 @@
             font-weight: 900;
             letter-spacing: -0.02em;
             margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
         }
 
         .section-header p {
             color: var(--light-gray);
             font-size: 1.1rem;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 1.5rem auto 0;
         }
 
         .steps {
@@ -751,8 +765,22 @@
         .cta-section h2 {
             font-size: 2.5rem;
             font-weight: 900;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             letter-spacing: -0.02em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .cta-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
         }
 
         .cta-section p {
