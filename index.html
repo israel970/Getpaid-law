@@ -80,6 +80,11 @@
             --red: #ef4444;
         }
 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--black);
@@ -141,6 +146,32 @@
         .header-phone svg {
             width: 26px;
             height: 26px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent);
+            color: var(--black);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .header-cta:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
         }
 
         /* Navigation */
@@ -237,7 +268,11 @@
             .main-nav {
                 display: none;
             }
-            
+
+            .header-cta {
+                display: none;
+            }
+
             .mobile-menu-btn {
                 display: flex;
                 align-items: center;
@@ -346,21 +381,36 @@
                 color: var(--accent);
             }
             
+            .mobile-cta-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1.5rem;
+                padding: 1rem;
+                background: var(--accent);
+                color: var(--black);
+                text-decoration: none;
+                font-size: 1.125rem;
+                font-weight: 700;
+                border-radius: 8px;
+            }
+
             .mobile-phone-btn {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 0.5rem;
-                margin-top: 1.5rem;
+                margin-top: 0.75rem;
                 padding: 1rem;
-                background: var(--accent);
-                color: white;
+                background: transparent;
+                border: 2px solid var(--accent);
+                color: var(--accent);
                 text-decoration: none;
                 font-size: 1.125rem;
                 font-weight: 600;
                 border-radius: 8px;
             }
-            
+
             .mobile-phone-btn svg {
                 width: 24px;
                 height: 24px;
@@ -797,6 +847,46 @@
             text-align: center;
         }
 
+        /* Floating CTA Button */
+        .floating-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent);
+            color: var(--black);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.4);
+            transition: all 0.3s;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .floating-cta:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(34, 197, 94, 0.5);
+        }
+
+        .floating-cta svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (max-width: 640px) {
+            .floating-cta {
+                bottom: 1rem;
+                right: 1rem;
+                padding: 0.875rem 1.25rem;
+                font-size: 0.9rem;
+            }
+        }
+
         /* Mobile Responsive */
         @media (max-width: 968px) {
             .hero {
@@ -896,12 +986,15 @@
                 <a href="/blog/" class="nav-link">Blog</a>
                 <a href="/our-process/" class="nav-link">Our Process</a>
             </nav>
-            <a href="tel:512-883-0012" class="header-phone">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <span>(512) 883-0012</span>
-            </a>
+            <div class="header-right">
+                <a href="tel:512-883-0012" class="header-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span>(512) 883-0012</span>
+                </a>
+                <a href="#contact-form" class="header-cta">Get What I Deserve</a>
+            </div>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
                 <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -951,6 +1044,7 @@
         <a href="/our-mission/" class="mobile-nav-link">Our Mission</a>
         <a href="/blog/" class="mobile-nav-link">Blog</a>
         <a href="/our-process/" class="mobile-nav-link">Our Process</a>
+        <a href="#contact-form" class="mobile-cta-btn" onclick="toggleMobileMenu()">Get What I Deserve</a>
         <a href="tel:512-883-0012" class="mobile-phone-btn">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -977,21 +1071,17 @@
             </div>
         </div>
 
-        <div class="form-card">
+        <div class="form-card" id="contact-form">
             <h2>Free Case Review</h2>
             <p class="subtitle">Get matched with the right attorney in minutes.</p>
             <form id="getpaid-form">
                 <div class="form-group">
-                    <label for="name">Full Name</label>
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="John Smith" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">Phone</label>
                     <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email <span style="color: #525252; font-weight: 400;">(optional)</span></label>
-                    <input type="email" id="email" name="email" placeholder="john@email.com">
                 </div>
                 <div class="form-group">
                     <label for="case-type">What Happened?</label>
@@ -1006,7 +1096,7 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
-                <button type="submit" class="submit-btn">Get My Free Review →</button>
+                <button type="submit" class="submit-btn">Get What I Deserve →</button>
                 <p class="form-disclaimer">By submitting, you agree to be contacted about your case. We respect your privacy.</p>
             </form>
         </div>
@@ -1153,10 +1243,9 @@
             
             const name = encodeURIComponent(document.getElementById('name').value);
             const phone = encodeURIComponent(document.getElementById('phone').value);
-            const email = encodeURIComponent(document.getElementById('email').value || 'Not provided');
             const caseType = encodeURIComponent(document.getElementById('case-type').value);
-            
-            const url = 'https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec?name=' + name + '&phone=' + phone + '&email=' + email + '&caseType=' + caseType;
+
+            const url = 'https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec?name=' + name + '&phone=' + phone + '&email=Not%20provided&caseType=' + caseType;
             
             fetch(url, { method: 'GET', mode: 'no-cors' })
             .then(() => {
@@ -1182,12 +1271,20 @@
             btn.classList.toggle('active');
             document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
         }
-        
+
         function toggleMobileDropdown(header) {
             header.classList.toggle('active');
             const dropdown = header.nextElementSibling;
             dropdown.classList.toggle('active');
         }
     </script>
+
+    <!-- Floating CTA Button -->
+    <a href="#contact-form" class="floating-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+        Get What I Deserve
+    </a>
 </body>
 </html>
