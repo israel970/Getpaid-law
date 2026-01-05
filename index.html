@@ -1306,6 +1306,7 @@
                         <a href="/wrongful-death-lawyer/">Wrongful Death</a>
                         <a href="/slip-and-fall-lawyer/">Slip & Fall</a>
                         <a href="/workplace-injury-lawyer/">Workplace Injuries</a>
+                        <a href="/police-brutality-lawyer/">Police Brutality</a>
                     </div>
                 </div>
                 <div class="nav-item">
@@ -1362,6 +1363,7 @@
                 <a href="/wrongful-death-lawyer/">Wrongful Death</a>
                 <a href="/slip-and-fall-lawyer/">Slip & Fall</a>
                 <a href="/workplace-injury-lawyer/">Workplace Injuries</a>
+                <a href="/police-brutality-lawyer/">Police Brutality</a>
             </div>
         </div>
         <div class="mobile-nav-section">
@@ -1469,6 +1471,7 @@
                         <option value="Workplace Injury">Workplace Injury</option>
                         <option value="Slip & Fall">Slip & Fall</option>
                         <option value="Wrongful Death">Wrongful Death</option>
+                        <option value="Police Brutality">Police Brutality</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
@@ -1716,16 +1719,10 @@
             
             fetch(url, { method: 'GET', mode: 'no-cors' })
             .then(() => {
-                alert('Thank you! We\'ll be in touch shortly.');
-                document.getElementById('getpaid-form').reset();
+                window.location.href = '/thank-you/';
             })
             .catch(() => {
-                alert('Thank you! We\'ll be in touch shortly.');
-                document.getElementById('getpaid-form').reset();
-            })
-            .finally(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
+                window.location.href = '/thank-you/';
             });
         });
     </script>
@@ -1774,6 +1771,7 @@
                     <option value="Workplace Injury">Workplace Injury</option>
                     <option value="Slip & Fall">Slip & Fall</option>
                     <option value="Wrongful Death">Wrongful Death</option>
+                    <option value="Police Brutality">Police Brutality</option>
                     <option value="Other">Other</option>
                 </select>
                 <button type="submit" class="popup-submit-btn">Get What I Deserve</button>
@@ -1812,18 +1810,10 @@
 
             fetch(url, { method: 'GET', mode: 'no-cors' })
             .then(() => {
-                alert('Thank you! We\'ll be in touch shortly.');
-                this.reset();
-                toggleCtaPopup();
+                window.location.href = '/thank-you/';
             })
             .catch(() => {
-                alert('Thank you! We\'ll be in touch shortly.');
-                this.reset();
-                toggleCtaPopup();
-            })
-            .finally(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
+                window.location.href = '/thank-you/';
             });
         });
     </script>
