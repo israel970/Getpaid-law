@@ -1020,25 +1020,6 @@
     </style>
 </head>
 <body>
-    <!-- News Ticker -->
-    <div class="news-ticker">
-        <div class="news-track">
-            <div class="news-item"><span class="news-source">Texas Tribune:</span><span class="news-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</span></div>
-            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</span></div>
-            <div class="news-item"><span class="news-source">FMCSA:</span><span class="news-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</span></div>
-            <div class="news-item"><span class="news-source">NHTSA:</span><span class="news-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</span></div>
-            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"Trucking Traffic Expected to Increase 22% by 2030 in Texas"</span></div>
-            <div class="news-item"><span class="news-source">NSC:</span><span class="news-headline">"Deaths in Truck Wrecks Increased 52% Since 2009"</span></div>
-            <!-- Duplicate for seamless loop -->
-            <div class="news-item"><span class="news-source">Texas Tribune:</span><span class="news-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</span></div>
-            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</span></div>
-            <div class="news-item"><span class="news-source">FMCSA:</span><span class="news-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</span></div>
-            <div class="news-item"><span class="news-source">NHTSA:</span><span class="news-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</span></div>
-            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"Trucking Traffic Expected to Increase 22% by 2030 in Texas"</span></div>
-            <div class="news-item"><span class="news-source">NSC:</span><span class="news-headline">"Deaths in Truck Wrecks Increased 52% Since 2009"</span></div>
-        </div>
-    </div>
-
     <!-- Header -->
     <div class="header-wrapper">
         <header>
@@ -1225,11 +1206,34 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label for="story">Tell Us Your Story</label>
+                    <textarea id="story" name="story" rows="3" placeholder="Briefly describe what happened..."></textarea>
+                </div>
                 <button type="submit" class="submit-btn">Get What I Deserve →</button>
                 <p class="form-disclaimer">By submitting, you agree to be contacted about your case. We respect your privacy.</p>
             </form>
         </div>
     </section>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="news-track">
+            <div class="news-item"><span class="news-source">Texas Tribune:</span><span class="news-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</span></div>
+            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</span></div>
+            <div class="news-item"><span class="news-source">FMCSA:</span><span class="news-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</span></div>
+            <div class="news-item"><span class="news-source">NHTSA:</span><span class="news-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</span></div>
+            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"Trucking Traffic Expected to Increase 22% by 2030 in Texas"</span></div>
+            <div class="news-item"><span class="news-source">NSC:</span><span class="news-headline">"Deaths in Truck Wrecks Increased 52% Since 2009"</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="news-item"><span class="news-source">Texas Tribune:</span><span class="news-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</span></div>
+            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</span></div>
+            <div class="news-item"><span class="news-source">FMCSA:</span><span class="news-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</span></div>
+            <div class="news-item"><span class="news-source">NHTSA:</span><span class="news-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</span></div>
+            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"Trucking Traffic Expected to Increase 22% by 2030 in Texas"</span></div>
+            <div class="news-item"><span class="news-source">NSC:</span><span class="news-headline">"Deaths in Truck Wrecks Increased 52% Since 2009"</span></div>
+        </div>
+    </div>
 
     <!-- Trust Bar -->
     <section class="trust-bar">
@@ -1373,8 +1377,9 @@
             const name = encodeURIComponent(document.getElementById('name').value);
             const phone = encodeURIComponent(document.getElementById('phone').value);
             const caseType = encodeURIComponent(document.getElementById('case-type').value);
+            const story = encodeURIComponent(document.getElementById('story').value || 'Not provided');
 
-            const url = 'https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec?name=' + name + '&phone=' + phone + '&email=Not%20provided&caseType=' + caseType;
+            const url = 'https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPOzvNYWhqoQ7AxTrlINgmbAspw/exec?name=' + name + '&phone=' + phone + '&email=Not%20provided&caseType=' + caseType + '&story=' + story;
             
             fetch(url, { method: 'GET', mode: 'no-cors' })
             .then(() => {
