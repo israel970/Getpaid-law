@@ -94,7 +94,7 @@
 
         /* Header */
         .header-wrapper {
-            position: fixed;
+            position: sticky;
             top: 0;
             left: 0;
             right: 0;
@@ -112,9 +112,6 @@
             margin: 0 auto;
         }
 
-        .header-spacer {
-            height: 95px;
-        }
 
         .logo {
             font-size: 2rem;
@@ -275,13 +272,13 @@
             .mobile-menu {
                 display: none;
                 position: fixed;
-                top: 70px;
+                top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 background: var(--black);
                 z-index: 999;
-                padding: 1rem;
+                padding: 5rem 1rem 1rem;
                 overflow-y: auto;
                 flex-direction: column;
             }
@@ -857,6 +854,55 @@
             }
         }
 
+        /* News Ticker */
+        .news-ticker {
+            background: var(--black);
+            border-bottom: 1px solid var(--gray);
+            overflow: hidden;
+            padding: 0.6rem 0;
+        }
+
+        .news-track {
+            display: flex;
+            animation: newsScroll 50s linear infinite;
+            width: max-content;
+        }
+
+        .news-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes newsScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .news-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0 2.5rem;
+            white-space: nowrap;
+        }
+
+        .news-source {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .news-headline {
+            font-size: 0.9rem;
+            color: var(--light-gray);
+        }
+
+        .news-divider {
+            color: #333;
+            margin: 0 0.5rem;
+        }
+
         /* Settlement Ticker */
         .settlement-ticker {
             background: var(--dark);
@@ -974,6 +1020,25 @@
     </style>
 </head>
 <body>
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="news-track">
+            <div class="news-item"><span class="news-source">Texas Tribune:</span><span class="news-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</span></div>
+            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</span></div>
+            <div class="news-item"><span class="news-source">FMCSA:</span><span class="news-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</span></div>
+            <div class="news-item"><span class="news-source">NHTSA:</span><span class="news-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</span></div>
+            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"Trucking Traffic Expected to Increase 22% by 2030 in Texas"</span></div>
+            <div class="news-item"><span class="news-source">NSC:</span><span class="news-headline">"Deaths in Truck Wrecks Increased 52% Since 2009"</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="news-item"><span class="news-source">Texas Tribune:</span><span class="news-headline">"Texas Leads U.S. in Fatal Truck Crashes as Safety Enforcement Plummets"</span></div>
+            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"39,000 Commercial Truck Crashes Occurred in Texas in 2024"</span></div>
+            <div class="news-item"><span class="news-source">FMCSA:</span><span class="news-headline">"14% of All U.S. Truck Accident Deaths Happen in Texas"</span></div>
+            <div class="news-item"><span class="news-source">NHTSA:</span><span class="news-headline">"82% of Truck Accident Fatalities Are Not Truck Occupants"</span></div>
+            <div class="news-item"><span class="news-source">TxDOT:</span><span class="news-headline">"Trucking Traffic Expected to Increase 22% by 2030 in Texas"</span></div>
+            <div class="news-item"><span class="news-source">NSC:</span><span class="news-headline">"Deaths in Truck Wrecks Increased 52% Since 2009"</span></div>
+        </div>
+    </div>
+
     <!-- Header -->
     <div class="header-wrapper">
         <header>
@@ -1079,8 +1144,6 @@
             Call (512) 883-0012
         </a>
     </div>
-    
-    <div class="header-spacer"></div>
 
     <!-- Settlement Ticker -->
     <div class="settlement-ticker">
