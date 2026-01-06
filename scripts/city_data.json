@@ -1,0 +1,1187 @@
+{
+  "austin": {
+    "name": "Austin",
+    "slug": "austin",
+    "county": "Travis County",
+    "phone": "(512) 883-0012",
+    "population": "1,000,000+",
+    "hospitals": [
+      {
+        "name": "Dell Seton Medical Center at The University of Texas",
+        "address": "1500 Red River St, Austin, TX 78701",
+        "trauma_level": "Level I",
+        "specialties": ["Trauma", "Neurosurgery", "Burn Care"]
+      },
+      {
+        "name": "St. David's Medical Center",
+        "address": "919 E 32nd St, Austin, TX 78705",
+        "trauma_level": "Level II",
+        "specialties": ["Cardiac Care", "Orthopedics", "Stroke Center"]
+      },
+      {
+        "name": "Ascension Seton Medical Center Austin",
+        "address": "1201 W 38th St, Austin, TX 78705",
+        "trauma_level": "Level II",
+        "specialties": ["Orthopedics", "Heart Care", "Cancer Treatment"]
+      },
+      {
+        "name": "St. David's South Austin Medical Center",
+        "address": "901 W Ben White Blvd, Austin, TX 78704",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Orthopedics", "Women's Services"]
+      },
+      {
+        "name": "Baylor Scott & White Medical Center - Lakeway",
+        "address": "100 Medical Pkwy, Lakeway, TX 78738",
+        "trauma_level": "General",
+        "specialties": ["Emergency Care", "Surgery", "Imaging"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Travis County Courthouse",
+      "address": "1000 Guadalupe St, Austin, TX 78701",
+      "district_courts": "126th, 167th, 200th, 201st, 250th, 261st, 299th, 331st, 345th, 353rd, 390th, 403rd, 419th, 427th, 450th, 459th District Courts",
+      "civil_filing": "Travis County District Clerk's Office",
+      "typical_timeline": "Personal injury cases in Travis County typically take 12-24 months from filing to trial, though complex cases may take longer."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 35 (I-35)",
+        "description": "Texas's deadliest interstate runs through downtown Austin. The stretch between US-290 and SH-71 sees over 100 crashes annually due to heavy congestion and construction.",
+        "dangerous_spots": ["I-35 at US-290 interchange", "I-35 at Ben White Blvd", "I-35 Upper/Lower Deck split"]
+      },
+      {
+        "name": "MoPac Expressway (Loop 1)",
+        "description": "High-speed commuter corridor with frequent rear-end collisions during rush hour. The toll lanes create dangerous merge points.",
+        "dangerous_spots": ["MoPac at 2222 interchange", "MoPac at Parmer Lane", "MoPac at 360 junction"]
+      },
+      {
+        "name": "US Highway 183",
+        "description": "Major north-south artery connecting Cedar Park to Austin-Bergstrom Airport. High crash rates near shopping centers and interchanges.",
+        "dangerous_spots": ["183 at Braker Lane", "183 at Research Blvd", "183 at I-35"]
+      },
+      {
+        "name": "US Highway 290 East",
+        "description": "Growing corridor to Manor and Elgin sees increasing accidents as development outpaces road improvements.",
+        "dangerous_spots": ["290 at I-35", "290 at SH-130", "290 at FM 973"]
+      },
+      {
+        "name": "State Highway 71",
+        "description": "High-speed highway to Austin-Bergstrom Airport with fatal crashes at major intersections.",
+        "dangerous_spots": ["SH-71 at US-183", "SH-71 at SH-130", "SH-71 at Ben White Blvd"]
+      },
+      {
+        "name": "FM 2222 (Koenig Lane/Bull Creek Road)",
+        "description": "Winding hill country road notorious for motorcycle accidents and head-on collisions.",
+        "dangerous_spots": ["2222 at MoPac", "2222 at 360", "Mount Bonnell curves"]
+      },
+      {
+        "name": "Ben White Boulevard (SH-71)",
+        "description": "Major east-west corridor with high-speed crashes, especially near I-35 and South Lamar intersections.",
+        "dangerous_spots": ["Ben White at Lamar", "Ben White at Congress", "Ben White at I-35"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-35 and US-290 interchange",
+      "I-35 and Ben White Boulevard",
+      "Lamar Boulevard and Ben White Boulevard",
+      "Research Boulevard and MoPac",
+      "Anderson Lane and Burnet Road",
+      "Parmer Lane and I-35",
+      "William Cannon and I-35",
+      "Riverside Drive and I-35",
+      "Airport Boulevard and I-35",
+      "Slaughter Lane and Mopac"
+    ],
+    "nearby_cities": ["Round Rock", "Cedar Park", "Pflugerville", "Georgetown", "San Marcos", "Kyle"],
+    "local_context": "As Texas's state capital and a rapidly growing tech hub, Austin sees increasing traffic congestion and accident rates. The city's population has doubled in the past two decades, but road infrastructure hasn't kept pace.",
+    "crash_stats": {
+      "total_crashes_2023": "19,847",
+      "fatal_crashes_2023": "87",
+      "serious_injury_crashes": "412",
+      "top_cause": "Failure to control speed"
+    }
+  },
+  "houston": {
+    "name": "Houston",
+    "slug": "houston",
+    "county": "Harris County",
+    "phone": "(512) 883-0012",
+    "population": "2,300,000+",
+    "hospitals": [
+      {
+        "name": "Memorial Hermann-Texas Medical Center",
+        "address": "6411 Fannin St, Houston, TX 77030",
+        "trauma_level": "Level I",
+        "specialties": ["Trauma", "Neurology", "Heart and Vascular"]
+      },
+      {
+        "name": "Ben Taub Hospital",
+        "address": "1504 Taub Loop, Houston, TX 77030",
+        "trauma_level": "Level I",
+        "specialties": ["Trauma", "Emergency Medicine", "Surgery"]
+      },
+      {
+        "name": "Houston Methodist Hospital",
+        "address": "6565 Fannin St, Houston, TX 77030",
+        "trauma_level": "Level II",
+        "specialties": ["Cardiology", "Orthopedics", "Neurology"]
+      },
+      {
+        "name": "UT Health Houston",
+        "address": "6431 Fannin St, Houston, TX 77030",
+        "trauma_level": "Level I",
+        "specialties": ["Trauma", "Burn Care", "Pediatric Trauma"]
+      },
+      {
+        "name": "Texas Children's Hospital",
+        "address": "6621 Fannin St, Houston, TX 77030",
+        "trauma_level": "Pediatric Level I",
+        "specialties": ["Pediatric Emergency", "Pediatric Surgery", "NICU"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Harris County Civil Courthouse",
+      "address": "201 Caroline St, Houston, TX 77002",
+      "district_courts": "11th, 55th, 61st, 80th, 113th, 125th, 127th, 129th, 133rd, 151st, 152nd, 157th, 164th, 165th, 190th District Courts (and many more)",
+      "civil_filing": "Harris County District Clerk",
+      "typical_timeline": "Personal injury cases in Harris County typically take 18-30 months from filing to trial due to heavy docket volume."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 45 (Gulf Freeway)",
+        "description": "Consistently ranked among the deadliest highways in America. The stretch from downtown to Galveston sees hundreds of fatal crashes annually.",
+        "dangerous_spots": ["I-45 at I-610 interchange", "I-45 at Beltway 8", "I-45 at I-10"]
+      },
+      {
+        "name": "Interstate 10 (Katy Freeway)",
+        "description": "One of the widest freeways in the world still experiences massive congestion and high-speed crashes.",
+        "dangerous_spots": ["I-10 at I-610", "I-10 at Beltway 8", "I-10 at 99 Grand Parkway"]
+      },
+      {
+        "name": "US Highway 59/I-69 (Southwest Freeway)",
+        "description": "Major corridor through affluent southwest Houston with frequent accidents during rush hours.",
+        "dangerous_spots": ["US-59 at I-610", "US-59 at Beltway 8", "US-59 at Hillcroft"]
+      },
+      {
+        "name": "Beltway 8 (Sam Houston Tollway)",
+        "description": "High-speed toll road circling Houston sees numerous crashes, especially at major freeway interchanges.",
+        "dangerous_spots": ["Beltway 8 at I-45", "Beltway 8 at I-10", "Beltway 8 at US-290"]
+      },
+      {
+        "name": "Loop 610",
+        "description": "Inner loop highway with dangerous curves and outdated design causing frequent accidents.",
+        "dangerous_spots": ["I-610 at I-10 West", "I-610 at I-45 South", "I-610 at US-59"]
+      },
+      {
+        "name": "US Highway 290 (Northwest Freeway)",
+        "description": "Fast-growing corridor to northwest suburbs experiences increasing accident rates.",
+        "dangerous_spots": ["US-290 at Loop 610", "US-290 at Beltway 8", "US-290 at 99 Grand Parkway"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-45 and I-610 interchange",
+      "I-10 and I-610 interchange",
+      "US-59 and I-610 interchange",
+      "I-45 and Beltway 8",
+      "Westheimer and Post Oak",
+      "Bellaire Blvd and Beltway 8",
+      "FM 1960 and I-45",
+      "Westheimer and Gessner",
+      "Bissonnet and Hillcroft",
+      "Richmond Ave and Hillcroft"
+    ],
+    "nearby_cities": ["Katy", "Sugar Land", "The Woodlands", "Pearland", "Pasadena", "Baytown"],
+    "local_context": "As America's fourth-largest city and home to the Texas Medical Center, Houston handles more trauma cases than almost any city in Texas. The sprawling metropolitan area and complex freeway system contribute to high accident rates.",
+    "crash_stats": {
+      "total_crashes_2023": "67,234",
+      "fatal_crashes_2023": "378",
+      "serious_injury_crashes": "1,847",
+      "top_cause": "Speeding and failure to yield"
+    }
+  },
+  "dallas": {
+    "name": "Dallas",
+    "slug": "dallas",
+    "county": "Dallas County",
+    "phone": "(512) 883-0012",
+    "population": "1,300,000+",
+    "hospitals": [
+      {
+        "name": "Parkland Memorial Hospital",
+        "address": "5200 Harry Hines Blvd, Dallas, TX 75235",
+        "trauma_level": "Level I",
+        "specialties": ["Trauma", "Burn Center", "Emergency Medicine"]
+      },
+      {
+        "name": "Baylor University Medical Center",
+        "address": "3500 Gaston Ave, Dallas, TX 75246",
+        "trauma_level": "Level I",
+        "specialties": ["Transplant", "Cardiac Care", "Cancer"]
+      },
+      {
+        "name": "UT Southwestern Medical Center",
+        "address": "5323 Harry Hines Blvd, Dallas, TX 75390",
+        "trauma_level": "Level I",
+        "specialties": ["Neuroscience", "Orthopedics", "Cancer"]
+      },
+      {
+        "name": "Medical City Dallas",
+        "address": "7777 Forest Ln, Dallas, TX 75230",
+        "trauma_level": "Level II",
+        "specialties": ["Emergency Care", "Heart Care", "Stroke"]
+      },
+      {
+        "name": "Texas Health Presbyterian Dallas",
+        "address": "8200 Walnut Hill Ln, Dallas, TX 75231",
+        "trauma_level": "Level II",
+        "specialties": ["Orthopedics", "Spine Care", "Joint Replacement"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "George Allen Courts Building",
+      "address": "600 Commerce St, Dallas, TX 75202",
+      "district_courts": "14th, 44th, 68th, 95th, 101st, 116th, 134th, 160th, 162nd, 191st, 192nd, 193rd, 194th, 195th, 254th, 298th, 301st, 302nd, 303rd District Courts",
+      "civil_filing": "Dallas County District Clerk",
+      "typical_timeline": "Personal injury cases in Dallas County typically take 12-24 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 35E",
+        "description": "Major north-south corridor through downtown Dallas with dangerous curves and heavy truck traffic.",
+        "dangerous_spots": ["I-35E at I-30 interchange", "I-35E at I-635", "I-35E at SH-183"]
+      },
+      {
+        "name": "Interstate 30 (R.L. Thornton Freeway)",
+        "description": "East-west freeway connecting Dallas to Fort Worth sees frequent high-speed crashes.",
+        "dangerous_spots": ["I-30 at I-35E", "I-30 at I-45", "I-30 at I-635"]
+      },
+      {
+        "name": "Interstate 635 (LBJ Freeway)",
+        "description": "Northern loop around Dallas known for extreme congestion and multi-vehicle accidents.",
+        "dangerous_spots": ["I-635 at US-75", "I-635 at I-35E", "I-635 at I-30"]
+      },
+      {
+        "name": "US Highway 75 (Central Expressway)",
+        "description": "High-speed corridor through uptown Dallas with dangerous merge points.",
+        "dangerous_spots": ["US-75 at I-635", "US-75 at Loop 12", "US-75 at I-30"]
+      },
+      {
+        "name": "Interstate 20",
+        "description": "Southern cross-town route with heavy commercial traffic and high crash rates.",
+        "dangerous_spots": ["I-20 at I-35E", "I-20 at I-45", "I-20 at US-67"]
+      },
+      {
+        "name": "Dallas North Tollway",
+        "description": "High-speed toll road with frequent rear-end collisions and merge-related accidents.",
+        "dangerous_spots": ["DNT at I-635", "DNT at SH-121", "DNT at President George Bush Turnpike"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-35E and I-30 interchange (Mixmaster)",
+      "I-635 and US-75 interchange",
+      "I-30 and I-45 interchange",
+      "Inwood Road and Harry Hines Blvd",
+      "Harry Hines and Empire Central",
+      "Northwest Highway and Skillman",
+      "Greenville Ave and Mockingbird Lane",
+      "Preston Road and LBJ Freeway",
+      "Stemmons Freeway and Market Center",
+      "Hampton Road and Illinois Ave"
+    ],
+    "nearby_cities": ["Fort Worth", "Arlington", "Plano", "Irving", "Frisco", "Garland"],
+    "local_context": "Dallas is a major business hub with one of America's busiest airport systems. The complex highway interchange system, particularly the I-35E/I-30 'Mixmaster,' creates dangerous conditions for drivers unfamiliar with the area.",
+    "crash_stats": {
+      "total_crashes_2023": "42,156",
+      "fatal_crashes_2023": "234",
+      "serious_injury_crashes": "1,123",
+      "top_cause": "Distracted driving and failure to yield"
+    }
+  },
+  "san-antonio": {
+    "name": "San Antonio",
+    "slug": "san-antonio",
+    "county": "Bexar County",
+    "phone": "(512) 883-0012",
+    "population": "1,500,000+",
+    "hospitals": [
+      {
+        "name": "University Hospital",
+        "address": "4502 Medical Dr, San Antonio, TX 78229",
+        "trauma_level": "Level I",
+        "specialties": ["Trauma", "Burn Care", "Transplant"]
+      },
+      {
+        "name": "Methodist Hospital",
+        "address": "7700 Floyd Curl Dr, San Antonio, TX 78229",
+        "trauma_level": "Level II",
+        "specialties": ["Heart Care", "Orthopedics", "Neuroscience"]
+      },
+      {
+        "name": "Baptist Medical Center",
+        "address": "111 Dallas St, San Antonio, TX 78205",
+        "trauma_level": "Level II",
+        "specialties": ["Emergency Care", "Cardiac", "Cancer"]
+      },
+      {
+        "name": "CHRISTUS Santa Rosa Hospital - Medical Center",
+        "address": "2827 Babcock Rd, San Antonio, TX 78229",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Surgery", "Women's Health"]
+      },
+      {
+        "name": "Brooke Army Medical Center (BAMC)",
+        "address": "3551 Roger Brooke Dr, Fort Sam Houston, TX 78234",
+        "trauma_level": "Level I",
+        "specialties": ["Trauma", "Burn Care", "Military Medicine"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Bexar County Courthouse",
+      "address": "100 Dolorosa St, San Antonio, TX 78205",
+      "district_courts": "37th, 45th, 57th, 73rd, 131st, 144th, 150th, 166th, 175th, 186th, 187th, 224th, 225th, 226th, 227th, 285th, 288th, 289th, 290th, 386th, 399th, 407th, 408th, 436th, 437th, 438th District Courts",
+      "civil_filing": "Bexar County District Clerk",
+      "typical_timeline": "Personal injury cases in Bexar County typically take 12-18 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 35",
+        "description": "Major north-south corridor through downtown San Antonio sees heavy congestion and frequent accidents.",
+        "dangerous_spots": ["I-35 at I-10 interchange", "I-35 at Loop 410", "I-35 at Loop 1604"]
+      },
+      {
+        "name": "Interstate 10",
+        "description": "East-west transcontinental highway with high-speed crashes, especially near downtown interchanges.",
+        "dangerous_spots": ["I-10 at I-35", "I-10 at Loop 410", "I-10 at Loop 1604"]
+      },
+      {
+        "name": "Loop 410",
+        "description": "Inner loop highway with outdated design and dangerous curves causing frequent accidents.",
+        "dangerous_spots": ["Loop 410 at I-35", "Loop 410 at US-281", "Loop 410 at I-10"]
+      },
+      {
+        "name": "Loop 1604",
+        "description": "Outer loop experiencing rapid growth and increasing accident rates as suburbs expand.",
+        "dangerous_spots": ["Loop 1604 at I-35", "Loop 1604 at US-281", "Loop 1604 at I-10"]
+      },
+      {
+        "name": "US Highway 281",
+        "description": "North-south highway connecting downtown to Stone Oak area with dangerous interchanges.",
+        "dangerous_spots": ["US-281 at Loop 410", "US-281 at Loop 1604", "US-281 at I-35"]
+      },
+      {
+        "name": "US Highway 90",
+        "description": "Western corridor to Castroville and beyond sees heavy truck traffic and rural crashes.",
+        "dangerous_spots": ["US-90 at Loop 410", "US-90 at Loop 1604", "US-90 at Culebra Road"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-35 and I-10 interchange",
+      "Loop 410 and US-281 interchange",
+      "Loop 1604 and US-281 interchange",
+      "Bandera Road and Loop 410",
+      "Culebra Road and Loop 410",
+      "Military Drive and I-35",
+      "Fredericksburg Road and Loop 410",
+      "San Pedro Ave and Loop 410",
+      "Nacogdoches Road and Loop 410",
+      "Marbach Road and US-90"
+    ],
+    "nearby_cities": ["New Braunfels", "Seguin", "Schertz", "Boerne", "Converse", "Universal City"],
+    "local_context": "San Antonio is Texas's second-largest city and home to multiple military bases. The combination of tourism (Alamo, River Walk), military presence, and rapid suburban growth creates unique traffic challenges.",
+    "crash_stats": {
+      "total_crashes_2023": "38,567",
+      "fatal_crashes_2023": "198",
+      "serious_injury_crashes": "945",
+      "top_cause": "Failure to yield right of way"
+    }
+  },
+  "rio-grande-valley": {
+    "name": "Rio Grande Valley",
+    "slug": "rio-grande-valley",
+    "county": "Hidalgo and Cameron Counties",
+    "phone": "(512) 883-0012",
+    "population": "1,400,000+ (region)",
+    "hospitals": [
+      {
+        "name": "Valley Baptist Medical Center - Harlingen",
+        "address": "2101 Pease St, Harlingen, TX 78550",
+        "trauma_level": "Level II",
+        "specialties": ["Trauma", "Cardiac Care", "Stroke"]
+      },
+      {
+        "name": "Doctors Hospital at Renaissance",
+        "address": "5501 S McColl Rd, Edinburg, TX 78539",
+        "trauma_level": "Level II",
+        "specialties": ["Trauma", "Cancer", "Bariatric Surgery"]
+      },
+      {
+        "name": "McAllen Medical Center",
+        "address": "301 W Expressway 83, McAllen, TX 78503",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Heart Care", "Surgery"]
+      },
+      {
+        "name": "Valley Baptist Medical Center - Brownsville",
+        "address": "1040 W Jefferson St, Brownsville, TX 78520",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Surgery", "Women's Services"]
+      },
+      {
+        "name": "Knapp Medical Center",
+        "address": "1401 E 8th St, Weslaco, TX 78596",
+        "trauma_level": "Level IV",
+        "specialties": ["Emergency Care", "Orthopedics", "General Surgery"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Hidalgo County Courthouse",
+      "address": "100 E Cano St, Edinburg, TX 78539",
+      "district_courts": "92nd, 93rd, 139th, 206th, 275th, 332nd, 370th, 381st, 389th, 398th, 430th, 449th District Courts (Hidalgo); 103rd, 107th, 138th, 197th, 357th, 404th, 444th District Courts (Cameron)",
+      "civil_filing": "Hidalgo/Cameron County District Clerk",
+      "typical_timeline": "Personal injury cases in the Rio Grande Valley typically take 12-24 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "US Expressway 83 (I-2)",
+        "description": "Main east-west corridor connecting Valley cities sees heavy commercial and cross-border traffic.",
+        "dangerous_spots": ["Expressway 83 at US-281", "Expressway 83 at US-77", "Expressway 83 at 10th Street McAllen"]
+      },
+      {
+        "name": "US Highway 281",
+        "description": "North-south highway connecting to San Antonio carries heavy truck traffic with limited passing zones.",
+        "dangerous_spots": ["US-281 at Expressway 83", "US-281 at FM 490", "US-281 at Pharr city limits"]
+      },
+      {
+        "name": "US Highway 77",
+        "description": "Eastern Valley corridor to Brownsville with dangerous rural stretches and truck traffic.",
+        "dangerous_spots": ["US-77 at FM 509", "US-77 at Harlingen", "US-77 at Brownsville"]
+      },
+      {
+        "name": "Interstate 69E/US-77",
+        "description": "Major international trade route with heavy 18-wheeler traffic heading to/from Mexico.",
+        "dangerous_spots": ["I-69E at US-83", "I-69E at Harlingen", "I-69E near Port of Brownsville"]
+      },
+      {
+        "name": "FM 1015 (International Boulevard)",
+        "description": "Border crossing route in Hidalgo with dangerous intersections and pedestrian traffic.",
+        "dangerous_spots": ["FM 1015 at Expressway 83", "FM 1015 at US-281", "Hidalgo International Bridge approach"]
+      }
+    ],
+    "dangerous_intersections": [
+      "Expressway 83 and 10th Street (McAllen)",
+      "US-281 and Expressway 83 (Pharr)",
+      "US-77 and FM 509 (Harlingen)",
+      "Expressway 83 and Conway Avenue (Mission)",
+      "US-83 and Jackson Road (Edinburg)",
+      "Boca Chica Blvd and Paredes Line (Brownsville)",
+      "10th Street and Bicentennial (McAllen)",
+      "University Drive and Sugar Road (Edinburg)",
+      "Tyler Ave and Expressway 83 (Harlingen)",
+      "Palm Blvd and Expressway 83 (McAllen)"
+    ],
+    "nearby_cities": ["McAllen", "Brownsville", "Harlingen", "Edinburg", "Mission", "Pharr", "Weslaco"],
+    "local_context": "The Rio Grande Valley is one of the fastest-growing regions in Texas with unique challenges including international border traffic, agricultural vehicles, and dense urban areas. Heavy truck traffic from international trade contributes to serious accidents.",
+    "crash_stats": {
+      "total_crashes_2023": "24,567",
+      "fatal_crashes_2023": "156",
+      "serious_injury_crashes": "634",
+      "top_cause": "Commercial vehicle accidents and failure to yield"
+    }
+  },
+  "west-texas": {
+    "name": "West Texas",
+    "slug": "west-texas",
+    "county": "Midland, Ector, and surrounding counties",
+    "phone": "(512) 883-0012",
+    "population": "500,000+ (region)",
+    "hospitals": [
+      {
+        "name": "Medical Center Hospital",
+        "address": "500 W 4th St, Odessa, TX 79761",
+        "trauma_level": "Level II",
+        "specialties": ["Trauma", "Emergency Medicine", "Surgery"]
+      },
+      {
+        "name": "Midland Memorial Hospital",
+        "address": "400 Rosalind Redfern Grover Pkwy, Midland, TX 79701",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Heart Care", "Cancer"]
+      },
+      {
+        "name": "Odessa Regional Medical Center",
+        "address": "520 E 6th St, Odessa, TX 79761",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Surgery", "Women's Services"]
+      },
+      {
+        "name": "Scenic Mountain Medical Center (Big Spring)",
+        "address": "1601 W 11th Pl, Big Spring, TX 79720",
+        "trauma_level": "Level IV",
+        "specialties": ["Emergency Care", "General Surgery", "Orthopedics"]
+      },
+      {
+        "name": "University Medical Center (Lubbock)",
+        "address": "602 Indiana Ave, Lubbock, TX 79415",
+        "trauma_level": "Level I",
+        "specialties": ["Trauma", "Burn Center", "Neurosurgery"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Midland County Courthouse",
+      "address": "500 N Loraine St, Midland, TX 79701",
+      "district_courts": "142nd, 238th, 318th District Courts (Midland); 70th, 161st, 244th, 358th District Courts (Ector)",
+      "civil_filing": "Midland/Ector County District Clerk",
+      "typical_timeline": "Personal injury cases in West Texas typically take 10-18 months from filing to trial, often faster than urban courts."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 20",
+        "description": "Main east-west corridor through the Permian Basin carries heavy oilfield traffic and sees frequent fatal crashes.",
+        "dangerous_spots": ["I-20 at SH-349", "I-20 at US-385", "I-20 between Midland and Odessa"]
+      },
+      {
+        "name": "State Highway 191",
+        "description": "Critical link between Midland and Odessa airports with dangerous intersections and high speeds.",
+        "dangerous_spots": ["SH-191 at Loop 250", "SH-191 at US-385", "SH-191 at FM 1788"]
+      },
+      {
+        "name": "US Highway 385",
+        "description": "North-south oil field route with heavy truck traffic, equipment transport, and limited lighting.",
+        "dangerous_spots": ["US-385 at I-20", "US-385 at SH-302", "US-385 at FM 1788"]
+      },
+      {
+        "name": "State Highway 349",
+        "description": "Oil field corridor south of Midland with dangerous curves and heavy commercial traffic.",
+        "dangerous_spots": ["SH-349 at I-20", "SH-349 at FM 1788", "SH-349 near Rankin"]
+      },
+      {
+        "name": "Loop 250 (Midland)",
+        "description": "Midland's loop highway sees increasing accidents as the city grows.",
+        "dangerous_spots": ["Loop 250 at SH-191", "Loop 250 at SH-349", "Loop 250 at Midkiff Road"]
+      },
+      {
+        "name": "Interstate 10 (Far West Texas)",
+        "description": "Long stretches with limited services lead to fatigued drivers and high-speed crashes.",
+        "dangerous_spots": ["I-10 near Fort Stockton", "I-10 near Van Horn", "I-10 at US-285"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-20 and SH-349 (Midland)",
+      "I-20 and US-385 (Odessa)",
+      "SH-191 and Loop 250",
+      "Loop 338 and US-385 (Odessa)",
+      "Midkiff Road and Loop 250",
+      "Andrews Highway and Loop 250",
+      "Grandview Ave and I-20 (Odessa)",
+      "Big Spring Street and Loop 250",
+      "JBS Parkway and SH-191",
+      "University Blvd and Loop 250"
+    ],
+    "nearby_cities": ["Midland", "Odessa", "Big Spring", "Lubbock", "Pecos", "Fort Stockton"],
+    "local_context": "West Texas is the heart of the Permian Basin oil industry. The region sees extremely heavy commercial truck traffic, oilfield equipment transport, and fatigued workers commuting long distances. This creates uniquely dangerous driving conditions.",
+    "crash_stats": {
+      "total_crashes_2023": "12,345",
+      "fatal_crashes_2023": "134",
+      "serious_injury_crashes": "456",
+      "top_cause": "Commercial vehicle crashes and fatigued driving"
+    }
+  },
+  "round-rock": {
+    "name": "Round Rock",
+    "slug": "round-rock",
+    "county": "Williamson County",
+    "phone": "(512) 883-0012",
+    "population": "130,000+",
+    "hospitals": [
+      {
+        "name": "Baylor Scott & White Medical Center - Round Rock",
+        "address": "300 University Blvd, Round Rock, TX 78665",
+        "trauma_level": "Level II",
+        "specialties": ["Trauma", "Emergency Care", "Heart Care"]
+      },
+      {
+        "name": "Ascension Seton Williamson",
+        "address": "201 Seton Pkwy, Round Rock, TX 78665",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Surgery", "Women's Services"]
+      },
+      {
+        "name": "St. David's Round Rock Medical Center",
+        "address": "2400 Round Rock Ave, Round Rock, TX 78681",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Orthopedics", "Spine"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Williamson County Justice Center",
+      "address": "405 Martin Luther King Jr St, Georgetown, TX 78626",
+      "district_courts": "26th, 277th, 368th, 395th, 425th District Courts",
+      "civil_filing": "Williamson County District Clerk",
+      "typical_timeline": "Personal injury cases in Williamson County typically take 12-18 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 35",
+        "description": "Main corridor through Round Rock with heavy congestion, especially near the outlets mall and toll road interchanges.",
+        "dangerous_spots": ["I-35 at SH-45 Toll", "I-35 at US-79", "I-35 at FM 1431"]
+      },
+      {
+        "name": "State Highway 45 Toll",
+        "description": "High-speed toll road connecting I-35 to SH-130 with dangerous merge points.",
+        "dangerous_spots": ["SH-45 at I-35", "SH-45 at SH-130", "SH-45 at MoPac"]
+      },
+      {
+        "name": "US Highway 79",
+        "description": "East-west corridor through downtown Round Rock with pedestrian and commercial traffic mixing.",
+        "dangerous_spots": ["US-79 at I-35", "US-79 at Mays Street", "US-79 at A.W. Grimes Blvd"]
+      },
+      {
+        "name": "FM 1431 (University Boulevard)",
+        "description": "Growing corridor to Cedar Park with increasing traffic and accident rates.",
+        "dangerous_spots": ["FM 1431 at I-35", "FM 1431 at A.W. Grimes", "FM 1431 at SH-130"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-35 and SH-45 interchange",
+      "I-35 and US-79 interchange",
+      "Mays Street and US-79",
+      "A.W. Grimes Blvd and FM 1431",
+      "Gattis School Road and I-35 frontage",
+      "FM 620 and I-35",
+      "University Boulevard and SH-130",
+      "Red Bud Lane and Mays Street"
+    ],
+    "nearby_cities": ["Austin", "Cedar Park", "Pflugerville", "Georgetown", "Hutto", "Taylor"],
+    "local_context": "Round Rock is one of Austin's largest suburbs and home to Dell Technologies headquarters. The city's rapid growth has increased traffic congestion, particularly along I-35 and around the Round Rock Premium Outlets.",
+    "crash_stats": {
+      "total_crashes_2023": "3,245",
+      "fatal_crashes_2023": "18",
+      "serious_injury_crashes": "89",
+      "top_cause": "Rear-end collisions and failure to control speed"
+    }
+  },
+  "cedar-park": {
+    "name": "Cedar Park",
+    "slug": "cedar-park",
+    "county": "Williamson County",
+    "phone": "(512) 883-0012",
+    "population": "85,000+",
+    "hospitals": [
+      {
+        "name": "Cedar Park Regional Medical Center",
+        "address": "1401 Medical Pkwy, Cedar Park, TX 78613",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Surgery", "Heart Care"]
+      },
+      {
+        "name": "Baylor Scott & White - Cedar Park (nearby)",
+        "address": "900 E Whitestone Blvd, Cedar Park, TX 78613",
+        "trauma_level": "Urgent Care",
+        "specialties": ["Emergency Care", "Imaging", "Lab Services"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Williamson County Justice Center",
+      "address": "405 Martin Luther King Jr St, Georgetown, TX 78626",
+      "district_courts": "26th, 277th, 368th, 395th, 425th District Courts",
+      "civil_filing": "Williamson County District Clerk",
+      "typical_timeline": "Personal injury cases in Williamson County typically take 12-18 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "US Highway 183",
+        "description": "Main north-south corridor through Cedar Park with high speeds and commercial traffic.",
+        "dangerous_spots": ["US-183 at FM 1431", "US-183 at Whitestone Blvd", "US-183 at RM 620"]
+      },
+      {
+        "name": "FM 1431 (Whitestone Boulevard)",
+        "description": "Major east-west corridor connecting Cedar Park to Round Rock and Lago Vista.",
+        "dangerous_spots": ["FM 1431 at US-183", "FM 1431 at Parmer Lane", "FM 1431 at Bagdad Road"]
+      },
+      {
+        "name": "RM 620",
+        "description": "Winding road connecting to Lake Travis area with dangerous curves.",
+        "dangerous_spots": ["RM 620 at US-183", "RM 620 at Anderson Mill Road", "RM 620 at 2222"]
+      }
+    ],
+    "dangerous_intersections": [
+      "US-183 and FM 1431 interchange",
+      "Whitestone Blvd and Parmer Lane",
+      "US-183 and RM 620",
+      "Cypress Creek Road and US-183",
+      "Brushy Creek Road and Parmer Lane",
+      "Discovery Blvd and US-183"
+    ],
+    "nearby_cities": ["Austin", "Leander", "Round Rock", "Lakeway", "Pflugerville", "Georgetown"],
+    "local_context": "Cedar Park is a rapidly growing suburb northwest of Austin. The city is known for H-E-B Center at Cedar Park and has seen significant retail and residential development along the US-183 corridor.",
+    "crash_stats": {
+      "total_crashes_2023": "1,876",
+      "fatal_crashes_2023": "8",
+      "serious_injury_crashes": "45",
+      "top_cause": "Failure to yield and distracted driving"
+    }
+  },
+  "pflugerville": {
+    "name": "Pflugerville",
+    "slug": "pflugerville",
+    "county": "Travis County",
+    "phone": "(512) 883-0012",
+    "population": "75,000+",
+    "hospitals": [
+      {
+        "name": "Ascension Seton Pflugerville",
+        "address": "1520 Royston Ln, Pflugerville, TX 78660",
+        "trauma_level": "Emergency Center",
+        "specialties": ["Emergency Care", "Imaging", "Lab Services"]
+      },
+      {
+        "name": "Baylor Scott & White Emergency - Pflugerville",
+        "address": "1615 Grand Ave Pkwy, Pflugerville, TX 78660",
+        "trauma_level": "Emergency Center",
+        "specialties": ["Emergency Care", "Urgent Care"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Travis County Courthouse",
+      "address": "1000 Guadalupe St, Austin, TX 78701",
+      "district_courts": "Travis County District Courts (same as Austin)",
+      "civil_filing": "Travis County District Clerk",
+      "typical_timeline": "Personal injury cases in Travis County typically take 12-24 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "State Highway 130 Toll",
+        "description": "High-speed toll road east of Pflugerville with 85 mph speed limits and serious crashes.",
+        "dangerous_spots": ["SH-130 at SH-45", "SH-130 at US-290", "SH-130 at FM 685"]
+      },
+      {
+        "name": "FM 685 (Pflugerville Parkway)",
+        "description": "Main east-west corridor experiencing rapid growth and increasing accidents.",
+        "dangerous_spots": ["FM 685 at SH-130", "FM 685 at Heatherwilde Blvd", "FM 685 at Dessau Road"]
+      },
+      {
+        "name": "Grand Avenue Parkway",
+        "description": "Growing commercial corridor with dangerous intersections.",
+        "dangerous_spots": ["Grand Ave at I-35", "Grand Ave at Heatherwilde Blvd", "Grand Ave at SH-130"]
+      },
+      {
+        "name": "Dessau Road",
+        "description": "North-south connector with increasing traffic from residential growth.",
+        "dangerous_spots": ["Dessau at Wells Branch Pkwy", "Dessau at FM 685", "Dessau at US-290"]
+      }
+    ],
+    "dangerous_intersections": [
+      "SH-130 and FM 685 interchange",
+      "Grand Avenue Parkway and I-35",
+      "Heatherwilde Blvd and FM 685",
+      "Pecan Street and FM 685",
+      "Wells Branch Pkwy and Dessau Road",
+      "Kelly Lane and SH-130 frontage"
+    ],
+    "nearby_cities": ["Austin", "Round Rock", "Manor", "Hutto", "Taylor", "Georgetown"],
+    "local_context": "Pflugerville is one of Austin's fastest-growing suburbs located northeast of the city. The community has transitioned from a small farming town to a major residential center, creating challenges as infrastructure catches up with growth.",
+    "crash_stats": {
+      "total_crashes_2023": "1,567",
+      "fatal_crashes_2023": "7",
+      "serious_injury_crashes": "34",
+      "top_cause": "High-speed crashes on SH-130 and rear-end collisions"
+    }
+  },
+  "georgetown": {
+    "name": "Georgetown",
+    "slug": "georgetown",
+    "county": "Williamson County",
+    "phone": "(512) 883-0012",
+    "population": "80,000+",
+    "hospitals": [
+      {
+        "name": "Baylor Scott & White Medical Center - Georgetown",
+        "address": "3201 S Austin Ave, Georgetown, TX 78628",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Surgery", "Heart Care"]
+      },
+      {
+        "name": "St. David's Georgetown Hospital",
+        "address": "2000 Scenic Dr, Georgetown, TX 78626",
+        "trauma_level": "General",
+        "specialties": ["Emergency Care", "Orthopedics", "Women's Services"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Williamson County Justice Center",
+      "address": "405 Martin Luther King Jr St, Georgetown, TX 78626",
+      "district_courts": "26th, 277th, 368th, 395th, 425th District Courts",
+      "civil_filing": "Williamson County District Clerk",
+      "typical_timeline": "Personal injury cases in Williamson County typically take 12-18 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 35",
+        "description": "Major corridor through Georgetown with heavy truck traffic and congestion at exits.",
+        "dangerous_spots": ["I-35 at Williams Drive", "I-35 at SH-29", "I-35 at University Ave"]
+      },
+      {
+        "name": "State Highway 29",
+        "description": "East-west corridor through downtown with mix of commercial and residential traffic.",
+        "dangerous_spots": ["SH-29 at I-35", "SH-29 at Williams Drive", "SH-29 at Austin Ave"]
+      },
+      {
+        "name": "Williams Drive",
+        "description": "Major north-south connector experiencing rapid growth and accidents.",
+        "dangerous_spots": ["Williams Drive at I-35", "Williams Drive at SH-29", "Williams Drive at Shell Road"]
+      },
+      {
+        "name": "State Highway 130 Toll",
+        "description": "High-speed bypass east of Georgetown with serious accidents.",
+        "dangerous_spots": ["SH-130 at SH-29", "SH-130 at Inner Loop", "SH-130 at FM 971"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-35 and Williams Drive interchange",
+      "I-35 and SH-29 interchange",
+      "Williams Drive and SH-29",
+      "Williams Drive and University Ave",
+      "Austin Ave and University Ave",
+      "Shell Road and Williams Drive"
+    ],
+    "nearby_cities": ["Austin", "Round Rock", "Cedar Park", "Taylor", "Hutto", "Leander"],
+    "local_context": "Georgetown is the Williamson County seat and one of Texas's fastest-growing cities. Known for its historic downtown square and Sun City retirement community, the city balances small-town charm with suburban growth challenges.",
+    "crash_stats": {
+      "total_crashes_2023": "1,234",
+      "fatal_crashes_2023": "9",
+      "serious_injury_crashes": "42",
+      "top_cause": "Intersection collisions and I-35 crashes"
+    }
+  },
+  "san-marcos": {
+    "name": "San Marcos",
+    "slug": "san-marcos",
+    "county": "Hays County",
+    "phone": "(512) 883-0012",
+    "population": "70,000+",
+    "hospitals": [
+      {
+        "name": "CHRISTUS Santa Rosa Hospital - San Marcos",
+        "address": "1301 Wonder World Dr, San Marcos, TX 78666",
+        "trauma_level": "Level IV",
+        "specialties": ["Emergency Care", "Surgery", "Women's Services"]
+      },
+      {
+        "name": "Central Texas Medical Center",
+        "address": "1301 Wonder World Dr, San Marcos, TX 78666",
+        "trauma_level": "Level IV",
+        "specialties": ["Emergency Care", "Orthopedics", "General Surgery"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Hays County Government Center",
+      "address": "712 S Stagecoach Trail, San Marcos, TX 78666",
+      "district_courts": "22nd, 207th, 274th, 428th, 453rd District Courts",
+      "civil_filing": "Hays County District Clerk",
+      "typical_timeline": "Personal injury cases in Hays County typically take 12-18 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 35",
+        "description": "Major corridor through San Marcos notorious for severe accidents, especially near outlet malls.",
+        "dangerous_spots": ["I-35 at SH-80", "I-35 at Wonder World Drive", "I-35 at Aquarena Springs"]
+      },
+      {
+        "name": "State Highway 80",
+        "description": "East corridor to Martindale and Luling with rural crashes.",
+        "dangerous_spots": ["SH-80 at I-35", "SH-80 at Hopkins Street", "SH-80 at Uhland Road"]
+      },
+      {
+        "name": "Ranch Road 12",
+        "description": "Scenic hill country road to Wimberley with dangerous curves.",
+        "dangerous_spots": ["RR-12 at I-35", "RR-12 at Wonder World Drive", "RR-12 at Wimberley"]
+      },
+      {
+        "name": "Wonder World Drive",
+        "description": "Major commercial corridor with heavy retail traffic.",
+        "dangerous_spots": ["Wonder World at I-35", "Wonder World at RR-12", "Wonder World at Outlet Mall"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-35 and SH-80 interchange",
+      "I-35 and Wonder World Drive",
+      "Hopkins Street and SH-80",
+      "Aquarena Springs and I-35 frontage",
+      "RR-12 and Wonder World Drive",
+      "Post Road and I-35 frontage"
+    ],
+    "nearby_cities": ["Austin", "Kyle", "Buda", "New Braunfels", "Wimberley", "Lockhart"],
+    "local_context": "San Marcos is home to Texas State University and the San Marcos Premium Outlets. The combination of college students, outlet mall shoppers, and I-35 through-traffic creates unique traffic challenges.",
+    "crash_stats": {
+      "total_crashes_2023": "1,876",
+      "fatal_crashes_2023": "12",
+      "serious_injury_crashes": "56",
+      "top_cause": "I-35 crashes and rear-end collisions near outlets"
+    }
+  },
+  "kyle": {
+    "name": "Kyle",
+    "slug": "kyle",
+    "county": "Hays County",
+    "phone": "(512) 883-0012",
+    "population": "55,000+",
+    "hospitals": [
+      {
+        "name": "Ascension Seton Hays (nearby)",
+        "address": "6001 Kyle Pkwy, Kyle, TX 78640",
+        "trauma_level": "Level IV",
+        "specialties": ["Emergency Care", "Surgery", "Women's Services"]
+      },
+      {
+        "name": "Baylor Scott & White Emergency - Kyle",
+        "address": "5401 S FM 1626, Kyle, TX 78640",
+        "trauma_level": "Emergency Center",
+        "specialties": ["Emergency Care", "Urgent Care"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Hays County Government Center",
+      "address": "712 S Stagecoach Trail, San Marcos, TX 78666",
+      "district_courts": "22nd, 207th, 274th, 428th, 453rd District Courts",
+      "civil_filing": "Hays County District Clerk",
+      "typical_timeline": "Personal injury cases in Hays County typically take 12-18 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "Interstate 35",
+        "description": "Major corridor through Kyle with heavy commuter traffic to Austin.",
+        "dangerous_spots": ["I-35 at Kyle Parkway", "I-35 at FM 150", "I-35 at Center Street"]
+      },
+      {
+        "name": "FM 150",
+        "description": "East-west connector experiencing rapid growth and increasing accidents.",
+        "dangerous_spots": ["FM 150 at I-35", "FM 150 at Kohlers Crossing", "FM 150 at FM 2001"]
+      },
+      {
+        "name": "Kyle Parkway",
+        "description": "Main commercial corridor with retail and residential traffic mixing.",
+        "dangerous_spots": ["Kyle Pkwy at I-35", "Kyle Pkwy at Marketplace Ave", "Kyle Pkwy at FM 2770"]
+      },
+      {
+        "name": "FM 1626",
+        "description": "North-south connector to South Austin with dangerous rural stretches.",
+        "dangerous_spots": ["FM 1626 at Kyle Pkwy", "FM 1626 at Brodie Lane", "FM 1626 at Slaughter Lane"]
+      }
+    ],
+    "dangerous_intersections": [
+      "I-35 and Kyle Parkway interchange",
+      "I-35 and FM 150 interchange",
+      "Kyle Parkway and Marketplace Ave",
+      "FM 150 and Kohlers Crossing",
+      "Center Street and I-35 frontage",
+      "FM 1626 and Kyle Parkway"
+    ],
+    "nearby_cities": ["Austin", "Buda", "San Marcos", "Wimberley", "Lockhart", "New Braunfels"],
+    "local_context": "Kyle is one of Texas's fastest-growing cities, located between Austin and San Marcos on I-35. The city has seen explosive residential growth, with infrastructure struggling to keep pace.",
+    "crash_stats": {
+      "total_crashes_2023": "987",
+      "fatal_crashes_2023": "6",
+      "serious_injury_crashes": "28",
+      "top_cause": "I-35 congestion crashes and construction zone accidents"
+    }
+  },
+  "leander": {
+    "name": "Leander",
+    "slug": "leander",
+    "county": "Williamson County",
+    "phone": "(512) 883-0012",
+    "population": "70,000+",
+    "hospitals": [
+      {
+        "name": "Baylor Scott & White Emergency - Leander",
+        "address": "920 Crystal Falls Pkwy, Leander, TX 78641",
+        "trauma_level": "Emergency Center",
+        "specialties": ["Emergency Care", "Imaging", "Lab Services"]
+      },
+      {
+        "name": "Cedar Park Regional Medical Center (nearby)",
+        "address": "1401 Medical Pkwy, Cedar Park, TX 78613",
+        "trauma_level": "Level III",
+        "specialties": ["Emergency Care", "Surgery", "Heart Care"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Williamson County Justice Center",
+      "address": "405 Martin Luther King Jr St, Georgetown, TX 78626",
+      "district_courts": "26th, 277th, 368th, 395th, 425th District Courts",
+      "civil_filing": "Williamson County District Clerk",
+      "typical_timeline": "Personal injury cases in Williamson County typically take 12-18 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "US Highway 183",
+        "description": "Main corridor through Leander with increasing traffic and commercial development.",
+        "dangerous_spots": ["US-183 at Crystal Falls Pkwy", "US-183 at RM 2243", "US-183 at Hero Way"]
+      },
+      {
+        "name": "RM 2243",
+        "description": "East-west connector to I-35 with dangerous rural stretches.",
+        "dangerous_spots": ["RM 2243 at US-183", "RM 2243 at Ronald Reagan Blvd", "RM 2243 at I-35"]
+      },
+      {
+        "name": "Crystal Falls Parkway",
+        "description": "Growing corridor with new development and construction zone hazards.",
+        "dangerous_spots": ["Crystal Falls at US-183", "Crystal Falls at Old FM 2243", "Crystal Falls at Lakeline"]
+      },
+      {
+        "name": "Ronald Reagan Boulevard",
+        "description": "North-south connector with increasing traffic as development expands.",
+        "dangerous_spots": ["Ronald Reagan at RM 2243", "Ronald Reagan at FM 1431", "Ronald Reagan at SH-45"]
+      }
+    ],
+    "dangerous_intersections": [
+      "US-183 and Crystal Falls Parkway",
+      "US-183 and RM 2243",
+      "Crystal Falls Parkway and Ronald Reagan Blvd",
+      "Hero Way and US-183",
+      "Old FM 2243 and US-183",
+      "Bagdad Road and RM 2243"
+    ],
+    "nearby_cities": ["Austin", "Cedar Park", "Liberty Hill", "Georgetown", "Round Rock", "Pflugerville"],
+    "local_context": "Leander is one of Austin's fastest-growing suburbs, connected to downtown by the Capital MetroRail. The city's rapid expansion has created traffic challenges as roads are upgraded to handle increased volume.",
+    "crash_stats": {
+      "total_crashes_2023": "876",
+      "fatal_crashes_2023": "5",
+      "serious_injury_crashes": "23",
+      "top_cause": "Construction zone accidents and failure to yield"
+    }
+  },
+  "lakeway": {
+    "name": "Lakeway",
+    "slug": "lakeway",
+    "county": "Travis County",
+    "phone": "(512) 883-0012",
+    "population": "20,000+",
+    "hospitals": [
+      {
+        "name": "Baylor Scott & White Medical Center - Lakeway",
+        "address": "100 Medical Pkwy, Lakeway, TX 78738",
+        "trauma_level": "General",
+        "specialties": ["Emergency Care", "Surgery", "Imaging"]
+      },
+      {
+        "name": "Lake Travis Emergency Medical Center",
+        "address": "3003 Bee Cave Rd, Austin, TX 78746",
+        "trauma_level": "Emergency Center",
+        "specialties": ["Emergency Care", "Urgent Care"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Travis County Courthouse",
+      "address": "1000 Guadalupe St, Austin, TX 78701",
+      "district_courts": "Travis County District Courts (same as Austin)",
+      "civil_filing": "Travis County District Clerk",
+      "typical_timeline": "Personal injury cases in Travis County typically take 12-24 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "RM 620",
+        "description": "Main corridor through Lakeway with winding hill country sections and high-speed crashes.",
+        "dangerous_spots": ["RM 620 at Lakeway Blvd", "RM 620 at Bee Cave Road", "RM 620 at 2222"]
+      },
+      {
+        "name": "State Highway 71",
+        "description": "High-speed highway connecting to Austin with dangerous curves.",
+        "dangerous_spots": ["SH-71 at RM 620", "SH-71 at Bee Cave", "SH-71 at Hamilton Pool Road"]
+      },
+      {
+        "name": "Lakeway Boulevard",
+        "description": "Main community corridor with golf course traffic and residential areas.",
+        "dangerous_spots": ["Lakeway Blvd at RM 620", "Lakeway Blvd at Lohmans Crossing", "Lakeway Blvd at The Hills"]
+      },
+      {
+        "name": "Lohmans Crossing Road",
+        "description": "Winding road with limited visibility and motorcycle accidents.",
+        "dangerous_spots": ["Lohmans Crossing at RM 620", "Lohmans Crossing at Lakeway Blvd", "Lohmans Crossing curves"]
+      }
+    ],
+    "dangerous_intersections": [
+      "RM 620 and Lakeway Boulevard",
+      "RM 620 and SH-71",
+      "Lakeway Boulevard and Lohmans Crossing",
+      "RM 620 and Bee Cave Road",
+      "Lakeway Boulevard and The Hills Drive",
+      "RM 620 and Mansfield Dam"
+    ],
+    "nearby_cities": ["Austin", "Bee Cave", "West Lake Hills", "Cedar Park", "Marble Falls", "Dripping Springs"],
+    "local_context": "Lakeway is an affluent lakeside community on Lake Travis west of Austin. The hilly terrain and winding roads create challenging driving conditions, particularly for motorcyclists and visitors unfamiliar with the area.",
+    "crash_stats": {
+      "total_crashes_2023": "456",
+      "fatal_crashes_2023": "3",
+      "serious_injury_crashes": "12",
+      "top_cause": "Winding road crashes and failure to control speed"
+    }
+  },
+  "bee-cave": {
+    "name": "Bee Cave",
+    "slug": "bee-cave",
+    "county": "Travis County",
+    "phone": "(512) 883-0012",
+    "population": "8,000+",
+    "hospitals": [
+      {
+        "name": "Baylor Scott & White Medical Center - Lakeway",
+        "address": "100 Medical Pkwy, Lakeway, TX 78738",
+        "trauma_level": "General",
+        "specialties": ["Emergency Care", "Surgery", "Imaging"]
+      },
+      {
+        "name": "Dell Children's Circle of Care - Bee Cave",
+        "address": "12700 Hill Country Blvd, Bee Cave, TX 78738",
+        "trauma_level": "Pediatric Care",
+        "specialties": ["Pediatric Care", "Urgent Care"]
+      }
+    ],
+    "courts": {
+      "main_courthouse": "Travis County Courthouse",
+      "address": "1000 Guadalupe St, Austin, TX 78701",
+      "district_courts": "Travis County District Courts (same as Austin)",
+      "civil_filing": "Travis County District Clerk",
+      "typical_timeline": "Personal injury cases in Travis County typically take 12-24 months from filing to trial."
+    },
+    "dangerous_roads": [
+      {
+        "name": "State Highway 71",
+        "description": "High-speed highway through Bee Cave with dangerous retail area crossings.",
+        "dangerous_spots": ["SH-71 at Bee Cave Road", "SH-71 at Galleria area", "SH-71 at Hamilton Pool Road"]
+      },
+      {
+        "name": "RM 620",
+        "description": "North-south connector with heavy traffic to Lake Travis and Lakeway.",
+        "dangerous_spots": ["RM 620 at SH-71", "RM 620 at Bee Cave Road", "RM 620 at 2244"]
+      },
+      {
+        "name": "Bee Cave Road (FM 2244)",
+        "description": "Winding road through hill country connecting to West Lake Hills.",
+        "dangerous_spots": ["Bee Cave Road at SH-71", "Bee Cave Road at RM 620", "Bee Cave Road curves"]
+      },
+      {
+        "name": "Hill Country Boulevard",
+        "description": "Commercial corridor at Hill Country Galleria with heavy pedestrian traffic.",
+        "dangerous_spots": ["Hill Country Blvd at SH-71", "Hill Country Blvd at Galleria entrances"]
+      }
+    ],
+    "dangerous_intersections": [
+      "SH-71 and RM 620 interchange",
+      "SH-71 and Bee Cave Road",
+      "SH-71 and Hill Country Boulevard",
+      "RM 620 and Bee Cave Road",
+      "Bee Cave Road and Westbank Drive",
+      "Hamilton Pool Road and SH-71"
+    ],
+    "nearby_cities": ["Austin", "Lakeway", "West Lake Hills", "Dripping Springs", "Spicewood", "Cedar Park"],
+    "local_context": "Bee Cave is a small but growing city west of Austin, anchored by the Hill Country Galleria shopping center. The combination of high-speed SH-71 traffic and pedestrian-friendly retail areas creates safety challenges.",
+    "crash_stats": {
+      "total_crashes_2023": "234",
+      "fatal_crashes_2023": "2",
+      "serious_injury_crashes": "8",
+      "top_cause": "SH-71 high-speed crashes and retail area pedestrian conflicts"
+    }
+  }
+}

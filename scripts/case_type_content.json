@@ -1,0 +1,494 @@
+{
+  "car-accident": {
+    "name": "Car Accident",
+    "slug": "car-accident-lawyer",
+    "hero_subtitle_template": "Injured in a car accident in {city}? Our experienced attorneys fight insurance companies to get you maximum compensation for your injuries.",
+    "intro_paragraphs": [
+      "Car accidents are the leading cause of personal injury claims in Texas, and {city} is no exception. With {crash_stats} motor vehicle crashes reported in {county} last year alone, the chances of being involved in a collision are unfortunately high. When you're injured due to another driver's negligence, you need an experienced {city} car accident lawyer who understands local roads, local courts, and how to maximize your compensation.",
+      "Texas follows a modified comparative fault system, meaning you can recover damages as long as you're less than 51% at fault for the accident. However, insurance companies routinely try to shift blame to victims to minimize payouts. Our attorneys know their tactics and fight back aggressively to protect your rights.",
+      "In {city}, car accidents most frequently occur on {dangerous_roads_list}. These high-traffic corridors see everything from minor fender-benders to catastrophic multi-vehicle collisions. Regardless of where your accident occurred, our team has the experience to investigate your case, identify all liable parties, and pursue every dollar you deserve."
+    ],
+    "why_local_lawyer": [
+      "A local {city} car accident attorney offers significant advantages over out-of-town lawyers. We know which intersections are dangerous, which roads have poor lighting or design flaws, and which insurance adjusters are most likely to lowball claims. We've appeared before judges in {county} courts hundreds of times and understand how local juries evaluate car accident cases.",
+      "Our office is conveniently located to serve {city} residents. We can meet you at home, at the hospital, or wherever is most convenient during your recovery. Time is critical in car accident cases—evidence disappears, witnesses forget details, and the statute of limitations in Texas is just two years from the date of the accident."
+    ],
+    "types_section_title": "Types of Car Accident Cases We Handle",
+    "types": [
+      {"title": "Rear-End Collisions", "description": "Often caused by distracted driving or following too closely. Even 'minor' rear-end crashes can cause serious whiplash and spinal injuries."},
+      {"title": "T-Bone Accidents", "description": "Side-impact crashes at intersections frequently cause severe injuries due to minimal protection on vehicle sides."},
+      {"title": "Head-On Collisions", "description": "The most deadly type of crash, often caused by wrong-way drivers, impaired driving, or distracted motorists."},
+      {"title": "Multi-Vehicle Pileups", "description": "Complex crashes involving multiple vehicles require experienced investigation to identify all liable parties."},
+      {"title": "Hit and Run Accidents", "description": "When negligent drivers flee the scene, we work with investigators and use uninsured motorist coverage to get you compensated."},
+      {"title": "Intersection Crashes", "description": "Running red lights and stop signs causes devastating T-bone and head-on collisions at busy intersections."}
+    ],
+    "texas_laws": [
+      {"title": "Comparative Fault", "content": "Texas uses modified comparative fault, allowing recovery if you're less than 51% at fault. Your compensation is reduced by your percentage of fault."},
+      {"title": "Statute of Limitations", "content": "You have two years from the accident date to file a lawsuit. Missing this deadline bars you from recovering compensation."},
+      {"title": "Minimum Insurance", "content": "Texas requires 30/60/25 liability coverage ($30,000 per person, $60,000 per accident, $25,000 property damage). Many drivers carry only minimums."},
+      {"title": "Damage Caps", "content": "Texas doesn't cap economic or non-economic damages in most car accident cases, but punitive damages are capped."}
+    ],
+    "faqs": [
+      {"q": "How much is my {city} car accident case worth?", "a": "Car accident settlement values depend on injury severity, medical bills, lost wages, pain and suffering, and insurance coverage. Minor injuries may settle for $10,000-$25,000, while serious injuries involving surgery or permanent damage often exceed $100,000. Our attorneys evaluate your specific circumstances to estimate fair compensation."},
+      {"q": "Should I accept the insurance company's first offer?", "a": "Almost never. Initial settlement offers are typically far below fair value. Insurance companies make low offers hoping injured victims will accept before understanding the full extent of their injuries and damages. An experienced attorney can often negotiate significantly higher settlements."},
+      {"q": "What if the other driver doesn't have insurance?", "a": "You may still recover compensation through your own uninsured/underinsured motorist (UM/UIM) coverage. Texas law requires insurers to offer this coverage. Additionally, we investigate whether other parties may be liable, such as employers of commercial drivers."},
+      {"q": "How long do car accident settlements take in {city}?", "a": "Simple cases with clear liability may settle in 3-6 months. More complex cases or those requiring litigation typically take 12-24 months. We work efficiently to resolve your case while ensuring you receive fair compensation."},
+      {"q": "Where should I seek medical treatment after a car accident in {city}?", "a": "For emergencies, go to the nearest trauma center such as {hospital_name}. For non-emergencies, urgent care centers can document injuries. Follow up with specialists as needed. We can recommend trusted medical providers who work with accident victims."},
+      {"q": "What are the most dangerous roads for car accidents in {city}?", "a": "{dangerous_roads_answer}"},
+      {"q": "Do I need a lawyer for a minor car accident?", "a": "Even 'minor' accidents can involve hidden injuries like soft tissue damage that manifests days or weeks later. If you have any injury, consulting an attorney is wise. Our consultations are free, and we only get paid if you win."},
+      {"q": "What evidence should I collect after a car accident?", "a": "Photograph the scene, vehicle damage, and injuries. Get contact information from witnesses. Request a copy of the police report. Save all medical records and bills. Don't give recorded statements to the other driver's insurance without consulting an attorney first."}
+    ],
+    "related_case_types": ["truck-accident-lawyer", "motorcycle-accident-lawyer", "hit-and-run-lawyer", "drunk-driving-accident-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "spinal-cord-injury-lawyer", "whiplash-lawyer", "broken-bones-lawyer", "internal-organ-damage-lawyer", "soft-tissue-injury-lawyer", "back-injury-lawyer", "neck-injury-lawyer"]
+  },
+  "truck-accident": {
+    "name": "Truck Accident",
+    "slug": "truck-accident-lawyer",
+    "hero_subtitle_template": "Injured in a truck accident in {city}? Our attorneys take on trucking companies and their insurers to fight for maximum compensation.",
+    "intro_paragraphs": [
+      "Commercial truck accidents in {city} often result in catastrophic injuries or death. With fully loaded trucks weighing up to 80,000 pounds, the physics of a collision between a big rig and a passenger vehicle are devastating. If you or a loved one has been injured in a truck crash, you need a {city} truck accident lawyer who understands federal trucking regulations and can take on powerful trucking companies.",
+      "Truck accident cases are fundamentally different from car accident cases. Multiple parties may share liability, including the driver, trucking company, cargo loader, and maintenance provider. Federal Motor Carrier Safety Administration (FMCSA) regulations create additional standards of care. Evidence like electronic logging device (ELD) data must be preserved quickly before it's destroyed.",
+      "In {city}, truck accidents frequently occur on {dangerous_roads_list}, where commercial traffic mixes with commuters. These crashes often involve hours-of-service violations, inadequate training, improper cargo loading, or deferred maintenance. Our team knows how to investigate trucking company records and hold all responsible parties accountable."
+    ],
+    "why_local_lawyer": [
+      "Truck accidents in {city} require attorneys who know both local roads and federal trucking law. We understand which {county} judges are receptive to trucking cases and how local juries evaluate evidence of corporate negligence. Our relationships with accident reconstruction experts and trucking industry consultants give us an edge in building winning cases.",
+      "Time is especially critical in truck accident cases. Trucking companies send rapid response teams to accident scenes to begin building their defense. ELD data can be overwritten within days. We immediately send spoliation letters to preserve evidence and begin our independent investigation while the trail is fresh."
+    ],
+    "types_section_title": "Types of Truck Accident Cases We Handle",
+    "types": [
+      {"title": "18-Wheeler Accidents", "description": "The largest and most dangerous trucks on the road, capable of causing mass casualty events."},
+      {"title": "Delivery Truck Accidents", "description": "Amazon, FedEx, UPS, and other delivery drivers under pressure to meet deadlines often cut corners on safety."},
+      {"title": "Tanker Truck Accidents", "description": "Liquid cargo shifts unpredictably, causing rollovers. Hazardous materials add explosion and contamination risks."},
+      {"title": "Dump Truck Accidents", "description": "Construction vehicles with large blind spots and unsecured loads create roadway hazards."},
+      {"title": "Garbage Truck Accidents", "description": "Frequent stops in residential areas and large blind spots lead to pedestrian and cyclist injuries."},
+      {"title": "Tow Truck Accidents", "description": "Improperly secured vehicles can break loose, and roadside operations create dangerous conditions."}
+    ],
+    "texas_laws": [
+      {"title": "FMCSA Regulations", "content": "Federal rules govern hours of service (11-hour driving limit), rest requirements, vehicle maintenance, and driver qualifications. Violations establish negligence."},
+      {"title": "Respondeat Superior", "content": "Trucking companies are typically liable for their drivers' negligence while working, even if the driver was an independent contractor in some cases."},
+      {"title": "Direct Negligence", "content": "Companies can be directly liable for negligent hiring, inadequate training, failure to drug test, or pressure to violate safety rules."},
+      {"title": "Punitive Damages", "content": "When trucking companies or drivers show gross negligence or conscious disregard for safety, Texas courts may award punitive damages."}
+    ],
+    "faqs": [
+      {"q": "Who is liable in a {city} truck accident?", "a": "Multiple parties may share liability: the truck driver, trucking company, cargo loading company, maintenance provider, truck or parts manufacturer, and even the shipper if cargo was improperly described. An experienced attorney investigates all potentially responsible parties."},
+      {"q": "How are truck accident cases different from car accidents?", "a": "Truck cases involve federal regulations, multiple defendants, larger insurance policies ($750,000-$1 million minimum), and more severe injuries. They require specialized investigation including ELD data analysis, driver qualification file review, and maintenance record examination."},
+      {"q": "What compensation can I receive for a truck accident injury?", "a": "Truck accident settlements are typically larger than car accident cases due to severe injuries and higher insurance limits. Compensation includes medical expenses, lost wages, pain and suffering, and potentially punitive damages. Many cases settle for six or seven figures."},
+      {"q": "How long do I have to file a truck accident lawsuit in Texas?", "a": "The statute of limitations is two years from the accident date. However, preserving evidence requires immediate action—ELD data and maintenance records can be legally destroyed after six months if not preserved."},
+      {"q": "Where do most truck accidents happen in {city}?", "a": "{dangerous_roads_answer}"},
+      {"q": "What medical facilities treat truck accident victims in {city}?", "a": "Due to the severity of truck accident injuries, victims often need Level I or Level II trauma centers. In the {city} area, {hospital_name} provides trauma care for serious injuries including traumatic brain injuries, spinal cord damage, and internal injuries."},
+      {"q": "Should I talk to the trucking company's insurance adjuster?", "a": "No. Trucking company insurers are experienced at getting victims to make statements that hurt their cases. They may record calls, ask leading questions, and use your words against you. Let an attorney handle all insurance communication."},
+      {"q": "What is a spoliation letter and why is it important?", "a": "A spoliation letter legally requires the trucking company to preserve all evidence including ELD data, driver logs, maintenance records, dash cam footage, and dispatch communications. Without this letter, companies may legally destroy evidence that could prove your case."}
+    ],
+    "related_case_types": ["18-wheeler-accident-lawyer", "car-accident-lawyer", "wrongful-death-lawyer", "work-injury-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "spinal-cord-injury-lawyer", "broken-bones-lawyer", "internal-organ-damage-lawyer", "burn-injury-lawyer", "amputation-lawyer", "back-injury-lawyer", "wrongful-death-lawyer"]
+  },
+  "18-wheeler-accident": {
+    "name": "18-Wheeler Accident",
+    "slug": "18-wheeler-accident-lawyer",
+    "hero_subtitle_template": "Catastrophic 18-wheeler accident in {city}? Our attorneys hold trucking companies accountable for the devastating injuries their negligence causes.",
+    "intro_paragraphs": [
+      "18-wheelers are the largest vehicles on {city} roads, and when they crash, the results are often devastating. These massive trucks can weigh 80,000 pounds fully loaded—20 to 30 times heavier than a typical passenger car. The physics of such collisions create forces that passenger vehicles simply cannot withstand, resulting in catastrophic injuries and fatalities.",
+      "If you've been injured in an 18-wheeler accident in {city}, you're facing powerful adversaries. Trucking companies have teams of lawyers, adjusters, and accident reconstruction experts whose job is to minimize what they pay victims. Our firm levels the playing field with aggressive investigation, deep knowledge of federal trucking regulations, and a track record of winning against large trucking companies.",
+      "In {city}, 18-wheeler accidents frequently occur on {dangerous_roads_list}. These highways carry heavy commercial traffic, and driver fatigue, aggressive schedules, and inadequate maintenance contribute to crashes. We investigate every aspect of these accidents to identify all liable parties and maximize your recovery."
+    ],
+    "why_local_lawyer": [
+      "An 18-wheeler accident case requires both local knowledge and specialized expertise. We know {city}'s roads and which routes see heavy truck traffic. We understand how {county} courts handle complex trucking cases and which expert witnesses are most effective with local juries. Our combination of local presence and trucking industry expertise gives our clients a decisive advantage.",
+      "The trucking company will have investigators at the scene within hours. Their goal is to protect the company, not find the truth. We counter with our own rapid response—preserving evidence, interviewing witnesses, and building your case from day one."
+    ],
+    "types_section_title": "Common Causes of 18-Wheeler Accidents",
+    "types": [
+      {"title": "Driver Fatigue", "description": "Despite hours-of-service regulations, many truckers are pressured to drive beyond safe limits, falling asleep at the wheel."},
+      {"title": "Overloaded Cargo", "description": "Exceeding weight limits affects braking distance and vehicle control. Improperly secured cargo can shift, causing loss of control."},
+      {"title": "Brake Failures", "description": "18-wheelers require extensive braking systems. Inadequate maintenance leads to catastrophic brake failures on steep grades."},
+      {"title": "Tire Blowouts", "description": "Worn tires on heavy trucks can explode at highway speeds, sending debris across lanes and causing drivers to lose control."},
+      {"title": "Jackknife Accidents", "description": "When the trailer swings perpendicular to the cab, it can sweep across multiple lanes, striking numerous vehicles."},
+      {"title": "Wide Turn Accidents", "description": "18-wheelers need extra room to turn, often swinging wide and crushing vehicles in adjacent lanes."}
+    ],
+    "texas_laws": [
+      {"title": "Federal Weight Limits", "content": "18-wheelers are limited to 80,000 pounds gross weight and specific axle weight limits. Overweight trucks have longer stopping distances and are more prone to brake failure."},
+      {"title": "CDL Requirements", "content": "18-wheeler drivers must hold a Commercial Driver's License with specific endorsements. Employers must verify qualifications and cannot hire drivers with disqualifying violations."},
+      {"title": "Drug and Alcohol Testing", "content": "Federal law requires pre-employment, random, post-accident, and reasonable suspicion drug and alcohol testing for commercial drivers."},
+      {"title": "Electronic Logging Devices", "content": "Federal law requires 18-wheelers to use ELDs that automatically record driving time, preventing falsification of paper logs."}
+    ],
+    "faqs": [
+      {"q": "What makes 18-wheeler accidents so dangerous?", "a": "The massive weight differential—80,000 pounds versus 4,000 pounds for a typical car—creates devastating forces. 18-wheelers also have much longer stopping distances, larger blind spots, and higher centers of gravity making rollovers more common."},
+      {"q": "How much compensation can I get for an 18-wheeler accident?", "a": "18-wheeler accident settlements are among the largest personal injury awards due to severe injuries and high insurance minimums ($750,000 for most interstate trucks). Settlements ranging from hundreds of thousands to several million dollars are common for serious injuries."},
+      {"q": "Who can I sue after an 18-wheeler accident in {city}?", "a": "Potentially liable parties include the driver, trucking company, cargo loading company, maintenance provider, truck or trailer manufacturer, and sometimes the shipper. We investigate thoroughly to identify all parties with responsibility and insurance coverage."},
+      {"q": "What should I do immediately after an 18-wheeler accident?", "a": "Call 911, seek medical attention, document the scene if possible, get the truck's DOT number and company name, and contact an attorney before speaking with any insurance company. Don't sign anything or give recorded statements."},
+      {"q": "Where do 18-wheeler accidents occur most often in {city}?", "a": "{dangerous_roads_answer}"},
+      {"q": "Which hospitals treat 18-wheeler accident injuries in {city}?", "a": "Due to the severity of 18-wheeler crash injuries, victims typically need trauma center care. {hospital_name} provides Level I or Level II trauma services for the serious injuries these accidents cause, including traumatic brain injuries and spinal cord damage."},
+      {"q": "How long does an 18-wheeler accident lawsuit take?", "a": "These complex cases typically take 12-24 months when litigation is required. Some cases settle faster with strong evidence and cooperative defendants. We work to resolve cases efficiently while ensuring full compensation for our clients."},
+      {"q": "What is hours-of-service and why does it matter?", "a": "Hours-of-service rules limit how long truckers can drive without rest (11 hours driving in a 14-hour window after 10 hours off). Violations cause driver fatigue, a leading cause of 18-wheeler accidents. ELD data can prove these violations."}
+    ],
+    "related_case_types": ["truck-accident-lawyer", "wrongful-death-lawyer", "car-accident-lawyer", "burn-injury-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "spinal-cord-injury-lawyer", "burn-injury-lawyer", "amputation-lawyer", "broken-bones-lawyer", "internal-organ-damage-lawyer", "wrongful-death-lawyer", "paralysis-lawyer"]
+  },
+  "motorcycle-accident": {
+    "name": "Motorcycle Accident",
+    "slug": "motorcycle-accident-lawyer",
+    "hero_subtitle_template": "Injured in a motorcycle crash in {city}? Our attorneys fight bias against riders and get maximum compensation for your injuries.",
+    "intro_paragraphs": [
+      "Motorcycle accidents in {city} often result in severe injuries because riders have no protection from the impact forces that vehicle occupants take for granted. When cars and trucks fail to see motorcycles or violate their right of way, the consequences can be catastrophic. Our {city} motorcycle accident lawyers understand both the unique challenges riders face and how to overcome bias to win fair compensation.",
+      "Unfortunately, motorcycle riders often face prejudice from insurance adjusters, juries, and even law enforcement. There's a false assumption that motorcyclists are reckless thrill-seekers who cause their own accidents. Our attorneys combat this bias with evidence, expert testimony, and compelling presentation of the facts that show who was truly at fault.",
+      "In {city}, motorcycle accidents frequently occur on {dangerous_roads_list}, where car and truck drivers fail to look for motorcycles before changing lanes, turning left, or pulling out of driveways. Road hazards like potholes, debris, and oil slicks that cars barely notice can be deadly for motorcyclists."
+    ],
+    "why_local_lawyer": [
+      "A {city} motorcycle accident attorney knows local roads, understands which intersections are dangerous for riders, and has experience with how {county} juries evaluate motorcycle cases. We know the local riding community and often have clients referred by fellow riders who we've helped in the past.",
+      "Our firm takes motorcycle cases seriously and fights back against bias. We work with accident reconstruction experts who understand motorcycle dynamics and can demonstrate how the other driver's negligence—not the rider's behavior—caused the crash."
+    ],
+    "types_section_title": "Common Motorcycle Accident Scenarios",
+    "types": [
+      {"title": "Left-Turn Accidents", "description": "The most common motorcycle crash—when cars turn left in front of oncoming motorcycles they failed to see or misjudged the speed of."},
+      {"title": "Lane Change Crashes", "description": "Drivers fail to check blind spots before changing lanes, colliding with motorcycles riding alongside them."},
+      {"title": "Rear-End Collisions", "description": "Distracted drivers fail to see stopped or slowing motorcycles and rear-end them at full speed."},
+      {"title": "Door Opening Accidents", "description": "Parked vehicle occupants open doors into the path of approaching motorcycles, causing crashes."},
+      {"title": "Road Hazard Crashes", "description": "Potholes, debris, gravel, and oil slicks cause motorcycle crashes that may create liability for road maintainers."},
+      {"title": "Intersection Collisions", "description": "Drivers running red lights or stop signs strike motorcycles with right of way."}
+    ],
+    "texas_laws": [
+      {"title": "Helmet Law", "content": "Texas requires helmets for riders under 21 and those without specific insurance or safety course completion. However, not wearing a helmet doesn't bar recovery or prove fault."},
+      {"title": "Lane Splitting", "content": "Texas does not currently allow lane splitting (riding between lanes of traffic). However, bills to allow it have been introduced."},
+      {"title": "Comparative Fault", "content": "Texas applies modified comparative fault to motorcycle cases. Riders can recover if less than 51% at fault, with damages reduced by their fault percentage."},
+      {"title": "Motorcycle Equipment", "content": "Texas law requires specific equipment including mirrors, turn signals, and lighting. Equipment violations don't automatically establish rider fault in crashes."}
+    ],
+    "faqs": [
+      {"q": "Will I be blamed for my motorcycle accident just because I was riding?", "a": "Unfortunately, bias against motorcyclists exists. Our attorneys counter this by presenting clear evidence of the other driver's negligence, using expert witnesses, and educating jurors about motorcycle safety and right-of-way laws."},
+      {"q": "What compensation can I receive for a motorcycle accident?", "a": "Motorcycle accident victims can recover medical expenses, lost wages, pain and suffering, property damage, and sometimes punitive damages. Because injuries tend to be severe, settlements are often significant."},
+      {"q": "Does not wearing a helmet affect my case in Texas?", "a": "Texas doesn't require helmets for all riders, and not wearing one doesn't make you automatically at fault. However, the defense may argue your head injuries would have been less severe with a helmet, potentially reducing damages."},
+      {"q": "What are the most dangerous roads for motorcycles in {city}?", "a": "{dangerous_roads_answer}"},
+      {"q": "Where should I go for medical treatment after a motorcycle crash in {city}?", "a": "For serious injuries, get to the nearest trauma center immediately. {hospital_name} provides trauma care for the severe injuries common in motorcycle crashes. For less serious injuries, urgent care can document everything for your case."},
+      {"q": "How long do motorcycle accident cases take to settle?", "a": "Motorcycle cases often take longer than car accident cases because injuries are more severe and require longer treatment. Most cases settle within 6-18 months, though complex cases requiring litigation take longer."},
+      {"q": "Can I sue if road conditions caused my motorcycle crash?", "a": "Yes, in some cases. If potholes, debris, or inadequate maintenance contributed to your crash, the government entity responsible for the road may be liable. These cases have special requirements and shorter deadlines."},
+      {"q": "What should I tell the insurance company after a motorcycle accident?", "a": "As little as possible. Insurance adjusters look for ways to blame motorcyclists. Don't give recorded statements, don't speculate about fault, and don't sign anything without consulting an attorney first."}
+    ],
+    "related_case_types": ["car-accident-lawyer", "hit-and-run-lawyer", "drunk-driving-accident-lawyer", "wrongful-death-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "spinal-cord-injury-lawyer", "road-rash-lawyer", "broken-bones-lawyer", "amputation-lawyer", "soft-tissue-injury-lawyer", "back-injury-lawyer", "neck-injury-lawyer"]
+  },
+  "uber-lyft-accident": {
+    "name": "Uber/Lyft Accident",
+    "slug": "uber-lyft-accident-lawyer",
+    "hero_subtitle_template": "Injured in an Uber or Lyft accident in {city}? Our attorneys navigate complex rideshare insurance to get you maximum compensation.",
+    "intro_paragraphs": [
+      "Rideshare accidents in {city} present unique legal challenges because multiple insurance policies may apply depending on the driver's status at the time of the crash. Whether you were a passenger, another driver, or a pedestrian injured by an Uber or Lyft driver, determining which insurance applies—and maximizing your recovery—requires specialized knowledge that our attorneys provide.",
+      "Both Uber and Lyft provide up to $1 million in liability coverage when drivers are actively transporting passengers. However, coverage is reduced when drivers are waiting for ride requests, and personal insurance typically denies rideshare-related claims. Navigating this maze of coverage requires an experienced rideshare accident attorney.",
+      "In {city}, Uber and Lyft drivers operate throughout the metropolitan area, with heavy concentrations near {downtown_areas}, the airport, entertainment districts, and hotels. Our attorneys handle rideshare accidents across {city} and understand the local factors that contribute to these crashes."
+    ],
+    "why_local_lawyer": [
+      "A {city} Uber/Lyft accident attorney understands local rideshare patterns—where drivers concentrate, which routes they favor, and where accidents most commonly occur. We know how to work with both the rideshare companies' insurance and local courts to maximize your recovery.",
+      "Rideshare companies make the claims process deliberately confusing. Their insurance adjusters often deny claims or point fingers at other insurers. We cut through the confusion and hold the right parties accountable."
+    ],
+    "types_section_title": "Types of Rideshare Accident Claims",
+    "types": [
+      {"title": "Passenger Injuries", "description": "Passengers injured during Uber/Lyft rides are covered by up to $1 million in insurance regardless of fault."},
+      {"title": "Accidents With Other Vehicles", "description": "Drivers or passengers in other vehicles hit by Uber/Lyft drivers may have claims against the rideshare company's insurance."},
+      {"title": "Pedestrian Injuries", "description": "Pedestrians struck by rideshare drivers can pursue claims against the driver and potentially Uber/Lyft."},
+      {"title": "Cyclist Injuries", "description": "Bicyclists injured by rideshare drivers have similar rights to pedestrians and other vehicle occupants."},
+      {"title": "Driver-on-Driver Accidents", "description": "When two rideshare drivers collide, coverage determination becomes especially complex."},
+      {"title": "App-Distracted Driving", "description": "Rideshare drivers distracted by their apps while looking for passengers or navigating cause many accidents."}
+    ],
+    "texas_laws": [
+      {"title": "TNC Insurance Requirements", "content": "Texas requires Transportation Network Companies like Uber/Lyft to maintain specific insurance coverage at different driver status levels."},
+      {"title": "Period 1 Coverage", "content": "When the driver is logged into the app but hasn't accepted a ride: $50,000/$100,000/$25,000 minimum coverage."},
+      {"title": "Period 2 & 3 Coverage", "content": "Once a ride is accepted through trip completion: $1 million liability coverage plus uninsured/underinsured motorist coverage."},
+      {"title": "Personal Insurance Gap", "content": "Most personal auto policies exclude rideshare driving. Drivers without rideshare endorsements may have coverage gaps."}
+    ],
+    "faqs": [
+      {"q": "How much insurance covers Uber/Lyft accidents?", "a": "Coverage depends on driver status. During active trips, up to $1 million in liability coverage applies. When logged in but waiting for rides, minimum coverage is $50,000/$100,000/$25,000. When offline, only the driver's personal insurance applies."},
+      {"q": "Can I sue Uber or Lyft directly?", "a": "Generally no—drivers are classified as independent contractors, not employees. However, you can pursue claims against the rideshare companies' insurance policies, which provide substantial coverage during active rides."},
+      {"q": "I was an Uber passenger injured in a crash. What are my options?", "a": "As a passenger, you're covered by Uber's $1 million insurance policy regardless of who caused the accident. You can also pursue claims against any at-fault drivers' insurance. Our attorneys ensure you maximize recovery from all available sources."},
+      {"q": "What if the Uber driver was at fault for my accident?", "a": "If the Uber driver caused the accident while on an active trip, the $1 million liability policy covers your injuries. If they were between rides or offline, coverage determination becomes more complex."},
+      {"q": "Where do most rideshare accidents occur in {city}?", "a": "Rideshare accidents in {city} commonly occur in entertainment districts, near the airport, around downtown hotels, and in busy commercial areas where drivers are frequently picking up and dropping off passengers."},
+      {"q": "Which hospitals should I go to after a rideshare accident in {city}?", "a": "For serious injuries, seek trauma center care immediately. {hospital_name} provides emergency services for accident victims. Document all medical treatment carefully—rideshare insurance claims require thorough documentation."},
+      {"q": "How long do Uber/Lyft accident claims take to resolve?", "a": "Rideshare claims can take 6-18 months due to coverage disputes and the complexity of determining which insurance applies. Having an experienced attorney often speeds the process by cutting through insurance company delays."},
+      {"q": "The rideshare driver was uninsured. Do I have options?", "a": "Yes. Uber and Lyft provide uninsured/underinsured motorist coverage during active trips. If you were injured by an uninsured rideshare driver during a trip, this coverage protects you."}
+    ],
+    "related_case_types": ["car-accident-lawyer", "pedestrian-accident-lawyer", "drunk-driving-accident-lawyer", "hit-and-run-lawyer"],
+    "injuries": ["whiplash-lawyer", "soft-tissue-injury-lawyer", "broken-bones-lawyer", "traumatic-brain-injury-lawyer", "back-injury-lawyer", "neck-injury-lawyer", "spinal-cord-injury-lawyer", "internal-organ-damage-lawyer"]
+  },
+  "drunk-driving-accident": {
+    "name": "Drunk Driving Accident",
+    "slug": "drunk-driving-accident-lawyer",
+    "hero_subtitle_template": "Injured by a drunk driver in {city}? Our attorneys pursue maximum compensation—including punitive damages—for victims of impaired driving.",
+    "intro_paragraphs": [
+      "Drunk driving accidents in {city} cause preventable tragedies every day. When an impaired driver chooses to get behind the wheel and injures innocent people, victims deserve more than just compensation for their injuries—they deserve justice. Our {city} drunk driving accident attorneys pursue all available damages, including punitive damages that punish reckless behavior.",
+      "Texas takes drunk driving seriously, with criminal penalties for DUI/DWI. But the criminal case is separate from your civil claim for damages. Even if the drunk driver isn't convicted—or only faces minor criminal penalties—you can still pursue substantial civil compensation for your injuries, lost wages, pain and suffering, and more.",
+      "In {city}, drunk driving accidents peak on weekend nights and near entertainment districts. But impaired driving occurs at all hours on highways like {dangerous_roads_list}. If you've been injured by a drunk driver, our attorneys can help you navigate both the legal process and the emotional trauma of being victimized by someone's reckless choice."
+    ],
+    "why_local_lawyer": [
+      "A {city} drunk driving accident lawyer understands local patterns—which bars over-serve, which entertainment districts see the most DUI arrests, and how {county} courts handle these cases. We work with prosecutors to coordinate civil and criminal matters and know which evidence from the criminal case can strengthen your civil claim.",
+      "We also understand the emotional component of drunk driving cases. Victims often feel violated in a way that goes beyond physical injuries. Our attorneys provide compassionate support while aggressively pursuing every dollar you deserve."
+    ],
+    "types_section_title": "Drunk Driving Liability Claims",
+    "types": [
+      {"title": "Direct Driver Liability", "description": "The drunk driver is directly liable for all injuries caused by their impaired driving."},
+      {"title": "Dram Shop Claims", "description": "Texas law allows claims against bars and restaurants that serve obviously intoxicated customers who then cause accidents."},
+      {"title": "Social Host Liability", "description": "Homeowners who serve alcohol to minors who then cause accidents may be liable under Texas law."},
+      {"title": "Employer Liability", "description": "Employers may be liable if employees are drunk driving company vehicles or during work duties."},
+      {"title": "Punitive Damages", "description": "Drunk driving demonstrates the gross negligence that justifies additional punitive damages in Texas."},
+      {"title": "Wrongful Death Claims", "description": "When drunk drivers kill victims, families can pursue wrongful death claims with substantial damages."}
+    ],
+    "texas_laws": [
+      {"title": "Per Se Intoxication", "content": "Texas considers drivers legally intoxicated at .08 BAC or higher. Higher BAC levels (.15+) result in enhanced criminal penalties and stronger civil cases."},
+      {"title": "Dram Shop Act", "content": "Texas allows claims against alcohol providers who serve obviously intoxicated adults or any alcohol to minors who then cause accidents."},
+      {"title": "Punitive Damages", "content": "Drunk driving typically meets the 'gross negligence' standard for punitive damages, which are capped at the greater of $200,000 or twice economic damages plus equal non-economic damages."},
+      {"title": "Criminal vs. Civil", "content": "Criminal conviction isn't required for civil recovery. Different standards of proof apply—civil cases require preponderance of evidence, not beyond reasonable doubt."}
+    ],
+    "faqs": [
+      {"q": "Can I get more compensation because the driver was drunk?", "a": "Yes. Drunk driving typically qualifies for punitive damages in addition to compensatory damages. Courts award punitive damages to punish reckless behavior and deter others. These can substantially increase your recovery."},
+      {"q": "What is a dram shop claim?", "a": "Texas's Dram Shop Act allows claims against bars, restaurants, and stores that serve alcohol to obviously intoxicated persons or minors who then cause accidents. This adds another source of recovery beyond the drunk driver's insurance."},
+      {"q": "How does the criminal case affect my civil claim?", "a": "The cases are separate but related. Criminal conviction isn't required for civil recovery, but conviction can help establish liability. Police reports, BAC test results, and other criminal evidence can be used in your civil case."},
+      {"q": "What if the drunk driver doesn't have insurance?", "a": "You may have claims against bars that over-served them (dram shop), your own uninsured motorist coverage, or other liable parties. Our attorneys investigate all potential sources of recovery."},
+      {"q": "Where do most drunk driving accidents occur in {city}?", "a": "Drunk driving accidents in {city} are concentrated near entertainment districts, bars, and restaurants, particularly on weekend nights. However, impaired driving occurs throughout the area on highways like {dangerous_roads_list}."},
+      {"q": "Which hospitals treat drunk driving accident victims in {city}?", "a": "Drunk driving accidents often cause severe injuries requiring trauma care. {hospital_name} provides emergency and trauma services for serious accident injuries in the {city} area."},
+      {"q": "How long do drunk driving accident cases take?", "a": "These cases often take 12-24 months because they may involve waiting for criminal case resolution, investigating dram shop claims, and building strong punitive damages arguments. Complex cases with multiple defendants take longer."},
+      {"q": "Can I sue the bar that served the drunk driver?", "a": "Potentially yes, under Texas's Dram Shop Act. If the bar served someone who was obviously intoxicated, or served any alcohol to a minor, and that person then caused your accident, the bar may share liability."}
+    ],
+    "related_case_types": ["car-accident-lawyer", "wrongful-death-lawyer", "hit-and-run-lawyer", "motorcycle-accident-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "spinal-cord-injury-lawyer", "broken-bones-lawyer", "internal-organ-damage-lawyer", "wrongful-death-lawyer", "burn-injury-lawyer", "amputation-lawyer", "soft-tissue-injury-lawyer"]
+  },
+  "hit-and-run": {
+    "name": "Hit and Run",
+    "slug": "hit-and-run-lawyer",
+    "hero_subtitle_template": "Victim of a hit and run in {city}? Our attorneys track down responsible parties and maximize your compensation.",
+    "intro_paragraphs": [
+      "Being the victim of a hit and run accident in {city} adds insult to injury—literally. Not only are you dealing with physical injuries and property damage, but the person responsible fled the scene rather than taking responsibility. Our {city} hit and run attorneys work to identify the driver, and when they can't be found, we maximize your recovery through other sources.",
+      "Texas law requires all drivers involved in accidents to stop and exchange information. Fleeing the scene is a crime—a felony if someone was injured or killed. But the criminal penalties the driver faces don't put money in your pocket. Our civil attorneys focus on getting you compensated, whether through finding the driver, pursuing other liable parties, or maximizing your uninsured motorist claim.",
+      "Hit and run accidents in {city} often occur on busy roads like {dangerous_roads_list}, where drivers believe they can blend into traffic and escape. Our attorneys work with investigators, review surveillance footage, and pursue every lead to identify hit and run drivers and hold them accountable."
+    ],
+    "why_local_lawyer": [
+      "A {city} hit and run attorney knows local resources—which businesses have surveillance cameras, how to work with {city} police investigators, and which private investigators specialize in finding hit and run drivers. We've handled numerous hit and run cases in {county} and know how to maximize recovery even when the driver is never found.",
+      "Time is critical in hit and run cases. Surveillance footage is overwritten, witnesses forget details, and evidence disappears. We immediately begin investigation to preserve your ability to identify the driver and recover compensation."
+    ],
+    "types_section_title": "Hit and Run Investigation & Recovery",
+    "types": [
+      {"title": "Driver Identification", "description": "We work with police, private investigators, and surveillance footage to identify hit and run drivers and their insurance."},
+      {"title": "Witness Interviews", "description": "Tracking down witnesses who saw the accident or the fleeing vehicle can provide critical identifying information."},
+      {"title": "Uninsured Motorist Claims", "description": "When drivers can't be found, your own UM/UIM coverage becomes your primary source of recovery."},
+      {"title": "Third Party Liability", "description": "Sometimes other parties share responsibility—employers of commercial drivers, bars that served drunk drivers, etc."},
+      {"title": "Commercial Vehicle Hit and Runs", "description": "Company logos, DOT numbers, and fleet tracking make commercial vehicles easier to identify."},
+      {"title": "Criminal Restitution", "description": "If the driver is caught and prosecuted, we pursue restitution as part of their criminal sentence."}
+    ],
+    "texas_laws": [
+      {"title": "Hit and Run Penalties", "content": "Failing to stop after an accident is a Class C misdemeanor if only property damage occurs, but becomes a felony if someone is injured (up to 5 years) or killed (up to 10 years)."},
+      {"title": "Duty to Stop", "content": "Texas law requires all drivers involved in accidents to immediately stop, render aid if needed, and exchange information including name, address, and insurance."},
+      {"title": "UM/UIM Coverage", "content": "Texas insurers must offer uninsured/underinsured motorist coverage, which provides compensation when hit and run drivers can't be found or lack adequate insurance."},
+      {"title": "Statute of Limitations", "content": "You have two years to file a lawsuit, but investigation to identify hit and run drivers should begin immediately."}
+    ],
+    "faqs": [
+      {"q": "What should I do right after a hit and run?", "a": "Call 911 immediately. Note any details you remember about the vehicle—make, model, color, license plate, direction of travel. Look for witnesses. Check nearby businesses for surveillance cameras. Document your injuries and damage. Contact an attorney before calling insurance."},
+      {"q": "Can I get compensation if the hit and run driver is never found?", "a": "Yes. Your own uninsured motorist (UM) coverage provides compensation when at-fault drivers can't be identified. We also investigate whether other parties may share liability, such as employers of commercial drivers."},
+      {"q": "How do attorneys find hit and run drivers?", "a": "We canvas the area for surveillance footage, interview witnesses, work with police investigators, hire private investigators, search social media, and review local body shop records for vehicles matching your description."},
+      {"q": "What if I only got a partial license plate?", "a": "Partial plate information combined with vehicle description can narrow down possibilities. Police and private investigators can search DMV records for matching vehicles in the area."},
+      {"q": "Where do most hit and run accidents happen in {city}?", "a": "Hit and run accidents in {city} commonly occur on busy roads like {dangerous_roads_list} where drivers believe they can escape unnoticed. Parking lot hit and runs are also common."},
+      {"q": "Which hospitals treat hit and run accident victims in {city}?", "a": "Seek immediate medical attention regardless of severity—hit and run victims often have adrenaline masking serious injuries. For serious injuries, {hospital_name} provides trauma care in the {city} area."},
+      {"q": "How long do hit and run cases take?", "a": "If the driver is quickly identified, cases proceed like typical accident claims (6-18 months). Uninsured motorist claims against your own insurance may resolve faster. Cases where extensive investigation is needed take longer."},
+      {"q": "Does my insurance go up if I file a hit and run claim?", "a": "Filing a UM/UIM claim for a hit and run generally shouldn't increase your rates since you weren't at fault. However, insurance practices vary. This is another reason to consult an attorney before filing."}
+    ],
+    "related_case_types": ["car-accident-lawyer", "drunk-driving-accident-lawyer", "pedestrian-accident-lawyer", "motorcycle-accident-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "broken-bones-lawyer", "soft-tissue-injury-lawyer", "whiplash-lawyer", "back-injury-lawyer", "neck-injury-lawyer", "spinal-cord-injury-lawyer", "internal-organ-damage-lawyer"]
+  },
+  "wrongful-death": {
+    "name": "Wrongful Death",
+    "slug": "wrongful-death-lawyer",
+    "hero_subtitle_template": "Lost a loved one to negligence in {city}? Our wrongful death attorneys help families find justice and financial security.",
+    "intro_paragraphs": [
+      "When you lose a family member due to someone else's negligence, no amount of money can truly compensate for your loss. But a wrongful death lawsuit can provide financial security for your family, hold responsible parties accountable, and give you a sense of justice. Our {city} wrongful death attorneys handle these sensitive cases with compassion while aggressively pursuing every dollar your family deserves.",
+      "Texas wrongful death law allows surviving spouses, children, and parents to pursue claims against those whose negligence caused their loved one's death. Separately, a survival action can recover what the deceased person could have recovered had they lived. Understanding these complex claims requires experienced legal guidance.",
+      "In {city}, wrongful deaths result from car accidents, truck accidents, workplace incidents, medical malpractice, defective products, and other causes. Each type of case has unique challenges, and our attorneys have experience across all wrongful death categories."
+    ],
+    "why_local_lawyer": [
+      "A {city} wrongful death attorney understands local courts, local juries, and the emotional needs of local families. We know that each wrongful death case represents a real person with a real family, not just a legal matter. Our approach combines aggressive legal representation with genuine compassion.",
+      "We handle wrongful death cases on contingency, meaning you pay nothing unless we recover compensation. This allows families to focus on grieving and healing while we handle the legal complexities."
+    ],
+    "types_section_title": "Types of Wrongful Death Cases",
+    "types": [
+      {"title": "Vehicle Accident Deaths", "description": "Car, truck, and motorcycle crashes are leading causes of wrongful death, often involving multiple liable parties."},
+      {"title": "Workplace Fatalities", "description": "Construction accidents, industrial incidents, and workplace violence may support wrongful death claims beyond workers' compensation."},
+      {"title": "Medical Malpractice Deaths", "description": "When medical errors or negligence cause patient deaths, families can pursue wrongful death claims against providers."},
+      {"title": "Product Liability Deaths", "description": "Defective vehicles, medications, medical devices, and consumer products can cause fatal injuries."},
+      {"title": "Premises Liability Deaths", "description": "Dangerous property conditions, inadequate security, and negligent maintenance can cause fatal accidents."},
+      {"title": "Criminal Act Deaths", "description": "Victims of violent crimes can pursue civil wrongful death claims separate from criminal prosecution."}
+    ],
+    "texas_laws": [
+      {"title": "Who Can Sue", "content": "Texas allows surviving spouse, children, and parents to bring wrongful death claims. Claims must be filed within three months, or a court-appointed representative can file."},
+      {"title": "Survival Action", "content": "Separate from wrongful death, survival actions recover what the deceased could have recovered—medical expenses, pain and suffering before death, and other pre-death damages."},
+      {"title": "Damages Available", "content": "Wrongful death damages include lost financial support, lost companionship, mental anguish, and loss of inheritance. No caps apply to most wrongful death damages."},
+      {"title": "Statute of Limitations", "content": "Texas wrongful death claims must be filed within two years of the death. Medical malpractice death cases have additional requirements."}
+    ],
+    "faqs": [
+      {"q": "Who can file a wrongful death lawsuit in Texas?", "a": "The surviving spouse, children, and parents of the deceased can file wrongful death claims in Texas. If no family members file within three months, the estate's representative can file on behalf of all beneficiaries."},
+      {"q": "What compensation is available in wrongful death cases?", "a": "Wrongful death damages include loss of financial support, loss of companionship and consortium, mental anguish of survivors, loss of inheritance, and funeral expenses. Survival actions add the deceased's pain and suffering and medical expenses before death."},
+      {"q": "How long do I have to file a wrongful death lawsuit?", "a": "Texas has a two-year statute of limitations for wrongful death claims, running from the date of death. However, gathering evidence and building a strong case takes time, so consulting an attorney promptly is important."},
+      {"q": "Can I file a wrongful death claim if there's a criminal case?", "a": "Yes. Criminal and civil cases are separate. You don't need a criminal conviction to pursue civil wrongful death claims, and you can receive civil compensation regardless of criminal case outcomes."},
+      {"q": "What causes wrongful deaths in {city}?", "a": "In {city}, wrongful deaths commonly result from traffic accidents on roads like {dangerous_roads_list}, workplace accidents, medical errors, and violent crimes. Each type of case requires different investigation and legal strategies."},
+      {"q": "How are wrongful death cases valued?", "a": "Courts consider the deceased's age, health, earning capacity, and relationship to survivors. The value of lost financial support, household services, guidance, and companionship are calculated. Expert economists often testify about future losses."},
+      {"q": "How long do wrongful death cases take?", "a": "Wrongful death cases typically take 18-36 months due to their complexity, emotional nature, and high stakes. Cases requiring extensive investigation or expert testimony take longer. We work to resolve cases as efficiently as possible while ensuring maximum recovery."},
+      {"q": "Do I pay attorney fees upfront for a wrongful death case?", "a": "No. We handle wrongful death cases on contingency, meaning we advance all costs and only get paid if we recover compensation. Our fee is a percentage of the recovery, allowing families to pursue justice without financial burden."}
+    ],
+    "related_case_types": ["car-accident-lawyer", "truck-accident-lawyer", "18-wheeler-accident-lawyer", "workplace-injury-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "spinal-cord-injury-lawyer", "burn-injury-lawyer", "internal-organ-damage-lawyer", "amputation-lawyer", "broken-bones-lawyer"]
+  },
+  "slip-and-fall": {
+    "name": "Slip and Fall",
+    "slug": "slip-and-fall-lawyer",
+    "hero_subtitle_template": "Injured in a slip and fall accident in {city}? Our premises liability attorneys hold property owners accountable.",
+    "intro_paragraphs": [
+      "Slip and fall accidents can cause serious injuries—broken bones, traumatic brain injuries, spinal cord damage, and more. When property owners fail to maintain safe conditions, they can be held liable for the injuries that result. Our {city} slip and fall attorneys understand Texas premises liability law and know how to prove property owner negligence.",
+      "Many people dismiss slip and falls as minor accidents or feel embarrassed about falling. Don't let these feelings prevent you from getting the compensation you deserve. Property owners have a legal duty to maintain safe premises, and when they breach that duty, they should be held accountable.",
+      "In {city}, slip and fall accidents occur at grocery stores, restaurants, retail shops, office buildings, hotels, apartment complexes, and many other locations. Common hazards include wet floors, uneven surfaces, poor lighting, broken stairs, and missing handrails. Our attorneys investigate each case to identify what hazard caused your fall and who failed to address it."
+    ],
+    "why_local_lawyer": [
+      "A {city} slip and fall lawyer knows local businesses, property managers, and which companies have histories of unsafe conditions. We understand how {county} courts handle premises liability cases and what evidence is most persuasive to local juries.",
+      "Property owners and their insurance companies often deny responsibility, claiming the hazard was 'open and obvious' or that the victim was careless. We counter these defenses with evidence, expert testimony, and aggressive advocacy for our clients."
+    ],
+    "types_section_title": "Common Slip and Fall Hazards",
+    "types": [
+      {"title": "Wet Floor Falls", "description": "Spills, recently mopped floors, and weather-related wetness near entrances cause many slip and fall injuries."},
+      {"title": "Uneven Surface Falls", "description": "Cracked sidewalks, broken tiles, raised carpet edges, and other uneven surfaces create tripping hazards."},
+      {"title": "Stairway Falls", "description": "Missing handrails, broken steps, poor lighting, and uneven risers make stairs dangerous."},
+      {"title": "Parking Lot Falls", "description": "Potholes, poor lighting, ice, and debris in parking lots cause falls before customers even enter stores."},
+      {"title": "Inadequate Lighting Falls", "description": "Dark hallways, burned-out bulbs, and shadowed areas hide hazards and contribute to falls."},
+      {"title": "Cluttered Aisle Falls", "description": "Merchandise, boxes, cords, and debris left in walkways create tripping hazards."}
+    ],
+    "texas_laws": [
+      {"title": "Premises Liability Duty", "content": "Property owners owe invitees (customers, guests) a duty to maintain reasonably safe premises and warn of known hazards."},
+      {"title": "Notice Requirement", "content": "To recover, you generally must prove the owner knew or should have known about the hazard. Evidence includes how long the hazard existed and inspection practices."},
+      {"title": "Open and Obvious Defense", "content": "Property owners may claim hazards were 'open and obvious.' However, this defense has limits, and owners can't ignore dangerous conditions just because they're visible."},
+      {"title": "Comparative Fault", "content": "If you're partially at fault for not watching where you were going, your damages are reduced by your percentage of fault."}
+    ],
+    "faqs": [
+      {"q": "What should I do after a slip and fall accident?", "a": "Report the incident to management and ensure they document it. Take photos of the hazard and your injuries. Get contact information from witnesses. Seek medical attention. Don't sign anything or give recorded statements to insurance without consulting an attorney."},
+      {"q": "How do I prove a slip and fall case?", "a": "You must prove a hazardous condition existed, the property owner knew or should have known about it, they failed to address it, and the hazard caused your injuries. Evidence includes incident reports, photos, witness statements, surveillance footage, and maintenance records."},
+      {"q": "What compensation can I receive for a slip and fall?", "a": "You can recover medical expenses, lost wages, pain and suffering, and sometimes punitive damages if the owner showed gross negligence. Serious falls involving broken bones or head injuries often result in significant settlements."},
+      {"q": "Does it matter where I fell?", "a": "The type of property affects what duty the owner owed you. Business visitors (invitees) receive the highest protection. Social guests (licensees) receive less. Trespassers generally can't recover except in limited circumstances."},
+      {"q": "Where do slip and fall accidents commonly occur in {city}?", "a": "Slip and fall accidents in {city} commonly occur at grocery stores, big-box retailers, restaurants, hotels, apartment complexes, parking garages, and commercial buildings throughout the area."},
+      {"q": "Where should I go for medical treatment after a fall?", "a": "For serious injuries, seek emergency care immediately. {hospital_name} provides treatment for fall injuries including broken bones and head injuries. Even for seemingly minor falls, get evaluated—some injuries don't appear immediately."},
+      {"q": "How long do I have to file a slip and fall lawsuit?", "a": "Texas has a two-year statute of limitations. However, evidence can disappear quickly—surveillance footage is often overwritten within days or weeks. Contact an attorney immediately to preserve evidence."},
+      {"q": "What if I was partially at fault for my fall?", "a": "Texas uses modified comparative fault. You can recover if you're less than 51% at fault, with damages reduced by your fault percentage. Insurance companies often exaggerate victim fault, so having an attorney advocate for you is important."}
+    ],
+    "related_case_types": ["workplace-injury-lawyer", "brain-injury-lawyer", "broken-bones-lawyer", "back-injury-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "spinal-cord-injury-lawyer", "broken-bones-lawyer", "back-injury-lawyer", "hip-injury-lawyer", "shoulder-injury-lawyer", "knee-injury-lawyer", "soft-tissue-injury-lawyer"]
+  },
+  "work-injury": {
+    "name": "Work Injury",
+    "slug": "work-injury-lawyer",
+    "hero_subtitle_template": "Injured on the job in {city}? Our attorneys help you get maximum compensation beyond workers' comp.",
+    "intro_paragraphs": [
+      "Workplace injuries in {city} can change your life in an instant. Whether you work in construction, oil and gas, manufacturing, healthcare, or any other industry, you deserve full compensation when employer negligence, third-party actions, or unsafe conditions cause your injury. Our {city} work injury attorneys help injured workers explore all options beyond limited workers' compensation benefits.",
+      "Texas is unique—it's the only state that doesn't require most private employers to carry workers' compensation insurance. If your employer is a 'non-subscriber,' you may be able to sue them directly for your full damages. Even if your employer does have workers' comp, you may have third-party claims against equipment manufacturers, property owners, or other contractors.",
+      "In {city}, work injuries occur across all industries, from construction sites and oil fields to offices and retail stores. Common injuries include falls, equipment accidents, repetitive stress injuries, toxic exposures, and vehicle accidents while working. Our attorneys evaluate each case to identify all potential sources of recovery."
+    ],
+    "why_local_lawyer": [
+      "A {city} work injury attorney understands local industries, local employers, and local courts. We know which companies are non-subscribers, which job sites have safety problems, and how to navigate both workers' comp and civil claims in {county} courts.",
+      "We've helped injured workers across {city}'s major industries and understand the specific hazards each faces. Our goal is maximizing your total recovery while you focus on healing."
+    ],
+    "types_section_title": "Types of Workplace Injury Cases",
+    "types": [
+      {"title": "Construction Accidents", "description": "Falls, scaffolding collapses, power tool injuries, and struck-by incidents make construction one of the most dangerous industries."},
+      {"title": "Oil Field Injuries", "description": "Explosions, chemical exposures, heavy equipment accidents, and transportation incidents are common in oil and gas work."},
+      {"title": "Manufacturing Injuries", "description": "Machine entanglement, crushing injuries, chemical burns, and repetitive stress injuries affect factory workers."},
+      {"title": "Warehouse Injuries", "description": "Forklift accidents, falling merchandise, loading dock falls, and overexertion injuries are common in warehouses."},
+      {"title": "Office Injuries", "description": "Slip and falls, ergonomic injuries, and assault can injure office workers."},
+      {"title": "Vehicle Accidents", "description": "Employees injured in vehicle accidents while working may have claims beyond workers' comp against at-fault drivers."}
+    ],
+    "texas_laws": [
+      {"title": "Non-Subscriber Liability", "content": "Texas employers who don't carry workers' comp (non-subscribers) can be sued directly. They can't use contributory negligence, assumed risk, or co-employee negligence as defenses."},
+      {"title": "Workers' Comp Limits", "content": "Texas workers' comp provides limited wage replacement (70% of average weekly wage up to state maximum) and medical benefits, but no pain and suffering compensation."},
+      {"title": "Third Party Claims", "content": "Even with workers' comp, you can sue third parties like equipment manufacturers, property owners, or other contractors whose negligence contributed to your injury."},
+      {"title": "OSHA Violations", "content": "Employer violations of OSHA safety regulations can help establish negligence in injury claims."}
+    ],
+    "faqs": [
+      {"q": "Can I sue my employer for a work injury in Texas?", "a": "It depends on whether your employer carries workers' compensation insurance. If they're a 'non-subscriber' without workers' comp, you can sue them directly for full damages. If they have workers' comp, benefits are generally your exclusive remedy against them (but you may have third-party claims)."},
+      {"q": "What's the difference between workers' comp and a personal injury lawsuit?", "a": "Workers' comp provides guaranteed but limited benefits—medical care and partial wage replacement. Personal injury lawsuits can recover full lost wages, pain and suffering, and other damages, but require proving someone's negligence caused your injury."},
+      {"q": "What third-party claims might I have for a work injury?", "a": "Potential third-party defendants include equipment manufacturers (defective products), property owners (premises liability), other contractors (negligent actions), and vehicle drivers (if injured in work-related crash). We investigate all possibilities."},
+      {"q": "What should I do after getting hurt at work?", "a": "Report the injury to your supervisor immediately. Seek medical attention. Document everything including photos and witness names. Don't sign anything without understanding your rights. Consult an attorney before accepting workers' comp settlements."},
+      {"q": "Which industries have the most work injuries in {city}?", "a": "In {city}, construction, oil and gas, manufacturing, warehousing, and transportation see the most serious workplace injuries. However, injuries can occur in any workplace, and all deserve proper compensation."},
+      {"q": "Where should I go for medical treatment after a work injury?", "a": "For emergencies, go to the nearest emergency room—{hospital_name} treats workplace injuries. For workers' comp claims, you may need to see approved providers. For non-subscriber cases, you can choose your own doctors."},
+      {"q": "How long do I have to file a work injury claim?", "a": "Workers' comp claims should be reported within 30 days. Personal injury lawsuits against non-subscribers or third parties have a two-year statute of limitations. Acting quickly preserves your rights and evidence."},
+      {"q": "Can I be fired for filing a work injury claim?", "a": "Texas law prohibits retaliation for filing workers' comp claims. If you're fired for claiming benefits, you may have an additional retaliation claim. Non-subscriber claims have different protections."}
+    ],
+    "related_case_types": ["construction-accident-lawyer", "oilfield-accident-lawyer", "slip-and-fall-lawyer", "wrongful-death-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "spinal-cord-injury-lawyer", "broken-bones-lawyer", "burn-injury-lawyer", "amputation-lawyer", "back-injury-lawyer", "repetitive-stress-injury-lawyer", "shoulder-injury-lawyer"]
+  },
+  "dog-bite": {
+    "name": "Dog Bite",
+    "slug": "dog-bite-lawyer",
+    "hero_subtitle_template": "Attacked by a dog in {city}? Our attorneys hold negligent dog owners accountable for your injuries.",
+    "intro_paragraphs": [
+      "Dog attacks can cause devastating injuries—deep puncture wounds, severe lacerations, nerve damage, broken bones, and serious infections. Children are particularly vulnerable to facial injuries and psychological trauma. When negligent dog owners fail to control dangerous animals, our {city} dog bite attorneys help victims recover full compensation for their injuries.",
+      "Texas uses a 'one bite rule' modified by negligence principles, meaning liability can exist even for first-time attacks if the owner was negligent in controlling their dog. We investigate each case to identify evidence of owner knowledge of dangerous propensities, inadequate confinement, and violations of local animal control ordinances.",
+      "In {city}, dog attacks occur in neighborhoods, parks, on sidewalks, and even on private property. Certain breeds may pose higher risks, but any dog can cause serious injury. Our attorneys focus on owner negligence and failure to prevent foreseeable attacks, regardless of breed."
+    ],
+    "why_local_lawyer": [
+      "A {city} dog bite attorney understands local animal control ordinances, leash laws, and dangerous dog regulations. We know how {county} courts handle animal attack cases and what evidence is most persuasive in establishing owner liability.",
+      "We also understand the physical and emotional trauma of dog attacks, especially for children. Our approach combines aggressive legal representation with sensitivity to our clients' ongoing fear and recovery."
+    ],
+    "types_section_title": "Dog Bite Liability Scenarios",
+    "types": [
+      {"title": "Negligent Confinement", "description": "Owners who fail to properly fence, leash, or confine dogs that escape and attack can be held liable."},
+      {"title": "Known Dangerous Dogs", "description": "Owners who know their dogs have bitten before or shown aggression have heightened duties to prevent attacks."},
+      {"title": "Landlord Liability", "description": "Landlords who allow tenants to keep known dangerous dogs may share liability for attacks on the property."},
+      {"title": "Child Victim Attacks", "description": "Owners must take extra precautions when children are present, as dogs may react unpredictably to children's behavior."},
+      {"title": "Postal/Delivery Worker Attacks", "description": "Delivery workers are frequent dog bite victims, and owners must secure dogs when expecting visitors."},
+      {"title": "Trespasser Attacks", "description": "Even trespassers may have claims in some circumstances, particularly if owners used dogs as intentional deterrents."}
+    ],
+    "texas_laws": [
+      {"title": "One Bite Rule", "content": "Texas traditionally required proof the dog had previously bitten or shown viciousness. However, owners can be liable under negligence even for first attacks if they failed to use reasonable care."},
+      {"title": "Negligence Per Se", "content": "Violations of leash laws or other animal control ordinances can establish negligence per se, making liability easier to prove."},
+      {"title": "Dangerous Dog Act", "content": "Texas has a Dangerous Dog Act requiring registration and confinement of dogs declared dangerous by authorities. Violations strengthen injury claims."},
+      {"title": "Homeowner's Insurance", "content": "Most dog bite claims are paid by homeowner's or renter's insurance, which typically covers liability for pet attacks up to policy limits."}
+    ],
+    "faqs": [
+      {"q": "What should I do after a dog attack?", "a": "Seek immediate medical attention—dog bites easily become infected. Report the attack to local animal control. Get the owner's name, address, and insurance information. Photograph your injuries. Document the dog's breed and any prior aggressive behavior you know about."},
+      {"q": "How do I prove liability in a dog bite case?", "a": "We investigate whether the owner knew the dog was dangerous, whether they violated leash laws or confinement requirements, and whether they took reasonable precautions. Witness statements, animal control records, and prior incident reports help establish liability."},
+      {"q": "What compensation can I receive for a dog bite?", "a": "Compensation includes medical expenses (often extensive due to infection risk and scarring), plastic surgery costs, lost wages, pain and suffering, psychological trauma, and sometimes punitive damages if the owner knew the dog was dangerous."},
+      {"q": "Does the dog owner's insurance cover attacks?", "a": "Usually yes. Homeowner's and renter's insurance typically cover dog bite liability up to policy limits. Some policies exclude certain breeds, but the owner may still be personally liable."},
+      {"q": "Where do dog attacks commonly occur in {city}?", "a": "Dog attacks in {city} occur throughout residential neighborhoods, at parks, on sidewalks, and at the homes of dog owners. Children are often attacked while playing in yards or walking to school."},
+      {"q": "Where should I go for treatment after a dog bite in {city}?", "a": "Seek immediate medical attention—emergency rooms can handle serious bites. {hospital_name} treats dog attack injuries. Dog bites require thorough cleaning, antibiotics, and tetanus updates. Watch for signs of infection in following days."},
+      {"q": "What if the dog had never bitten anyone before?", "a": "Texas's 'one bite rule' isn't absolute. If the owner was negligent—failing to leash the dog, ignoring aggressive behavior, or violating local ordinances—liability can exist even for first-time attacks."},
+      {"q": "Can I sue if the dog owner is a friend or family member?", "a": "Yes. Their homeowner's insurance typically pays claims, not them personally. Many dog bite claims involve known dogs because people interact closely with friends' and relatives' pets."}
+    ],
+    "related_case_types": ["slip-and-fall-lawyer", "child-injury-lawyer", "facial-injury-lawyer", "premises-liability-lawyer"],
+    "injuries": ["facial-injury-lawyer", "soft-tissue-injury-lawyer", "nerve-damage-lawyer", "broken-bones-lawyer", "puncture-wound-lawyer", "infection-injury-lawyer", "scarring-disfigurement-lawyer", "psychological-trauma-lawyer"]
+  },
+  "brain-injury": {
+    "name": "Brain Injury",
+    "slug": "brain-injury-lawyer",
+    "hero_subtitle_template": "Suffered a traumatic brain injury in {city}? Our attorneys fight for the lifetime care compensation you deserve.",
+    "intro_paragraphs": [
+      "Traumatic brain injuries (TBI) are among the most devastating and life-altering injuries a person can suffer. Even 'mild' concussions can cause persistent symptoms, while severe TBIs can result in permanent cognitive impairment, personality changes, and the need for lifetime care. Our {city} brain injury attorneys understand the full scope of TBI impacts and fight for compensation that reflects the true cost of these injuries.",
+      "Brain injuries require specialized medical care, extensive rehabilitation, and often ongoing support for activities of daily living. Calculating fair compensation requires medical experts, life care planners, and economists who can project future needs. We work with leading experts to build cases that demonstrate the full impact of brain injuries on our clients' lives.",
+      "In {city}, brain injuries result from car accidents, truck collisions, motorcycle crashes, falls, workplace incidents, assaults, and other traumatic events. Regardless of how your injury occurred, if someone else's negligence caused it, you deserve full compensation for your past, present, and future damages."
+    ],
+    "why_local_lawyer": [
+      "A {city} brain injury attorney knows local medical resources, rehabilitation facilities, and experts who can document the full extent of your injury. We understand how {county} juries evaluate complex brain injury evidence and how to present these cases effectively.",
+      "Brain injury cases require patience and persistence. We stay with our clients through years of treatment and recovery, ensuring their legal case reflects their actual ongoing needs."
+    ],
+    "types_section_title": "Types of Brain Injuries",
+    "types": [
+      {"title": "Concussions", "description": "Often called 'mild TBI,' concussions can cause persistent headaches, memory problems, and cognitive difficulties lasting months or years."},
+      {"title": "Contusions", "description": "Brain bruises from direct impact can cause localized damage affecting specific functions depending on location."},
+      {"title": "Diffuse Axonal Injury", "description": "Rotation or shaking damages nerve connections throughout the brain, often from car accidents."},
+      {"title": "Penetrating Injuries", "description": "Objects penetrating the skull cause direct brain damage and high infection risk."},
+      {"title": "Coup-Contrecoup", "description": "Impact causes injury at both the impact site and the opposite side of the brain as it bounces within the skull."},
+      {"title": "Second Impact Syndrome", "description": "Suffering a second concussion before fully recovering from the first can cause severe brain swelling."}
+    ],
+    "texas_laws": [
+      {"title": "Future Damages", "content": "Texas allows recovery of future medical expenses, lost earning capacity, and pain and suffering when brain injuries cause permanent impairment."},
+      {"title": "Life Care Plans", "content": "Courts accept expert life care plans projecting future medical needs, which can extend for decades and cost millions of dollars."},
+      {"title": "Loss of Consortium", "content": "Spouses can recover for loss of companionship and support when brain injuries change their partner's personality or abilities."},
+      {"title": "No Damage Caps", "content": "Texas doesn't cap economic or non-economic damages in most personal injury cases, allowing full recovery for brain injury victims."}
+    ],
+    "faqs": [
+      {"q": "What are symptoms of traumatic brain injury?", "a": "TBI symptoms include headaches, dizziness, nausea, memory problems, difficulty concentrating, mood changes, sleep disturbances, sensitivity to light and sound, and personality changes. Symptoms may appear immediately or develop over days or weeks."},
+      {"q": "How much compensation can I receive for a brain injury?", "a": "Brain injury settlements vary widely based on severity. Mild TBIs may settle for tens of thousands, while severe TBIs requiring lifetime care often result in multi-million dollar awards covering future medical care, lost earnings, and quality of life impacts."},
+      {"q": "What medical evidence is needed for a brain injury case?", "a": "Medical records, imaging studies (CT, MRI), neuropsychological testing, and expert medical opinions document brain injuries. We work with neurologists, neuropsychologists, and other specialists to fully document your injury."},
+      {"q": "What is a life care plan?", "a": "A life care plan is a detailed projection of all future medical care, therapy, assistance, and equipment a brain injury victim will need. Prepared by certified life care planners, these documents can show lifetime care costs in the millions of dollars."},
+      {"q": "Where can I get brain injury treatment in {city}?", "a": "For acute brain injuries, trauma centers provide emergency care—{hospital_name} has neurology and neurosurgery capabilities. Long-term rehabilitation is available at specialized facilities. We can recommend treatment providers experienced with TBI."},
+      {"q": "How long does it take to recover from a brain injury?", "a": "Recovery varies dramatically. Some concussion symptoms resolve in weeks, while severe TBIs may cause permanent impairment. Maximum medical improvement may take 2-3 years, but some recovery continues beyond that. Your legal case should account for long-term prognosis."},
+      {"q": "Can I sue for a concussion?", "a": "Yes. While often called 'mild' TBI, concussions can cause significant symptoms and impact quality of life. If someone's negligence caused your concussion, you deserve compensation for medical expenses, lost wages, pain, and any lasting effects."},
+      {"q": "What causes most brain injuries in {city}?", "a": "In {city}, brain injuries commonly result from motor vehicle accidents on roads like {dangerous_roads_list}, workplace incidents, falls, and assaults. Car and truck accidents cause particularly severe TBIs due to the forces involved."}
+    ],
+    "related_case_types": ["car-accident-lawyer", "truck-accident-lawyer", "motorcycle-accident-lawyer", "slip-and-fall-lawyer"],
+    "injuries": ["traumatic-brain-injury-lawyer", "concussion-lawyer", "cognitive-impairment-lawyer", "memory-loss-lawyer", "headache-disorder-lawyer", "vision-problems-lawyer", "balance-disorder-lawyer", "mood-disorder-lawyer"]
+  }
+}
