@@ -64,4 +64,65 @@
     <loc>https://www.getpaid.law/austin-workplace-injury-lawyer/</loc>
     <priority>0.9</priority>
   </url>
+  <!-- Injury Type Pages -->
+  <url>
+    <loc>https://www.getpaid.law/traumatic-brain-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/spinal-cord-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/back-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/neck-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/whiplash-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/concussion-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/broken-bones-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/burn-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/paralysis-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/amputation-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/soft-tissue-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/joint-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/scarring-disfigurement-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/nerve-damage-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.getpaid.law/coma-injury-lawyer/</loc>
+    <priority>0.9</priority>
+  </url>
 </urlset>
