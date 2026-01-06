@@ -228,6 +228,28 @@
         .location-card .link-text svg { width: 16px; height: 16px; }
         @media (max-width: 900px) { .location-grid { grid-template-columns: 1fr; } }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.getpaid.law/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Wrongful Death Lawyer",
+                "item": "https://www.getpaid.law/wrongful-death-lawyer/"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <div class="header-wrapper">

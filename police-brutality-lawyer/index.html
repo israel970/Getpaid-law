@@ -652,6 +652,28 @@
         @media (max-width: 1024px) { .credentials-grid { grid-template-columns: repeat(3, 1fr); } }
         @media (max-width: 640px) { .credentials-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; } .credential-item { padding: 1.25rem 0.75rem; } .credential-item h3 { font-size: 0.9rem; } }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.getpaid.law/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Police Brutality Lawyer",
+                "item": "https://www.getpaid.law/police-brutality-lawyer/"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->

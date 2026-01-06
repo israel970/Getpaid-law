@@ -198,6 +198,34 @@
         @media (max-width: 900px) { .mobile-menu-btn { display: flex; } }
         @media (min-width: 901px) { .mobile-menu-btn { display: none; } .mobile-menu { display: none !important; } }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.getpaid.law/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Hit and Run",
+                "item": "https://www.getpaid.law/hit-and-run-lawyer/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Round Rock Hit and Run Lawyer",
+                "item": "https://www.getpaid.law/round-rock-hit-and-run-lawyer/"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <div class="header-wrapper">

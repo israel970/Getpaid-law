@@ -181,6 +181,34 @@
         .floating-cta:hover { background: var(--accent-hover); transform: translateY(-3px); box-shadow: 0 6px 25px rgba(34, 197, 94, 0.5); }
         @media (max-width: 640px) { .floating-cta { bottom: 1rem; right: 1rem; padding: 0.875rem 1.25rem; font-size: 0.9rem; } }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.getpaid.law/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Injury Types",
+                "item": "https://www.getpaid.law/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Paralysis Injury Lawyer",
+                "item": "https://www.getpaid.law/paralysis-injury-lawyer/"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <div class="header-wrapper">

@@ -240,6 +240,34 @@
         .content-image img { width: 100%; border-radius: 10px; display: block; }
         @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.getpaid.law/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Slip and Fall",
+                "item": "https://www.getpaid.law/slip-and-fall-lawyer/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Austin Slip and Fall Lawyer",
+                "item": "https://www.getpaid.law/austin-slip-and-fall-lawyer/"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
