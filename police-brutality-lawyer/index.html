@@ -449,6 +449,32 @@
             font-size: 1rem;
         }
 
+        
+        /* Injury Links */
+        .injury-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .injury-link {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: var(--gray);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .injury-link:hover {
+            background: var(--accent);
+            color: var(--black);
+            border-color: var(--accent);
+        }
+
         /* FAQ Section */
         .faq-section {
             max-width: 900px;
