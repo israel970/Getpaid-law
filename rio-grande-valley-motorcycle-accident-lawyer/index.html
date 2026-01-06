@@ -221,6 +221,32 @@
         .content-image { float: right; margin: 0 0 1.5rem 2rem; max-width: 350px; border-radius: 12px; border: 2px solid var(--accent); }
         .content-image img { width: 100%; border-radius: 10px; display: block; }
         @media (max-width: 768px) { .content-image { float: none; margin: 0 auto 1.5rem; max-width: 100%; } }
+
+        /* Injury Links */
+        .injury-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .injury-link {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: var(--gray);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .injury-link:hover {
+            background: var(--accent);
+            color: var(--black);
+            border-color: var(--accent);
+        }
+
     </style>
 </head>
 <body>
@@ -250,26 +276,6 @@
                         <a href="/dallas-personal-injury-lawyer/">Dallas-Fort Worth</a>
                         <a href="/rio-grande-valley-personal-injury-lawyer/">Rio Grande Valley</a>
                         <a href="/west-texas-personal-injury-lawyer/">West Texas</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <span class="nav-link" style="cursor: pointer;">
-                        Injury Types
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
-                    <div class="dropdown">
-                        <a href="/traumatic-brain-injury-lawyer/">Brain Injury (TBI)</a>
-                        <a href="/spinal-cord-injury-lawyer/">Spinal Cord Injury</a>
-                        <a href="/back-injury-lawyer/">Back Injury</a>
-                        <a href="/neck-injury-lawyer/">Neck Injury</a>
-                        <a href="/whiplash-injury-lawyer/">Whiplash</a>
-                        <a href="/concussion-injury-lawyer/">Concussion</a>
-                        <a href="/broken-bones-lawyer/">Broken Bones</a>
-                        <a href="/burn-injury-lawyer/">Burn Injuries</a>
-                        <a href="/paralysis-injury-lawyer/">Paralysis</a>
-                        <a href="/amputation-injury-lawyer/">Amputation</a>
                     </div>
                 </div>
                 <a href="/our-mission/" class="nav-link">Our Mission</a>
@@ -311,26 +317,6 @@
                 <a href="/dallas-personal-injury-lawyer/">Dallas-Fort Worth</a>
                 <a href="/rio-grande-valley-personal-injury-lawyer/">Rio Grande Valley</a>
                 <a href="/west-texas-personal-injury-lawyer/">West Texas</a>
-            </div>
-        </div>
-        <div class="mobile-nav-section">
-            <div class="mobile-nav-header" onclick="toggleMobileDropdown(this)">
-                Injury Types
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-            </div>
-            <div class="mobile-dropdown">
-                <a href="/traumatic-brain-injury-lawyer/">Brain Injury (TBI)</a>
-                <a href="/spinal-cord-injury-lawyer/">Spinal Cord Injury</a>
-                <a href="/back-injury-lawyer/">Back Injury</a>
-                <a href="/neck-injury-lawyer/">Neck Injury</a>
-                <a href="/whiplash-injury-lawyer/">Whiplash</a>
-                <a href="/concussion-injury-lawyer/">Concussion</a>
-                <a href="/broken-bones-lawyer/">Broken Bones</a>
-                <a href="/burn-injury-lawyer/">Burn Injuries</a>
-                <a href="/paralysis-injury-lawyer/">Paralysis</a>
-                <a href="/amputation-injury-lawyer/">Amputation</a>
             </div>
         </div>
         <a href="/our-mission/" class="mobile-nav-link">Our Mission</a>
