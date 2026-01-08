@@ -8,6 +8,9 @@ export interface PracticeArea {
 }
 
 export const practiceAreas: PracticeArea[] = [
+  // General
+  { slug: 'personal-injury-lawyer', title: 'Personal Injury Lawyer', shortTitle: 'Personal Injury', description: 'Comprehensive personal injury legal services for all types of accidents and injuries.', heroImage: 'personal-injury.jpg', category: 'General' },
+
   // Vehicle Accidents
   { slug: 'car-accident-lawyer', title: 'Car Accident Lawyer', shortTitle: 'Car Accidents', description: 'Experienced car accident lawyers fighting for maximum compensation.', heroImage: 'car-accident.jpg', category: 'Vehicle Accidents' },
   { slug: 'truck-accident-lawyer', title: 'Truck Accident Lawyer', shortTitle: 'Truck Accidents', description: 'Truck accident attorneys with experience against major carriers.', heroImage: 'truck-accident.jpg', category: 'Vehicle Accidents' },
@@ -34,7 +37,8 @@ export const practiceAreas: PracticeArea[] = [
 
   // Serious Injuries
   { slug: 'wrongful-death-lawyer', title: 'Wrongful Death Lawyer', shortTitle: 'Wrongful Death', description: 'Compassionate wrongful death representation for families.', heroImage: 'wrongful-death.jpg', category: 'Serious Injuries' },
-  { slug: 'traumatic-brain-injury-lawyer', title: 'Traumatic Brain Injury Lawyer', shortTitle: 'Brain Injuries', description: 'TBI and head injury legal representation.', heroImage: 'brain-injury.jpg', category: 'Serious Injuries' },
+  { slug: 'brain-injury-lawyer', title: 'Brain Injury Lawyer', shortTitle: 'Brain Injuries', description: 'Brain injury and head trauma legal representation.', heroImage: 'brain-injury.jpg', category: 'Serious Injuries' },
+  { slug: 'traumatic-brain-injury-lawyer', title: 'Traumatic Brain Injury Lawyer', shortTitle: 'Traumatic Brain Injuries', description: 'TBI and head injury legal representation.', heroImage: 'brain-injury.jpg', category: 'Serious Injuries' },
   { slug: 'spinal-cord-injury-lawyer', title: 'Spinal Cord Injury Lawyer', shortTitle: 'Spinal Cord Injuries', description: 'Spinal cord and paralysis injury claims.', heroImage: 'spinal-cord.jpg', category: 'Serious Injuries' },
   { slug: 'burn-injury-lawyer', title: 'Burn Injury Lawyer', shortTitle: 'Burn Injuries', description: 'Serious burn injury compensation claims.', heroImage: 'burn-injury.jpg', category: 'Serious Injuries' },
   { slug: 'amputation-injury-lawyer', title: 'Amputation Injury Lawyer', shortTitle: 'Amputation Injuries', description: 'Limb loss and amputation injury claims.', heroImage: 'amputation.jpg', category: 'Serious Injuries' },
@@ -54,6 +58,7 @@ export const practiceAreas: PracticeArea[] = [
   { slug: 'repetitive-stress-injury-lawyer', title: 'Repetitive Stress Injury Lawyer', shortTitle: 'Repetitive Stress Injuries', description: 'RSI and repetitive motion injury claims.', heroImage: 'repetitive-stress.jpg', category: 'Serious Injuries' },
 
   // Workplace & Premises
+  { slug: 'work-injury-lawyer', title: 'Work Injury Lawyer', shortTitle: 'Work Injuries', description: 'Work injury and on-the-job accident claims.', heroImage: 'workplace.jpg', category: 'Workplace & Premises' },
   { slug: 'workplace-injury-lawyer', title: 'Workplace Injury Lawyer', shortTitle: 'Workplace Injuries', description: 'Work injury and on-the-job accident claims.', heroImage: 'workplace.jpg', category: 'Workplace & Premises' },
   { slug: 'construction-accident-lawyer', title: 'Construction Accident Lawyer', shortTitle: 'Construction Accidents', description: 'Construction site injury representation.', heroImage: 'construction.jpg', category: 'Workplace & Premises' },
   { slug: 'oil-field-injury-lawyer', title: 'Oil Field Injury Lawyer', shortTitle: 'Oil Field Injuries', description: 'Oilfield and energy sector injury claims.', heroImage: 'oil-field.jpg', category: 'Workplace & Premises' },

@@ -1,5 +1,9 @@
 // Spanish translations for practice area titles
 export const practiceAreaTitlesEs: Record<string, string> = {
+  // General
+  'Personal Injury Lawyer': 'Abogado de Lesiones Personales',
+  'Personal Injury': 'Lesiones Personales',
+
   // Vehicle Accidents
   'Car Accident Lawyer': 'Abogado de Accidentes de Auto',
   'Car Accidents': 'Accidentes de Auto',
@@ -48,9 +52,11 @@ export const practiceAreaTitlesEs: Record<string, string> = {
 
   // Serious Injuries
   'Wrongful Death Lawyer': 'Abogado de Muerte Injusta',
+  'Brain Injury Lawyer': 'Abogado de Lesiones Cerebrales',
+  'Brain Injuries': 'Lesiones Cerebrales',
   'Wrongful Death': 'Muerte Injusta',
   'Traumatic Brain Injury Lawyer': 'Abogado de Lesiones Cerebrales Traumáticas',
-  'Brain Injuries': 'Lesiones Cerebrales',
+  'Traumatic Brain Injuries': 'Lesiones Cerebrales Traumáticas',
   'Spinal Cord Injury Lawyer': 'Abogado de Lesiones de Médula Espinal',
   'Spinal Cord Injuries': 'Lesiones de Médula Espinal',
   'Burn Injury Lawyer': 'Abogado de Lesiones por Quemaduras',
@@ -87,6 +93,8 @@ export const practiceAreaTitlesEs: Record<string, string> = {
   'Repetitive Stress Injuries': 'Lesiones por Estrés Repetitivo',
 
   // Workplace & Premises
+  'Work Injury Lawyer': 'Abogado de Lesiones de Trabajo',
+  'Work Injuries': 'Lesiones de Trabajo',
   'Workplace Injury Lawyer': 'Abogado de Lesiones Laborales',
   'Workplace Injuries': 'Lesiones Laborales',
   'Construction Accident Lawyer': 'Abogado de Accidentes de Construcción',
@@ -149,16 +157,11 @@ export const practiceAreaTitlesEs: Record<string, string> = {
   'Racial Profiling': 'Perfil Racial',
   'First Amendment Retaliation Lawyer': 'Abogado de Represalia por Primera Enmienda',
   'First Amendment Retaliation': 'Represalia por Primera Enmienda',
-
-  // Personal Injury (generic)
-  'Personal Injury Lawyer': 'Abogado de Lesiones Personales',
-  'Personal Injury': 'Lesiones Personales',
-  'Work Injury Lawyer': 'Abogado de Lesiones de Trabajo',
-  'Brain Injury Lawyer': 'Abogado de Lesiones Cerebrales',
 }
 
 // Category translations
 export const categoryTitlesEs: Record<string, string> = {
+  'General': 'General',
   'Vehicle Accidents': 'Accidentes de Vehículos',
   'Serious Injuries': 'Lesiones Graves',
   'Workplace & Premises': 'Laboral y Propiedades',
