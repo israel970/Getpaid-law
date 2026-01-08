@@ -205,9 +205,11 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
-            <div className="aspect-[4/3] bg-gray flex items-center justify-center">
-              <span className="text-gray-light text-sm">{practiceArea.shortTitle}</span>
-            </div>
+            <img
+              src={`/images/heroes/${practiceArea.heroImage}`}
+              alt={practiceArea.title}
+              className="w-full aspect-[4/3] object-cover"
+            />
           </div>
         </div>
       </section>
@@ -403,9 +405,11 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
-            <div className="aspect-[4/3] bg-gray flex items-center justify-center">
-              <span className="text-gray-light text-sm">{city.name}</span>
-            </div>
+            <img
+              src={`/images/heroes/${city.heroImage}`}
+              alt={`${city.name} ${practiceArea.shortTitle} Lawyer`}
+              className="w-full aspect-[4/3] object-cover"
+            />
           </div>
         </div>
       </section>

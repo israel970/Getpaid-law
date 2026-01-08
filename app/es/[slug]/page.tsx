@@ -221,9 +221,11 @@ function SpanishPracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea 
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
-            <div className="aspect-[4/3] bg-gray flex items-center justify-center">
-              <span className="text-gray-light text-sm">{shortTitleEs}</span>
-            </div>
+            <img
+              src={`/images/heroes/${practiceArea.heroImage}`}
+              alt={titleEs}
+              className="w-full aspect-[4/3] object-cover"
+            />
           </div>
         </div>
       </section>
@@ -423,9 +425,11 @@ function SpanishCityPracticePage({ city, practiceArea, slug }: { city: typeof ci
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
-            <div className="aspect-[4/3] bg-gray flex items-center justify-center">
-              <span className="text-gray-light text-sm">{cityNameEs}</span>
-            </div>
+            <img
+              src={`/images/heroes/${city.heroImage}`}
+              alt={`Abogado de ${shortTitleEs} en ${cityNameEs}`}
+              className="w-full aspect-[4/3] object-cover"
+            />
           </div>
         </div>
       </section>
