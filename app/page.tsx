@@ -204,7 +204,7 @@ export default function HomePage() {
             <p className="text-gray-light max-w-xl mx-auto">Find experienced attorneys in your area.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {cities.slice(0, 10).map((city) => (
+            {cities.map((city) => (
               <Link
                 key={city.slug}
                 href={`/${city.slug}-personal-injury-lawyer`}
