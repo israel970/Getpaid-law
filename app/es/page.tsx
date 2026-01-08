@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { practiceAreas } from '@/lib/practiceAreas'
 import { featuredCities } from '@/lib/cities'
 import { getPracticeAreaTitleEs, getCityNameEs } from '@/lib/practiceAreasEs'
+import Schema from '@/components/Schema'
 
 const settlements = [
   { amount: '$13,660,000', type: 'Responsabilidad de Propiedades' },
@@ -40,6 +41,7 @@ export default function SpanishHomePage() {
 
   return (
     <>
+      <Schema type="home" lang="es" />
       {/* Settlement Ticker */}
       <div className="bg-dark py-3 overflow-hidden border-b border-gray">
         <div className="flex animate-scroll">

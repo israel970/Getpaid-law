@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { cities, getCityBySlug, cityPracticeAreas } from '@/lib/cities'
 import { practiceAreas, getPracticeAreaBySlug, PracticeArea } from '@/lib/practiceAreas'
 import { getPracticeAreaTitleEs, getCityNameEs, getCategoryTitleEs } from '@/lib/practiceAreasEs'
+import Schema from '@/components/Schema'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -180,25 +181,7 @@ function SpanishPracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea 
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LegalService",
-            "name": `GetPaid.law - ${titleEs}s`,
-            "description": practiceArea.description,
-            "url": `https://www.getpaid.law/es/${practiceArea.slug}/`,
-            "telephone": "(512) 883-0012",
-            "inLanguage": "es",
-            "areaServed": [
-              { "@type": "State", "name": "Texas" },
-              { "@type": "Country", "name": "United States" }
-            ],
-            "priceRange": "Consulta Gratis"
-          })
-        }}
-      />
+      <Schema type="practiceArea" practiceArea={practiceArea} lang="es" />
 
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4">
@@ -382,25 +365,7 @@ function SpanishCityPracticePage({ city, practiceArea, slug }: { city: typeof ci
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LegalService",
-            "name": `GetPaid.law - Abogado de ${shortTitleEs} en ${cityNameEs}`,
-            "description": `Abogado experimentado de ${shortTitleEs.toLowerCase()} en ${cityNameEs} luchando por la máxima compensación.`,
-            "url": `https://www.getpaid.law/es/${slug}/`,
-            "telephone": "(512) 883-0012",
-            "inLanguage": "es",
-            "areaServed": {
-              "@type": "City",
-              "name": city.name,
-              "containedInPlace": { "@type": "State", "name": "Texas" }
-            }
-          })
-        }}
-      />
+      <Schema type="cityPractice" city={city} practiceArea={practiceArea} lang="es" />
 
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4">
