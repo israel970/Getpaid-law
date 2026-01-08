@@ -1,0 +1,213 @@
+// Spanish translations for practice area titles
+export const practiceAreaTitlesEs: Record<string, string> = {
+  // Vehicle Accidents
+  'Car Accident Lawyer': 'Abogado de Accidentes de Auto',
+  'Car Accidents': 'Accidentes de Auto',
+  'Truck Accident Lawyer': 'Abogado de Accidentes de Camión',
+  'Truck Accidents': 'Accidentes de Camión',
+  '18-Wheeler Accident Lawyer': 'Abogado de Accidentes de 18 Ruedas',
+  '18-Wheeler Accidents': 'Accidentes de 18 Ruedas',
+  'Motorcycle Accident Lawyer': 'Abogado de Accidentes de Motocicleta',
+  'Motorcycle Accidents': 'Accidentes de Motocicleta',
+  'Hit and Run Lawyer': 'Abogado de Atropello y Fuga',
+  'Hit and Run': 'Atropello y Fuga',
+  'Drunk Driving Accident Lawyer': 'Abogado de Accidentes por Conducir Ebrio',
+  'Drunk Driving Accidents': 'Accidentes por Conducir Ebrio',
+  'Rideshare Accident Lawyer': 'Abogado de Accidentes de Viaje Compartido',
+  'Rideshare Accidents': 'Accidentes de Viaje Compartido',
+  'Uber/Lyft Accident Lawyer': 'Abogado de Accidentes de Uber/Lyft',
+  'Uber/Lyft Accidents': 'Accidentes de Uber/Lyft',
+  'Box Truck Accident Lawyer': 'Abogado de Accidentes de Camión de Carga',
+  'Box Truck Accidents': 'Accidentes de Camión de Carga',
+  'Delivery Truck Accident Lawyer': 'Abogado de Accidentes de Camión de Entrega',
+  'Delivery Truck Accidents': 'Accidentes de Camión de Entrega',
+  'Dump Truck Accident Lawyer': 'Abogado de Accidentes de Camión de Volteo',
+  'Dump Truck Accidents': 'Accidentes de Camión de Volteo',
+  'Garbage Truck Accident Lawyer': 'Abogado de Accidentes de Camión de Basura',
+  'Garbage Truck Accidents': 'Accidentes de Camión de Basura',
+  'Tanker Truck Accident Lawyer': 'Abogado de Accidentes de Camión Cisterna',
+  'Tanker Truck Accidents': 'Accidentes de Camión Cisterna',
+  'Tow Truck Accident Lawyer': 'Abogado de Accidentes de Grúa',
+  'Tow Truck Accidents': 'Accidentes de Grúa',
+  'Concrete Mixer Accident Lawyer': 'Abogado de Accidentes de Mezcladora de Concreto',
+  'Concrete Mixer Accidents': 'Accidentes de Mezcladora de Concreto',
+  'Oversized Load Accident Lawyer': 'Abogado de Accidentes de Carga Sobredimensionada',
+  'Oversized Load Accidents': 'Accidentes de Carga Sobredimensionada',
+  'Head-On Collision Lawyer': 'Abogado de Colisiones Frontales',
+  'Head-On Collisions': 'Colisiones Frontales',
+  'Rear-End Collision Lawyer': 'Abogado de Colisiones Traseras',
+  'Rear-End Collisions': 'Colisiones Traseras',
+  'T-Bone Accident Lawyer': 'Abogado de Accidentes Laterales',
+  'T-Bone Accidents': 'Accidentes Laterales',
+  'Multi-Vehicle Accident Lawyer': 'Abogado de Accidentes de Múltiples Vehículos',
+  'Multi-Vehicle Accidents': 'Accidentes de Múltiples Vehículos',
+  'Distracted Driving Lawyer': 'Abogado de Conducción Distraída',
+  'Distracted Driving': 'Conducción Distraída',
+  'Uninsured Motorist Lawyer': 'Abogado de Conductores Sin Seguro',
+  'Uninsured Motorist': 'Conductores Sin Seguro',
+
+  // Serious Injuries
+  'Wrongful Death Lawyer': 'Abogado de Muerte Injusta',
+  'Wrongful Death': 'Muerte Injusta',
+  'Traumatic Brain Injury Lawyer': 'Abogado de Lesiones Cerebrales Traumáticas',
+  'Brain Injuries': 'Lesiones Cerebrales',
+  'Spinal Cord Injury Lawyer': 'Abogado de Lesiones de Médula Espinal',
+  'Spinal Cord Injuries': 'Lesiones de Médula Espinal',
+  'Burn Injury Lawyer': 'Abogado de Lesiones por Quemaduras',
+  'Burn Injuries': 'Lesiones por Quemaduras',
+  'Amputation Injury Lawyer': 'Abogado de Lesiones por Amputación',
+  'Amputation Injuries': 'Lesiones por Amputación',
+  'Paralysis Injury Lawyer': 'Abogado de Lesiones por Parálisis',
+  'Paralysis Injuries': 'Lesiones por Parálisis',
+  'Coma Injury Lawyer': 'Abogado de Lesiones por Coma',
+  'Coma Injuries': 'Lesiones por Coma',
+  'Back Injury Lawyer': 'Abogado de Lesiones de Espalda',
+  'Back Injuries': 'Lesiones de Espalda',
+  'Neck Injury Lawyer': 'Abogado de Lesiones de Cuello',
+  'Neck Injuries': 'Lesiones de Cuello',
+  'Whiplash Injury Lawyer': 'Abogado de Latigazo Cervical',
+  'Whiplash Injuries': 'Lesiones de Latigazo Cervical',
+  'Broken Bones Lawyer': 'Abogado de Huesos Rotos',
+  'Broken Bones': 'Huesos Rotos',
+  'Concussion Injury Lawyer': 'Abogado de Lesiones por Conmoción',
+  'Concussion Injuries': 'Lesiones por Conmoción',
+  'Internal Injuries Lawyer': 'Abogado de Lesiones Internas',
+  'Internal Injuries': 'Lesiones Internas',
+  'Nerve Damage Lawyer': 'Abogado de Daño Nervioso',
+  'Nerve Damage': 'Daño Nervioso',
+  'Soft Tissue Injury Lawyer': 'Abogado de Lesiones de Tejido Blando',
+  'Soft Tissue Injuries': 'Lesiones de Tejido Blando',
+  'Joint Injury Lawyer': 'Abogado de Lesiones de Articulaciones',
+  'Joint Injuries': 'Lesiones de Articulaciones',
+  'Road Rash Lawyer': 'Abogado de Quemaduras por Asfalto',
+  'Road Rash': 'Quemaduras por Asfalto',
+  'Scarring & Disfigurement Lawyer': 'Abogado de Cicatrices y Desfiguración',
+  'Scarring & Disfigurement': 'Cicatrices y Desfiguración',
+  'Repetitive Stress Injury Lawyer': 'Abogado de Lesiones por Estrés Repetitivo',
+  'Repetitive Stress Injuries': 'Lesiones por Estrés Repetitivo',
+
+  // Workplace & Premises
+  'Workplace Injury Lawyer': 'Abogado de Lesiones Laborales',
+  'Workplace Injuries': 'Lesiones Laborales',
+  'Construction Accident Lawyer': 'Abogado de Accidentes de Construcción',
+  'Construction Accidents': 'Accidentes de Construcción',
+  'Oil Field Injury Lawyer': 'Abogado de Lesiones en Campos Petroleros',
+  'Oil Field Injuries': 'Lesiones en Campos Petroleros',
+  'Machinery Accident Lawyer': 'Abogado de Accidentes de Maquinaria',
+  'Machinery Accidents': 'Accidentes de Maquinaria',
+  'Electrocution Injury Lawyer': 'Abogado de Lesiones por Electrocución',
+  'Electrocution Injuries': 'Lesiones por Electrocución',
+  'Fall From Height Lawyer': 'Abogado de Caídas de Altura',
+  'Falls From Height': 'Caídas de Altura',
+  'Workplace Burn Lawyer': 'Abogado de Quemaduras Laborales',
+  'Workplace Burns': 'Quemaduras Laborales',
+  'Workplace Vehicle Accident Lawyer': 'Abogado de Accidentes de Vehículos Laborales',
+  'Workplace Vehicle Accidents': 'Accidentes de Vehículos Laborales',
+  'Toxic Exposure Lawyer': 'Abogado de Exposición Tóxica',
+  'Toxic Exposure': 'Exposición Tóxica',
+  'Slip and Fall Lawyer': 'Abogado de Resbalones y Caídas',
+  'Slip & Fall': 'Resbalones y Caídas',
+  'Premises Liability Lawyer': 'Abogado de Responsabilidad de Propiedades',
+  'Premises Liability': 'Responsabilidad de Propiedades',
+  'Dog Bite Lawyer': 'Abogado de Mordeduras de Perro',
+  'Dog Bites': 'Mordeduras de Perro',
+  'Wet Floor Accident Lawyer': 'Abogado de Accidentes de Piso Mojado',
+  'Wet Floor Accidents': 'Accidentes de Piso Mojado',
+  'Stairway Accident Lawyer': 'Abogado de Accidentes en Escaleras',
+  'Stairway Accidents': 'Accidentes en Escaleras',
+  'Uneven Surface Accident Lawyer': 'Abogado de Accidentes por Superficie Irregular',
+  'Uneven Surface Accidents': 'Accidentes por Superficie Irregular',
+  'Poor Lighting Accident Lawyer': 'Abogado de Accidentes por Mala Iluminación',
+  'Poor Lighting Accidents': 'Accidentes por Mala Iluminación',
+  'Cluttered Aisle Accident Lawyer': 'Abogado de Accidentes en Pasillos',
+  'Cluttered Aisle Accidents': 'Accidentes en Pasillos',
+  'Weather-Related Fall Lawyer': 'Abogado de Caídas por Clima',
+  'Weather-Related Falls': 'Caídas por Clima',
+  'Medical Malpractice Lawyer': 'Abogado de Mala Práctica Médica',
+  'Medical Malpractice': 'Mala Práctica Médica',
+  'Product Liability Lawyer': 'Abogado de Productos Defectuosos',
+  'Product Liability': 'Productos Defectuosos',
+
+  // Civil Rights
+  'Police Brutality Lawyer': 'Abogado de Brutalidad Policial',
+  'Police Brutality': 'Brutalidad Policial',
+  'Excessive Force Lawyer': 'Abogado de Fuerza Excesiva',
+  'Excessive Force': 'Fuerza Excesiva',
+  'Wrongful Arrest Lawyer': 'Abogado de Arresto Ilegal',
+  'Wrongful Arrest': 'Arresto Ilegal',
+  'False Imprisonment Lawyer': 'Abogado de Encarcelamiento Falso',
+  'False Imprisonment': 'Encarcelamiento Falso',
+  'Malicious Prosecution Lawyer': 'Abogado de Procesamiento Malicioso',
+  'Malicious Prosecution': 'Procesamiento Malicioso',
+  'Illegal Search & Seizure Lawyer': 'Abogado de Registro e Incautación Ilegal',
+  'Illegal Search & Seizure': 'Registro e Incautación Ilegal',
+  'Police Shooting Lawyer': 'Abogado de Disparos Policiales',
+  'Police Shootings': 'Disparos Policiales',
+  'Jail/Prison Abuse Lawyer': 'Abogado de Abuso en Cárcel/Prisión',
+  'Jail/Prison Abuse': 'Abuso en Cárcel/Prisión',
+  'Racial Profiling Lawyer': 'Abogado de Perfil Racial',
+  'Racial Profiling': 'Perfil Racial',
+  'First Amendment Retaliation Lawyer': 'Abogado de Represalia por Primera Enmienda',
+  'First Amendment Retaliation': 'Represalia por Primera Enmienda',
+
+  // Personal Injury (generic)
+  'Personal Injury Lawyer': 'Abogado de Lesiones Personales',
+  'Personal Injury': 'Lesiones Personales',
+  'Work Injury Lawyer': 'Abogado de Lesiones de Trabajo',
+  'Brain Injury Lawyer': 'Abogado de Lesiones Cerebrales',
+}
+
+// Category translations
+export const categoryTitlesEs: Record<string, string> = {
+  'Vehicle Accidents': 'Accidentes de Vehículos',
+  'Serious Injuries': 'Lesiones Graves',
+  'Workplace & Premises': 'Laboral y Propiedades',
+  'Civil Rights': 'Derechos Civiles',
+}
+
+// City name translations (some cities have Spanish names)
+export const cityNamesEs: Record<string, string> = {
+  'Austin': 'Austin',
+  'Houston': 'Houston',
+  'Dallas': 'Dallas',
+  'San Antonio': 'San Antonio',
+  'Bee Cave': 'Bee Cave',
+  'Cedar Park': 'Cedar Park',
+  'Georgetown': 'Georgetown',
+  'Kyle': 'Kyle',
+  'Lakeway': 'Lakeway',
+  'Leander': 'Leander',
+  'Pflugerville': 'Pflugerville',
+  'Round Rock': 'Round Rock',
+  'San Marcos': 'San Marcos',
+  'Rio Grande Valley': 'Valle del Río Grande',
+  'West Texas': 'Oeste de Texas',
+}
+
+// Get Spanish translation for practice area title
+export function getPracticeAreaTitleEs(englishTitle: string): string {
+  return practiceAreaTitlesEs[englishTitle] || englishTitle
+}
+
+// Get Spanish translation for category
+export function getCategoryTitleEs(englishCategory: string): string {
+  return categoryTitlesEs[englishCategory] || englishCategory
+}
+
+// Get Spanish translation for city name
+export function getCityNameEs(englishCity: string): string {
+  return cityNamesEs[englishCity] || englishCity
+}
+
+// Blog category translations
+export const blogCategoryEs: Record<string, string> = {
+  'Car Accidents': 'Accidentes de Auto',
+  'Legal Guide': 'Guía Legal',
+  'Settlement Guide': 'Guía de Acuerdos',
+  'Personal Injury': 'Lesiones Personales',
+  'Texas Law': 'Ley de Texas',
+}
+
+export function getBlogCategoryEs(englishCategory: string): string {
+  return blogCategoryEs[englishCategory] || englishCategory
+}

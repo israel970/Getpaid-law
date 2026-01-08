@@ -2,6 +2,57 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
+
+// Language Toggle Component
+function LanguageToggle() {
+  const pathname = usePathname()
+  const isSpanish = pathname.startsWith('/es')
+
+  const getToggleLink = () => {
+    if (isSpanish) {
+      // Spanish to English
+      if (pathname === '/es') return '/'
+      if (pathname === '/es/nuestra-mision') return '/our-mission'
+      if (pathname === '/es/nuestro-proceso') return '/our-process'
+      if (pathname === '/es/socios') return '/partners'
+      if (pathname === '/es/contacto') return '/contact'
+      if (pathname === '/es/gracias') return '/thank-you'
+      if (pathname === '/es/blog') return '/blog'
+      if (pathname.startsWith('/es/blog/')) return pathname.replace('/es/blog/', '/blog/')
+      // Practice area pages
+      if (pathname.startsWith('/es/')) {
+        const rest = pathname.substring(4) // Remove '/es/'
+        return '/' + rest
+      }
+      return '/'
+    } else {
+      // English to Spanish
+      if (pathname === '/') return '/es'
+      if (pathname === '/our-mission') return '/es/nuestra-mision'
+      if (pathname === '/our-process') return '/es/nuestro-proceso'
+      if (pathname === '/partners') return '/es/socios'
+      if (pathname === '/contact') return '/es/contacto'
+      if (pathname === '/thank-you') return '/es/gracias'
+      if (pathname === '/blog') return '/es/blog'
+      if (pathname.startsWith('/blog/')) return '/es' + pathname
+      // Practice area and city pages
+      return '/es' + pathname
+    }
+  }
+
+  return (
+    <Link href={getToggleLink()} className="flex items-center gap-2 no-underline">
+      <span className={`text-sm font-medium ${!isSpanish ? 'text-white' : 'text-gray-light'}`}>EN</span>
+      <div className="relative w-12 h-6 bg-gray rounded-sm p-0.5 cursor-pointer transition-colors hover:bg-dark">
+        <div className={`absolute top-0.5 w-5 h-5 bg-accent rounded-sm shadow-md transition-transform duration-300 ${
+          isSpanish ? 'translate-x-6' : 'translate-x-0.5'
+        }`} />
+      </div>
+      <span className={`text-sm font-medium ${isSpanish ? 'text-white' : 'text-gray-light'}`}>ES</span>
+    </Link>
+  )
+}
 
 const practiceAreas = [
   { name: 'Car Accidents', href: '/car-accident-lawyer' },
@@ -118,13 +169,16 @@ export default function Navigation() {
           </Link>
         </nav>
 
-        {/* Phone Number */}
-        <a href="tel:512-883-0012" className="hidden md:flex items-center gap-2 text-white no-underline font-bold text-xl hover:text-accent transition-colors">
-          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-          </svg>
-          <span>(512) 883-0012</span>
-        </a>
+        {/* Language Toggle & Phone Number */}
+        <div className="hidden md:flex items-center gap-6">
+          <LanguageToggle />
+          <a href="tel:512-883-0012" className="flex items-center gap-2 text-white no-underline font-bold text-xl hover:text-accent transition-colors">
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span>(512) 883-0012</span>
+          </a>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
