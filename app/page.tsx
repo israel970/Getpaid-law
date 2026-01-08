@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { practiceAreas, categories } from '@/lib/practiceAreas'
-import { cities } from '@/lib/cities'
+import { featuredCities } from '@/lib/cities'
 import Schema from '@/components/Schema'
 
 const settlements = [
@@ -203,8 +203,8 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-black mb-4">Serving All of Texas</h2>
             <p className="text-gray-light max-w-xl mx-auto">Find experienced attorneys in your area.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {cities.map((city) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+            {featuredCities.map((city) => (
               <Link
                 key={city.slug}
                 href={`/${city.slug}-personal-injury-lawyer`}

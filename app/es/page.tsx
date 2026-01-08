@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { practiceAreas } from '@/lib/practiceAreas'
-import { cities } from '@/lib/cities'
+import { featuredCities } from '@/lib/cities'
 import { getPracticeAreaTitleEs, getCityNameEs } from '@/lib/practiceAreasEs'
 
 const settlements = [
@@ -202,8 +202,8 @@ export default function SpanishHomePage() {
             <h2 className="text-3xl md:text-4xl font-black mb-4">Sirviendo Todo Texas</h2>
             <p className="text-gray-light max-w-xl mx-auto">Encuentre abogados experimentados en su área.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {cities.map((city) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+            {featuredCities.map((city) => (
               <Link
                 key={city.slug}
                 href={`/es/${city.slug}-personal-injury-lawyer`}
