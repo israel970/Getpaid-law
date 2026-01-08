@@ -116,7 +116,7 @@ export default function ContactPage() {
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="John Smith"
+                  placeholder=""
                   required
                   className="w-full bg-black border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
                 />
@@ -128,7 +128,7 @@ export default function ContactPage() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="(555) 123-4567"
+                  placeholder=""
                   required
                   className="w-full bg-black border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
                 />
@@ -140,7 +140,7 @@ export default function ContactPage() {
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="john@example.com"
+                  placeholder=""
                   className="w-full bg-black border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
                 />
               </div>

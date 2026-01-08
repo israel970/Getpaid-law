@@ -118,7 +118,7 @@ export default function SpanishContactPage() {
                     type="tel"
                     id="phone"
                     name="entry.phone"
-                    placeholder="(555) 123-4567"
+                    placeholder=""
                     required
                     className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
                   />
@@ -129,7 +129,7 @@ export default function SpanishContactPage() {
                     type="email"
                     id="email"
                     name="entry.email"
-                    placeholder="correo@ejemplo.com"
+                    placeholder=""
                     className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
                   />
                 </div>

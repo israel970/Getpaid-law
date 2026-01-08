@@ -90,7 +90,7 @@ export default function SpanishHomePage() {
                     type="text"
                     id="name"
                     name="entry.name"
-                    placeholder="Juan García"
+                    placeholder=""
                     required
                     className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
                   />
@@ -101,7 +101,7 @@ export default function SpanishHomePage() {
                     type="tel"
                     id="phone"
                     name="entry.phone"
-                    placeholder="(555) 123-4567"
+                    placeholder=""
                     required
                     className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
                   />
