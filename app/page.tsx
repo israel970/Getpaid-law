@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { practiceAreas, categories } from '@/lib/practiceAreas'
 import { cities } from '@/lib/cities'
+import Schema from '@/components/Schema'
 
 const settlements = [
   { amount: '$13,660,000', type: 'Premises Liability' },
@@ -39,6 +40,7 @@ export default function HomePage() {
 
   return (
     <>
+      <Schema type="home" />
       {/* Settlement Ticker */}
       <div className="bg-dark py-3 overflow-hidden border-b border-gray">
         <div className="flex animate-scroll">

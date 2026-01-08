@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { cities, getCityBySlug, cityPracticeAreas } from '@/lib/cities'
 import { practiceAreas, getPracticeAreaBySlug, PracticeArea } from '@/lib/practiceAreas'
+import Schema from '@/components/Schema'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -165,24 +166,7 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LegalService",
-            "name": `GetPaid.law - ${practiceArea.title}s`,
-            "description": practiceArea.description,
-            "url": `https://www.getpaid.law/${practiceArea.slug}/`,
-            "telephone": "(512) 883-0012",
-            "areaServed": [
-              { "@type": "State", "name": "Texas" },
-              { "@type": "Country", "name": "United States" }
-            ],
-            "priceRange": "Free Consultation"
-          })
-        }}
-      />
+      <Schema type="practiceArea" practiceArea={practiceArea} />
 
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4">
@@ -363,24 +347,7 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LegalService",
-            "name": `GetPaid.law - ${city.name} ${practiceArea.shortTitle} Lawyer`,
-            "description": `Experienced ${city.name} ${practiceArea.shortTitle.toLowerCase()} lawyer fighting for maximum compensation.`,
-            "url": `https://www.getpaid.law/${slug}/`,
-            "telephone": "(512) 883-0012",
-            "areaServed": {
-              "@type": "City",
-              "name": city.name,
-              "containedInPlace": { "@type": "State", "name": "Texas" }
-            }
-          })
-        }}
-      />
+      <Schema type="cityPractice" city={city} practiceArea={practiceArea} />
 
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4">
