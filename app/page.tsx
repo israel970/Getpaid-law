@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
 import { practiceAreas } from '@/lib/practiceAreas'
 import { featuredCities } from '@/lib/cities'
@@ -44,11 +45,11 @@ const steps = [
 
 // Media logos for "As Seen On" section
 const mediaLogos = [
-  { name: 'CNN', width: 80 },
-  { name: 'NBC', width: 70 },
-  { name: 'Telemundo', width: 120 },
-  { name: 'Univision', width: 110 },
-  { name: 'Daily Mail', width: 120 },
+  { name: 'CNN', src: '/images/media/cnn.svg', width: 80, height: 32 },
+  { name: 'NBC', src: '/images/media/nbc.svg', width: 60, height: 40 },
+  { name: 'Telemundo', src: '/images/media/telemundo.svg', width: 140, height: 32 },
+  { name: 'Univision', src: '/images/media/univision.svg', width: 130, height: 32 },
+  { name: 'Daily Mail', src: '/images/media/dailymail.svg', width: 130, height: 32 },
 ]
 
 // Award badges
@@ -227,31 +228,13 @@ export default function HomePage() {
                 className="flex-shrink-0 px-8 md:px-12 flex items-center justify-center group cursor-pointer"
               >
                 <div className="opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,184,0,0.5)]">
-                  {logo.name === 'CNN' && (
-                    <svg viewBox="0 0 100 40" className="h-8 md:h-10 w-auto fill-white">
-                      <text x="50" y="30" textAnchor="middle" className="text-3xl font-black">CNN</text>
-                    </svg>
-                  )}
-                  {logo.name === 'NBC' && (
-                    <svg viewBox="0 0 100 40" className="h-8 md:h-10 w-auto fill-white">
-                      <text x="50" y="30" textAnchor="middle" className="text-3xl font-black">NBC</text>
-                    </svg>
-                  )}
-                  {logo.name === 'Telemundo' && (
-                    <svg viewBox="0 0 150 40" className="h-8 md:h-10 w-auto fill-white">
-                      <text x="75" y="28" textAnchor="middle" className="text-2xl font-bold">TELEMUNDO</text>
-                    </svg>
-                  )}
-                  {logo.name === 'Univision' && (
-                    <svg viewBox="0 0 140 40" className="h-8 md:h-10 w-auto fill-white">
-                      <text x="70" y="28" textAnchor="middle" className="text-2xl font-bold">UNIVISION</text>
-                    </svg>
-                  )}
-                  {logo.name === 'Daily Mail' && (
-                    <svg viewBox="0 0 150 40" className="h-8 md:h-10 w-auto fill-white">
-                      <text x="75" y="28" textAnchor="middle" className="text-2xl font-bold italic">Daily Mail</text>
-                    </svg>
-                  )}
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={logo.width}
+                    height={logo.height}
+                    className="h-8 md:h-10 w-auto"
+                  />
                 </div>
               </div>
             ))}
