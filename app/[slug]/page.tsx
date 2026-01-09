@@ -4,6 +4,9 @@ import { notFound } from 'next/navigation'
 import { cities, getCityBySlug, cityPracticeAreas } from '@/lib/cities'
 import { practiceAreas, getPracticeAreaBySlug, PracticeArea } from '@/lib/practiceAreas'
 import Schema from '@/components/Schema'
+import ScrollReveal from '@/components/ScrollReveal'
+import TiltCard from '@/components/TiltCard'
+import TexasMap from '@/components/TexasMap'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -171,7 +174,7 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4">
         <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-10 items-center">
-          <div>
+          <ScrollReveal direction="left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6">
               Injured? <span className="text-accent">Get the Compensation You Deserve</span>
             </h1>
@@ -187,42 +190,50 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
               </a>
               <p className="text-gray-light text-sm text-center">Free consultation • Available 24/7 • No fee unless you win</p>
             </div>
-          </div>
-          <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
-            <img
-              src={`/images/heroes/${practiceArea.heroImage}`}
-              alt={practiceArea.title}
-              className="w-full aspect-[4/3] object-cover"
-            />
-          </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right">
+            <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
+              <img
+                src={`/images/heroes/${practiceArea.heroImage}`}
+                alt={practiceArea.title}
+                className="w-full aspect-[4/3] object-cover"
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Location Selection */}
       <section className="py-16 px-4 bg-dark">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-black mb-3">Select Your Location</h2>
-            <p className="text-gray-light">Find a {practiceArea.shortTitle.toLowerCase()} lawyer near you.</p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-black mb-3">Select Your Location</h2>
+              <p className="text-gray-light">Find a {practiceArea.shortTitle.toLowerCase()} lawyer near you.</p>
+            </div>
+          </ScrollReveal>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {locations.map((location) => (
-              <Link key={location.slug} href={`/${location.slug}-${practiceArea.slug.replace('-lawyer', '')}-lawyer`} className="bg-black border border-gray rounded-xl p-6 hover:border-accent transition-all group">
-                <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  {location.name}
-                </h3>
-                <p className="text-gray-light text-sm mb-3">{location.description}</p>
-                <span className="text-accent font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  View {location.name} lawyers
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
-              </Link>
+            {locations.map((location, index) => (
+              <ScrollReveal key={location.slug} delay={index * 100}>
+                <TiltCard>
+                  <Link href={`/${location.slug}-${practiceArea.slug.replace('-lawyer', '')}-lawyer`} className="block bg-black border border-gray rounded-xl p-6 hover:border-accent transition-all group h-full">
+                    <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
+                      <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      {location.name}
+                    </h3>
+                    <p className="text-gray-light text-sm mb-3">{location.description}</p>
+                    <span className="text-accent font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                      View {location.name} lawyers
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </Link>
+                </TiltCard>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -231,42 +242,54 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
       {/* Why You Need a Lawyer */}
       <section className="py-16 px-4">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-6">Why You Need a {practiceArea.shortTitle} Lawyer</h2>
-          <p className="text-gray-light text-lg mb-6 leading-relaxed">
-            When you&apos;re dealing with a {practiceArea.shortTitle.toLowerCase()} case, insurance companies immediately start working to minimize what they pay you—not to help you get better.
-          </p>
-          <p className="text-gray-light text-lg mb-8 leading-relaxed">
-            An experienced {practiceArea.shortTitle.toLowerCase()} lawyer levels the playing field. They handle the insurance adjusters, gather evidence, document your injuries, and fight for every dollar you deserve. And because they work on contingency, you don&apos;t pay a dime unless they win your case.
-          </p>
-          <h3 className="text-xl font-bold mb-4">What Insurance Companies Don&apos;t Want You to Know</h3>
-          <ul className="text-gray-light space-y-3 mb-8 list-disc pl-6">
-            <li><strong className="text-white">Quick settlement offers</strong> — They&apos;ll offer money fast, before you know the full extent of your injuries.</li>
-            <li><strong className="text-white">Recorded statements</strong> — They&apos;ll ask for a recorded statement hoping you&apos;ll say something they can use against you.</li>
-            <li><strong className="text-white">Delay tactics</strong> — They&apos;ll drag out the process hoping you&apos;ll get frustrated and accept less.</li>
-            <li><strong className="text-white">Minimize your injuries</strong> — They&apos;ll question whether your injuries are really as serious as you claim.</li>
-          </ul>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-6">Why You Need a {practiceArea.shortTitle} Lawyer</h2>
+            <p className="text-gray-light text-lg mb-6 leading-relaxed">
+              When you&apos;re dealing with a {practiceArea.shortTitle.toLowerCase()} case, insurance companies immediately start working to minimize what they pay you—not to help you get better.
+            </p>
+            <p className="text-gray-light text-lg mb-8 leading-relaxed">
+              An experienced {practiceArea.shortTitle.toLowerCase()} lawyer levels the playing field. They handle the insurance adjusters, gather evidence, document your injuries, and fight for every dollar you deserve. And because they work on contingency, you don&apos;t pay a dime unless they win your case.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <h3 className="text-xl font-bold mb-4">What Insurance Companies Don&apos;t Want You to Know</h3>
+            <ul className="text-gray-light space-y-3 mb-8 list-disc pl-6">
+              <li><strong className="text-gold">Quick settlement offers</strong> — They&apos;ll offer money fast, before you know the full extent of your injuries.</li>
+              <li><strong className="text-gold">Recorded statements</strong> — They&apos;ll ask for a recorded statement hoping you&apos;ll say something they can use against you.</li>
+              <li><strong className="text-gold">Delay tactics</strong> — They&apos;ll drag out the process hoping you&apos;ll get frustrated and accept less.</li>
+              <li><strong className="text-gold">Minimize your injuries</strong> — They&apos;ll question whether your injuries are really as serious as you claim.</li>
+            </ul>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Texas Laws */}
       <section className="py-16 px-4 bg-dark">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-6">Texas Laws You Need to Know</h2>
-          <h3 className="text-xl font-bold mb-3 mt-8">Statute of Limitations: 2 Years</h3>
-          <p className="text-gray-light text-lg mb-6 leading-relaxed">
-            In Texas, you have <strong className="text-white">2 years from the date of your injury</strong> to file a personal injury lawsuit. If you miss this deadline, you lose your right to sue forever.
-          </p>
-          <h3 className="text-xl font-bold mb-3 mt-8">Modified Comparative Fault (51% Rule)</h3>
-          <p className="text-gray-light text-lg mb-4 leading-relaxed">Texas follows a &quot;modified comparative fault&quot; system:</p>
-          <ul className="text-gray-light space-y-2 mb-6 list-disc pl-6">
-            <li>You can recover damages as long as you&apos;re <strong className="text-white">50% or less</strong> at fault</li>
-            <li>If you&apos;re 51% or more at fault, you recover nothing</li>
-            <li>Your compensation is reduced by your percentage of fault</li>
-          </ul>
-          <h3 className="text-xl font-bold mb-3 mt-8">No Cap on Damages</h3>
-          <p className="text-gray-light text-lg leading-relaxed">
-            Unlike some states, Texas does not cap damages in most personal injury cases. You can pursue full compensation for all economic and non-economic damages.
-          </p>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-6">Texas Laws You Need to Know</h2>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <h3 className="text-xl font-bold mb-3 mt-8">Statute of Limitations: <span className="text-gold">2 Years</span></h3>
+            <p className="text-gray-light text-lg mb-6 leading-relaxed">
+              In Texas, you have <strong className="text-gold">2 years from the date of your injury</strong> to file a personal injury lawsuit. If you miss this deadline, you lose your right to sue forever.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={200}>
+            <h3 className="text-xl font-bold mb-3 mt-8">Modified Comparative Fault (<span className="text-gold">51% Rule</span>)</h3>
+            <p className="text-gray-light text-lg mb-4 leading-relaxed">Texas follows a &quot;modified comparative fault&quot; system:</p>
+            <ul className="text-gray-light space-y-2 mb-6 list-disc pl-6">
+              <li>You can recover damages as long as you&apos;re <strong className="text-gold">50% or less</strong> at fault</li>
+              <li>If you&apos;re 51% or more at fault, you recover nothing</li>
+              <li>Your compensation is reduced by your percentage of fault</li>
+            </ul>
+          </ScrollReveal>
+          <ScrollReveal delay={300}>
+            <h3 className="text-xl font-bold mb-3 mt-8">No Cap on Damages</h3>
+            <p className="text-gray-light text-lg leading-relaxed">
+              Unlike some states, Texas does not cap damages in most personal injury cases. You can pursue <strong className="text-gold">full compensation</strong> for all economic and non-economic damages.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -274,17 +297,23 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
       {relatedAreas.length > 0 && (
         <section className="py-16 px-4">
           <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="text-2xl md:text-3xl font-black mb-3">Related Practice Areas</h2>
-              <p className="text-gray-light">Our attorneys also handle these types of cases.</p>
-            </div>
+            <ScrollReveal>
+              <div className="text-center mb-10">
+                <h2 className="text-2xl md:text-3xl font-black mb-3">Related Practice Areas</h2>
+                <p className="text-gray-light">Our attorneys also handle these types of cases.</p>
+              </div>
+            </ScrollReveal>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {relatedAreas.map((related) => (
-                <Link key={related.slug} href={`/${related.slug}`} className="bg-dark border border-gray rounded-xl p-6 hover:border-accent transition-all">
-                  <h3 className="text-lg font-bold mb-2">{related.shortTitle}</h3>
-                  <p className="text-gray-light text-sm mb-3">{related.description}</p>
-                  <span className="text-accent font-semibold text-sm">Learn more →</span>
-                </Link>
+              {relatedAreas.map((related, index) => (
+                <ScrollReveal key={related.slug} delay={index * 100}>
+                  <TiltCard>
+                    <Link href={`/${related.slug}`} className="block bg-dark border border-gray rounded-xl p-6 hover:border-accent transition-all h-full">
+                      <h3 className="text-lg font-bold mb-2">{related.shortTitle}</h3>
+                      <p className="text-gray-light text-sm mb-3">{related.description}</p>
+                      <span className="text-accent font-semibold text-sm">Learn more →</span>
+                    </Link>
+                  </TiltCard>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -294,24 +323,34 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-dark">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Frequently Asked Questions</h2>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Frequently Asked Questions</h2>
+          </ScrollReveal>
           <div className="border-t border-gray">
-            <div className="py-6 border-b border-gray">
-              <h3 className="text-lg font-semibold mb-3">How much does a {practiceArea.shortTitle.toLowerCase()} lawyer cost?</h3>
-              <p className="text-gray-light leading-relaxed">Most lawyers work on contingency, meaning you pay nothing upfront. The attorney only gets paid if you win your case, typically 33% of your settlement.</p>
-            </div>
-            <div className="py-6 border-b border-gray">
-              <h3 className="text-lg font-semibold mb-3">How long do I have to file a claim in Texas?</h3>
-              <p className="text-gray-light leading-relaxed">In Texas, you have 2 years from the date of the injury to file a personal injury lawsuit. Contact an attorney as soon as possible to protect your rights.</p>
-            </div>
-            <div className="py-6 border-b border-gray">
-              <h3 className="text-lg font-semibold mb-3">How much is my case worth?</h3>
-              <p className="text-gray-light leading-relaxed">Case values depend on medical expenses, lost wages, pain and suffering, and injury severity. Minor cases might settle for $10,000-$25,000, while serious injuries can be worth $100,000 to several million dollars.</p>
-            </div>
-            <div className="py-6 border-b border-gray">
-              <h3 className="text-lg font-semibold mb-3">Should I accept the insurance company&apos;s first offer?</h3>
-              <p className="text-gray-light leading-relaxed">Almost never. Insurance companies make quick, low offers hoping you&apos;ll settle before understanding your injuries. Always consult an attorney before accepting any offer.</p>
-            </div>
+            <ScrollReveal delay={100}>
+              <div className="py-6 border-b border-gray">
+                <h3 className="text-lg font-semibold mb-3">How much does a {practiceArea.shortTitle.toLowerCase()} lawyer cost?</h3>
+                <p className="text-gray-light leading-relaxed">Most lawyers work on contingency, meaning you pay nothing upfront. The attorney only gets paid if you win your case, typically <span className="text-gold font-semibold">33%</span> of your settlement.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={150}>
+              <div className="py-6 border-b border-gray">
+                <h3 className="text-lg font-semibold mb-3">How long do I have to file a claim in Texas?</h3>
+                <p className="text-gray-light leading-relaxed">In Texas, you have <span className="text-gold font-semibold">2 years</span> from the date of the injury to file a personal injury lawsuit. Contact an attorney as soon as possible to protect your rights.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="py-6 border-b border-gray">
+                <h3 className="text-lg font-semibold mb-3">How much is my case worth?</h3>
+                <p className="text-gray-light leading-relaxed">Case values depend on medical expenses, lost wages, pain and suffering, and injury severity. Minor cases might settle for <span className="text-gold font-semibold">$10,000-$25,000</span>, while serious injuries can be worth <span className="text-gold font-semibold">$100,000 to several million dollars</span>.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={250}>
+              <div className="py-6 border-b border-gray">
+                <h3 className="text-lg font-semibold mb-3">Should I accept the insurance company&apos;s first offer?</h3>
+                <p className="text-gray-light leading-relaxed">Almost never. Insurance companies make quick, low offers hoping you&apos;ll settle before understanding your injuries. Always consult an attorney before accepting any offer.</p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -319,16 +358,18 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
       {/* Final CTA */}
       <section className="py-20 px-4 bg-gradient-to-b from-dark to-black text-center">
         <div className="max-w-[800px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-4">Don&apos;t Let Insurance Companies Take Advantage of You</h2>
-          <p className="text-gray-light text-lg mb-8">
-            Every day you wait, evidence disappears. Get an experienced {practiceArea.shortTitle.toLowerCase()} lawyer in your corner today.
-          </p>
-          <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            Call Now: (512) 883-0012
-          </a>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-4">Don&apos;t Let Insurance Companies Take Advantage of You</h2>
+            <p className="text-gray-light text-lg mb-8">
+              Every day you wait, evidence disappears. Get an experienced {practiceArea.shortTitle.toLowerCase()} lawyer in your corner today.
+            </p>
+            <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Call Now: (512) 883-0012
+            </a>
+          </ScrollReveal>
         </div>
       </section>
     </>
@@ -352,9 +393,9 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4">
         <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-10 items-center">
-          <div>
+          <ScrollReveal direction="left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6">
-              {city.name} {practiceArea.shortTitle} Lawyer
+              <span className="text-gold">{city.name}</span> {practiceArea.shortTitle} Lawyer
             </h1>
             <p className="text-gray-light text-lg mb-8">
               Injured in {city.name}? Our experienced attorneys fight insurance companies to get you maximum compensation for your injuries. Free consultation for {city.county} residents.
@@ -366,54 +407,66 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
                 </svg>
                 Call: (512) 883-0012
               </a>
-              <Link href="/contact" className="inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+              <Link href="/contact" className="inline-flex items-center justify-center border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
                 Free Consultation
               </Link>
             </div>
-          </div>
-          <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
-            <img
-              src={`/images/heroes/${city.heroImage}`}
-              alt={`${city.name} ${practiceArea.shortTitle} Lawyer`}
-              className="w-full aspect-[4/3] object-cover"
-            />
-          </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right">
+            <div className="relative rounded-2xl overflow-hidden border-2 border-gold">
+              <img
+                src={`/images/heroes/${city.heroImage}`}
+                alt={`${city.name} ${practiceArea.shortTitle} Lawyer`}
+                className="w-full aspect-[4/3] object-cover"
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Why You Need a Local Lawyer */}
       <section className="py-16 px-4">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-6">Why You Need a {city.name} {practiceArea.shortTitle} Lawyer</h2>
-          <p className="text-gray-light text-lg mb-6 leading-relaxed">
-            {practiceArea.shortTitle} cases are among the most common personal injury claims in Texas, and {city.name} is no exception. When you&apos;re injured due to someone else&apos;s negligence, you need an experienced {city.name} attorney who understands local roads, local courts, and how to maximize your compensation.
-          </p>
-          <p className="text-gray-light text-lg leading-relaxed">
-            Texas follows a modified comparative fault system, meaning you can recover damages as long as you&apos;re less than 51% at fault. Our attorneys know insurance company tactics and fight back aggressively to protect your rights.
-          </p>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-6">Why You Need a {city.name} {practiceArea.shortTitle} Lawyer</h2>
+            <p className="text-gray-light text-lg mb-6 leading-relaxed">
+              {practiceArea.shortTitle} cases are among the most common personal injury claims in Texas, and {city.name} is no exception. When you&apos;re injured due to someone else&apos;s negligence, you need an experienced {city.name} attorney who understands local roads, local courts, and how to maximize your compensation.
+            </p>
+            <p className="text-gray-light text-lg leading-relaxed">
+              Texas follows a modified comparative fault system, meaning you can recover damages as long as you&apos;re less than <span className="text-gold font-semibold">51% at fault</span>. Our attorneys know insurance company tactics and fight back aggressively to protect your rights.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Statistics Section */}
       <section className="py-16 px-4 bg-dark">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-black mb-3">{practiceArea.shortTitle} Statistics in {city.name}</h2>
-            <p className="text-gray-light">{city.name} and {city.county} see thousands of accidents each year.</p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-black mb-3">{practiceArea.shortTitle} Statistics in <span className="text-gold">{city.name}</span></h2>
+              <p className="text-gray-light">{city.name} and {city.county} see thousands of accidents each year.</p>
+            </div>
+          </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-black border border-gray rounded-xl p-8 text-center">
-              <div className="text-4xl md:text-5xl font-black text-accent mb-2">{cityInfo.stats.crashes}</div>
-              <div className="text-gray-light">Total Crashes (2023)</div>
-            </div>
-            <div className="bg-black border border-gray rounded-xl p-8 text-center">
-              <div className="text-4xl md:text-5xl font-black text-accent mb-2">{cityInfo.stats.fatal}</div>
-              <div className="text-gray-light">Fatal Crashes</div>
-            </div>
-            <div className="bg-black border border-gray rounded-xl p-8 text-center">
-              <div className="text-4xl md:text-5xl font-black text-accent mb-2">{cityInfo.stats.serious}</div>
-              <div className="text-gray-light">Serious Injury Crashes</div>
-            </div>
+            <ScrollReveal delay={100}>
+              <div className="bg-black border border-gold/30 rounded-xl p-8 text-center">
+                <div className="text-4xl md:text-5xl font-black text-gold mb-2">{cityInfo.stats.crashes}</div>
+                <div className="text-gray-light">Total Crashes (2023)</div>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-black border border-gold/30 rounded-xl p-8 text-center">
+                <div className="text-4xl md:text-5xl font-black text-gold mb-2">{cityInfo.stats.fatal}</div>
+                <div className="text-gray-light">Fatal Crashes</div>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <div className="bg-black border border-gold/30 rounded-xl p-8 text-center">
+                <div className="text-4xl md:text-5xl font-black text-gold mb-2">{cityInfo.stats.serious}</div>
+                <div className="text-gray-light">Serious Injury Crashes</div>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -421,44 +474,65 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
       {/* Dangerous Roads */}
       <section className="py-16 px-4">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-6">Dangerous Roads in {city.name}</h2>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-6">Dangerous Roads in <span className="text-gold">{city.name}</span></h2>
+          </ScrollReveal>
           <div className="space-y-6">
             {cityInfo.roads.map((road, index) => (
-              <div key={index} className="bg-dark border border-gray rounded-xl p-6">
-                <h3 className="text-xl font-bold mb-2">{road.name}</h3>
-                <p className="text-gray-light mb-3">{road.description}</p>
-                <p className="text-sm"><strong className="text-accent">High-risk areas:</strong> <span className="text-gray-light">{road.hotspots}</span></p>
-              </div>
+              <ScrollReveal key={index} delay={index * 100}>
+                <TiltCard>
+                  <div className="bg-dark border border-gray rounded-xl p-6 hover:border-gold/50 transition-colors">
+                    <h3 className="text-xl font-bold mb-2">{road.name}</h3>
+                    <p className="text-gray-light mb-3">{road.description}</p>
+                    <p className="text-sm"><strong className="text-gold">High-risk areas:</strong> <span className="text-gray-light">{road.hotspots}</span></p>
+                  </div>
+                </TiltCard>
+              </ScrollReveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why Choose Local */}
+      {/* Why Choose Local + Texas Map */}
       <section className="py-16 px-4 bg-dark">
-        <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-6">Why Choose a Local {city.name} Attorney?</h2>
-          <p className="text-gray-light text-lg mb-6 leading-relaxed">
-            A local {city.name} {practiceArea.shortTitle.toLowerCase()} attorney offers significant advantages. We know which intersections are dangerous, which roads have design flaws, and which insurance adjusters are most likely to lowball claims.
-          </p>
-          <p className="text-gray-light text-lg leading-relaxed">
-            We&apos;ve appeared before judges in {city.county} courts hundreds of times. Time is critical—evidence disappears, and the statute of limitations in Texas is just two years.
-          </p>
+        <div className="max-w-[1200px] mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <ScrollReveal direction="left">
+              <h2 className="text-2xl md:text-3xl font-black mb-6">Why Choose a Local {city.name} Attorney?</h2>
+              <p className="text-gray-light text-lg mb-6 leading-relaxed">
+                A local {city.name} {practiceArea.shortTitle.toLowerCase()} attorney offers significant advantages. We know which intersections are dangerous, which roads have design flaws, and which insurance adjusters are most likely to lowball claims.
+              </p>
+              <p className="text-gray-light text-lg leading-relaxed">
+                We&apos;ve appeared before judges in {city.county} courts hundreds of times. Time is critical—evidence disappears, and the statute of limitations in Texas is just <span className="text-gold font-semibold">two years</span>.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal direction="right">
+              <div className="hidden lg:block">
+                <TexasMap />
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
       {/* Related Practice Areas */}
       <section className="py-16 px-4">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-black mb-3">Other Cases We Handle in {city.name}</h2>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-black mb-3">Other Cases We Handle in <span className="text-gold">{city.name}</span></h2>
+            </div>
+          </ScrollReveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {relatedPracticeAreas.map((area) => (
-              <Link key={area.slug} href={`/${city.slug}-${area.slug.replace('-lawyer', '')}-lawyer`} className="bg-dark border border-gray rounded-xl p-6 hover:border-accent transition-all">
-                <h3 className="text-lg font-bold mb-2">{area.shortTitle}</h3>
-                <span className="text-accent font-semibold text-sm">Learn more →</span>
-              </Link>
+            {relatedPracticeAreas.map((area, index) => (
+              <ScrollReveal key={area.slug} delay={index * 100}>
+                <TiltCard>
+                  <Link href={`/${city.slug}-${area.slug.replace('-lawyer', '')}-lawyer`} className="block bg-dark border border-gray rounded-xl p-6 hover:border-accent transition-all h-full">
+                    <h3 className="text-lg font-bold mb-2">{area.shortTitle}</h3>
+                    <span className="text-accent font-semibold text-sm">Learn more →</span>
+                  </Link>
+                </TiltCard>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -467,15 +541,21 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
       {/* Other Locations */}
       <section className="py-16 px-4 bg-dark">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-black mb-3">{practiceArea.shortTitle} Lawyers in Other Texas Cities</h2>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-black mb-3">{practiceArea.shortTitle} Lawyers in Other Texas Cities</h2>
+            </div>
+          </ScrollReveal>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {relatedCities.map((relatedCity) => (
-              <Link key={relatedCity.slug} href={`/${relatedCity.slug}-${practiceArea.slug.replace('-lawyer', '')}-lawyer`} className="bg-black border border-gray rounded-lg p-4 text-center hover:border-accent transition-all">
-                <p className="font-semibold">{relatedCity.name}</p>
-                <p className="text-gray-light text-sm">{relatedCity.county}</p>
-              </Link>
+            {relatedCities.map((relatedCity, index) => (
+              <ScrollReveal key={relatedCity.slug} delay={index * 50}>
+                <TiltCard>
+                  <Link href={`/${relatedCity.slug}-${practiceArea.slug.replace('-lawyer', '')}-lawyer`} className="block bg-black border border-gray rounded-lg p-4 text-center hover:border-gold transition-all h-full">
+                    <p className="font-semibold">{relatedCity.name}</p>
+                    <p className="text-gray-light text-sm">{relatedCity.county}</p>
+                  </Link>
+                </TiltCard>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -484,20 +564,28 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
       {/* FAQ Section */}
       <section className="py-16 px-4">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Frequently Asked Questions</h2>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Frequently Asked Questions</h2>
+          </ScrollReveal>
           <div className="border-t border-gray">
-            <div className="py-6 border-b border-gray">
-              <h3 className="text-lg font-semibold mb-3">How much is my {city.name} case worth?</h3>
-              <p className="text-gray-light leading-relaxed">Settlement values depend on injury severity, medical bills, lost wages, and insurance coverage. Minor injuries may settle for $10,000-$25,000, while serious injuries often exceed $100,000.</p>
-            </div>
-            <div className="py-6 border-b border-gray">
-              <h3 className="text-lg font-semibold mb-3">Should I accept the insurance company&apos;s first offer?</h3>
-              <p className="text-gray-light leading-relaxed">Almost never. Initial offers are typically far below fair value. An experienced attorney can often negotiate significantly higher settlements.</p>
-            </div>
-            <div className="py-6 border-b border-gray">
-              <h3 className="text-lg font-semibold mb-3">How long do settlements take in {city.name}?</h3>
-              <p className="text-gray-light leading-relaxed">Simple cases may settle in 3-6 months. More complex cases typically take 12-24 months. We work efficiently while ensuring fair compensation.</p>
-            </div>
+            <ScrollReveal delay={100}>
+              <div className="py-6 border-b border-gray">
+                <h3 className="text-lg font-semibold mb-3">How much is my {city.name} case worth?</h3>
+                <p className="text-gray-light leading-relaxed">Settlement values depend on injury severity, medical bills, lost wages, and insurance coverage. Minor injuries may settle for <span className="text-gold font-semibold">$10,000-$25,000</span>, while serious injuries often exceed <span className="text-gold font-semibold">$100,000</span>.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={150}>
+              <div className="py-6 border-b border-gray">
+                <h3 className="text-lg font-semibold mb-3">Should I accept the insurance company&apos;s first offer?</h3>
+                <p className="text-gray-light leading-relaxed">Almost never. Initial offers are typically far below fair value. An experienced attorney can often negotiate significantly higher settlements.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="py-6 border-b border-gray">
+                <h3 className="text-lg font-semibold mb-3">How long do settlements take in {city.name}?</h3>
+                <p className="text-gray-light leading-relaxed">Simple cases may settle in <span className="text-gold font-semibold">3-6 months</span>. More complex cases typically take <span className="text-gold font-semibold">12-24 months</span>. We work efficiently while ensuring fair compensation.</p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -505,21 +593,23 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
       {/* Final CTA */}
       <section className="py-20 px-4 bg-gradient-to-b from-dark to-black text-center">
         <div className="max-w-[800px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-4">Get Your Free Case Review Today</h2>
-          <p className="text-gray-light text-lg mb-8">
-            Don&apos;t let insurance companies take advantage of you. Get an experienced {city.name} {practiceArea.shortTitle.toLowerCase()} lawyer in your corner today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-              Call: (512) 883-0012
-            </a>
-            <Link href="/contact" className="inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
-              Free Consultation
-            </Link>
-          </div>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-4">Get Your Free Case Review Today</h2>
+            <p className="text-gray-light text-lg mb-8">
+              Don&apos;t let insurance companies take advantage of you. Get an experienced {city.name} {practiceArea.shortTitle.toLowerCase()} lawyer in your corner today.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Call: (512) 883-0012
+              </a>
+              <Link href="/contact" className="inline-flex items-center justify-center border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+                Free Consultation
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </>

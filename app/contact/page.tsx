@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
   title: 'Free Consultation | Contact Us | GetPaid.law',
@@ -49,7 +50,7 @@ export default function ContactPage() {
       <section className="py-16 md:py-24 px-4">
         <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-start">
           {/* Content */}
-          <div>
+          <ScrollReveal direction="left">
             <h1 className="text-4xl md:text-5xl font-black leading-tight mb-6">
               Get Your <span className="text-accent">Free Case Review</span>
             </h1>
@@ -58,7 +59,7 @@ export default function ContactPage() {
             </p>
 
             {/* Phone CTA */}
-            <div className="bg-dark border border-gray rounded-xl p-6 mb-8">
+            <div className="glass rounded-xl p-6 mb-8">
               <h2 className="text-xl font-bold mb-4">Prefer to Talk?</h2>
               <a
                 href="tel:512-883-0012"
@@ -69,120 +70,128 @@ export default function ContactPage() {
                 </svg>
                 Call (512) 883-0012
               </a>
-              <p className="text-gray-light text-sm mt-3">Available 24/7 for emergencies</p>
+              <p className="text-gray-light text-sm mt-3">Available <span className="text-gold font-semibold">24/7</span> for emergencies</p>
             </div>
 
             {/* Benefits */}
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                <div>
-                  <p className="font-semibold">100% Free Consultation</p>
-                  <p className="text-gray-light text-sm">No cost to talk to us about your case</p>
+              <ScrollReveal delay={100}>
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold">100% Free Consultation</p>
+                    <p className="text-gray-light text-sm">No cost to talk to us about your case</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                <div>
-                  <p className="font-semibold">No Fee Unless You Win</p>
-                  <p className="text-gray-light text-sm">You only pay if we get you compensation</p>
+              </ScrollReveal>
+              <ScrollReveal delay={150}>
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold">No Fee Unless You Win</p>
+                    <p className="text-gray-light text-sm">You only pay if we get you compensation</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                <div>
-                  <p className="font-semibold">Fast Response</p>
-                  <p className="text-gray-light text-sm">We&apos;ll get back to you within 24 hours</p>
+              </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold">Fast Response</p>
+                    <p className="text-gray-light text-sm">We&apos;ll get back to you within 24 hours</p>
+                  </div>
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
-          </div>
+          </ScrollReveal>
 
-          {/* Contact Form */}
-          <div className="bg-dark border border-gray rounded-2xl p-6 md:p-8">
-            <h2 className="text-2xl font-bold mb-2">Tell Us About Your Case</h2>
-            <p className="text-gray-light mb-6">Fill out the form below and we&apos;ll be in touch shortly.</p>
+          {/* Contact Form with Glassmorphism */}
+          <ScrollReveal direction="right">
+            <div className="glass rounded-2xl p-6 md:p-8">
+              <h2 className="text-2xl font-bold mb-2">Tell Us About Your Case</h2>
+              <p className="text-gray-light mb-6">Fill out the form below and we&apos;ll be in touch shortly.</p>
 
-            <form action="https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPPOzvNYWhqoQ7AxTrlINgmbAspw/exec" method="GET" className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">Full Name *</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder=""
-                  required
-                  className="w-full bg-black border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
-                />
-              </div>
+              <form action="https://script.google.com/macros/s/AKfycbwu-Yc8nPaHrdJj3KEz8jvZJF6I51o7-ZIGYjBarvEPPPOzvNYWhqoQ7AxTrlINgmbAspw/exec" method="GET" className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2">Full Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder=""
+                    required
+                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone Number *</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder=""
-                  required
-                  className="w-full bg-black border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
-                />
-              </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder=""
+                    required
+                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder=""
-                  className="w-full bg-black border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
-                />
-              </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder=""
+                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="caseType" className="block text-sm font-medium mb-2">Type of Injury *</label>
-                <select
-                  id="caseType"
-                  name="caseType"
-                  required
-                  className="w-full bg-black border border-gray rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors"
+                <div>
+                  <label htmlFor="caseType" className="block text-sm font-medium mb-2">Type of Injury *</label>
+                  <select
+                    id="caseType"
+                    name="caseType"
+                    required
+                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  >
+                    <option value="">Select one</option>
+                    {caseTypes.map((type) => (
+                      <option key={type.value} value={type.value}>{type.label}</option>
+                    ))}
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="story" className="block text-sm font-medium mb-2">Tell Us What Happened</label>
+                  <textarea
+                    id="story"
+                    name="story"
+                    rows={4}
+                    placeholder="Describe your injury and how it happened..."
+                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors resize-none backdrop-blur-sm"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-accent hover:bg-accent-hover text-black font-bold py-4 rounded-lg transition-colors text-lg"
                 >
-                  <option value="">Select one</option>
-                  {caseTypes.map((type) => (
-                    <option key={type.value} value={type.value}>{type.label}</option>
-                  ))}
-                </select>
-              </div>
+                  Get My Free Case Review
+                </button>
 
-              <div>
-                <label htmlFor="story" className="block text-sm font-medium mb-2">Tell Us What Happened</label>
-                <textarea
-                  id="story"
-                  name="story"
-                  rows={4}
-                  placeholder="Describe your injury and how it happened..."
-                  className="w-full bg-black border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors resize-none"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-accent hover:bg-accent-hover text-black font-bold py-4 rounded-lg transition-colors text-lg"
-              >
-                Get My Free Case Review
-              </button>
-
-              <p className="text-gray-light text-xs text-center">
-                By submitting, you agree to be contacted about your case. We respect your privacy and will never share your information.
-              </p>
-            </form>
-          </div>
+                <p className="text-gray-light text-xs text-center">
+                  By submitting, you agree to be contacted about your case. We respect your privacy and will never share your information.
+                </p>
+              </form>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </>

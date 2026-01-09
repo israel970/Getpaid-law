@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import ScrollReveal from '@/components/ScrollReveal'
+import TiltCard from '@/components/TiltCard'
 
 export const metadata: Metadata = {
   title: 'Our Process | How to Get Paid | GetPaid.law',
@@ -80,12 +82,14 @@ export default function OurProcessPage() {
       {/* Hero Section */}
       <section className="py-16 md:py-24 px-4">
         <div className="max-w-[800px] mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
-            How to <span className="text-accent">Get Paid</span>
-          </h1>
-          <p className="text-gray-light text-xl md:text-2xl leading-relaxed">
-            Getting the compensation you deserve shouldn&apos;t be complicated. Here&apos;s how our process works.
-          </p>
+          <ScrollReveal>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
+              How to <span className="text-gold">Get Paid</span>
+            </h1>
+            <p className="text-gray-light text-xl md:text-2xl leading-relaxed">
+              Getting the compensation you deserve shouldn&apos;t be complicated. Here&apos;s how our process works.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -93,27 +97,29 @@ export default function OurProcessPage() {
       <section className="py-16 px-4 bg-dark">
         <div className="max-w-[900px] mx-auto">
           {steps.map((step, index) => (
-            <div key={step.number} className={`flex flex-col md:flex-row gap-8 ${index < steps.length - 1 ? 'mb-16 pb-16 border-b border-gray' : ''}`}>
-              <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-accent text-black rounded-full flex items-center justify-center font-black text-2xl">
-                  {step.number}
+            <ScrollReveal key={step.number} delay={index * 150}>
+              <div className={`flex flex-col md:flex-row gap-8 ${index < steps.length - 1 ? 'mb-16 pb-16 border-b border-gray' : ''}`}>
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-gold text-black rounded-full flex items-center justify-center font-black text-2xl">
+                    {step.number}
+                  </div>
+                </div>
+                <div>
+                  <h2 className="text-2xl font-black mb-4">{step.title}</h2>
+                  <p className="text-gray-light text-lg mb-6 leading-relaxed">{step.description}</p>
+                  <ul className="space-y-3">
+                    {step.details.map((detail, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-light">{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-              <div>
-                <h2 className="text-2xl font-black mb-4">{step.title}</h2>
-                <p className="text-gray-light text-lg mb-6 leading-relaxed">{step.description}</p>
-                <ul className="space-y-3">
-                  {step.details.map((detail, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-light">{detail}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </section>
@@ -121,23 +127,37 @@ export default function OurProcessPage() {
       {/* Why It Works */}
       <section className="py-16 px-4">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Why This Process Works</h2>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Why This Process Works</h2>
+          </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-dark border border-gray rounded-xl p-6 text-center">
-              <div className="text-4xl font-black text-accent mb-3">$0</div>
-              <h3 className="text-lg font-bold mb-2">Upfront Cost</h3>
-              <p className="text-gray-light text-sm">You never pay anything out of pocket. Ever.</p>
-            </div>
-            <div className="bg-dark border border-gray rounded-xl p-6 text-center">
-              <div className="text-4xl font-black text-accent mb-3">24/7</div>
-              <h3 className="text-lg font-bold mb-2">Availability</h3>
-              <p className="text-gray-light text-sm">We&apos;re here when you need us, day or night.</p>
-            </div>
-            <div className="bg-dark border border-gray rounded-xl p-6 text-center">
-              <div className="text-4xl font-black text-accent mb-3">100%</div>
-              <h3 className="text-lg font-bold mb-2">Commitment</h3>
-              <p className="text-gray-light text-sm">Our attorneys fight for maximum compensation.</p>
-            </div>
+            <ScrollReveal delay={100}>
+              <TiltCard>
+                <div className="glass rounded-xl p-6 text-center h-full">
+                  <div className="text-4xl font-black text-gold mb-3">$0</div>
+                  <h3 className="text-lg font-bold mb-2">Upfront Cost</h3>
+                  <p className="text-gray-light text-sm">You never pay anything out of pocket. Ever.</p>
+                </div>
+              </TiltCard>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <TiltCard>
+                <div className="glass rounded-xl p-6 text-center h-full">
+                  <div className="text-4xl font-black text-gold mb-3">24/7</div>
+                  <h3 className="text-lg font-bold mb-2">Availability</h3>
+                  <p className="text-gray-light text-sm">We&apos;re here when you need us, day or night.</p>
+                </div>
+              </TiltCard>
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <TiltCard>
+                <div className="glass rounded-xl p-6 text-center h-full">
+                  <div className="text-4xl font-black text-gold mb-3">100%</div>
+                  <h3 className="text-lg font-bold mb-2">Commitment</h3>
+                  <p className="text-gray-light text-sm">Our attorneys fight for maximum compensation.</p>
+                </div>
+              </TiltCard>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -145,20 +165,34 @@ export default function OurProcessPage() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-dark">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Common Questions</h2>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Common Questions</h2>
+          </ScrollReveal>
           <div className="space-y-6">
-            <div className="bg-black border border-gray rounded-xl p-6">
-              <h3 className="text-lg font-bold mb-2">How much does it cost to use GetPaid.law?</h3>
-              <p className="text-gray-light">Nothing. Our service is completely free to you. You only pay attorney fees if you win your case, and those fees come from your settlement—not your pocket.</p>
-            </div>
-            <div className="bg-black border border-gray rounded-xl p-6">
-              <h3 className="text-lg font-bold mb-2">How quickly will I hear from an attorney?</h3>
-              <p className="text-gray-light">In most cases, an attorney will contact you within 24 hours of your initial consultation. For urgent cases, it may be even faster.</p>
-            </div>
-            <div className="bg-black border border-gray rounded-xl p-6">
-              <h3 className="text-lg font-bold mb-2">What if I&apos;m not sure I have a case?</h3>
-              <p className="text-gray-light">That&apos;s what the free consultation is for. We&apos;ll help you understand whether you have a valid claim and what your options are.</p>
-            </div>
+            <ScrollReveal delay={100}>
+              <TiltCard>
+                <div className="glass rounded-xl p-6">
+                  <h3 className="text-lg font-bold mb-2">How much does it cost to use GetPaid.law?</h3>
+                  <p className="text-gray-light">Nothing. Our service is completely free to you. You only pay attorney fees if you win your case, and those fees come from your settlement—not your pocket.</p>
+                </div>
+              </TiltCard>
+            </ScrollReveal>
+            <ScrollReveal delay={150}>
+              <TiltCard>
+                <div className="glass rounded-xl p-6">
+                  <h3 className="text-lg font-bold mb-2">How quickly will I hear from an attorney?</h3>
+                  <p className="text-gray-light">In most cases, an attorney will contact you within <span className="text-gold font-semibold">24 hours</span> of your initial consultation. For urgent cases, it may be even faster.</p>
+                </div>
+              </TiltCard>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <TiltCard>
+                <div className="glass rounded-xl p-6">
+                  <h3 className="text-lg font-bold mb-2">What if I&apos;m not sure I have a case?</h3>
+                  <p className="text-gray-light">That&apos;s what the free consultation is for. We&apos;ll help you understand whether you have a valid claim and what your options are.</p>
+                </div>
+              </TiltCard>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -166,27 +200,29 @@ export default function OurProcessPage() {
       {/* CTA */}
       <section className="py-20 px-4 text-center">
         <div className="max-w-[800px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-4">Ready to Start?</h2>
-          <p className="text-gray-light text-lg mb-8">
-            The sooner you start, the sooner you can get paid. Contact us now for your free consultation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:512-883-0012"
-              className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
-            >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Call (512) 883-0012
-            </a>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
-            >
-              Free Case Review
-            </Link>
-          </div>
+          <ScrollReveal>
+            <h2 className="text-2xl md:text-3xl font-black mb-4">Ready to Start?</h2>
+            <p className="text-gray-light text-lg mb-8">
+              The sooner you start, the sooner you can get paid. Contact us now for your free consultation.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:512-883-0012"
+                className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Call (512) 883-0012
+              </a>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+              >
+                Free Case Review
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </>
