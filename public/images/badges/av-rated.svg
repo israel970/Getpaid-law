@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Square badge with rounded corners -->
+  <rect x="8" y="8" width="84" height="84" rx="8" fill="#1a1a1a" stroke="#FFB800" stroke-width="2"/>
+  <!-- Inner border -->
+  <rect x="15" y="15" width="70" height="70" rx="4" fill="none" stroke="#FFB800" stroke-width="1" opacity="0.5"/>
+  <!-- AV text -->
+  <text x="50" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#FFB800">AV</text>
+  <!-- Preeminent text -->
+  <text x="50" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white" letter-spacing="1">PREEMINENT</text>
+  <!-- Martindale-Hubbell -->
+  <text x="50" y="74" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#FFB800" letter-spacing="0.3">MARTINDALE-HUBBELL</text>
+  <!-- 5 stars at top -->
+  <g fill="#FFB800" transform="translate(50, 22)">
+    <polygon points="-24,0 -22,4 -18,4 -21,7 -20,11 -24,8 -28,11 -27,7 -30,4 -26,4" transform="scale(0.6)"/>
+    <polygon points="-12,0 -10,4 -6,4 -9,7 -8,11 -12,8 -16,11 -15,7 -18,4 -14,4" transform="scale(0.6)"/>
+    <polygon points="0,0 2,4 6,4 3,7 4,11 0,8 -4,11 -3,7 -6,4 -2,4" transform="scale(0.6)"/>
+    <polygon points="12,0 14,4 18,4 15,7 16,11 12,8 8,11 9,7 6,4 10,4" transform="scale(0.6)"/>
+    <polygon points="24,0 26,4 30,4 27,7 28,11 24,8 20,11 21,7 18,4 22,4" transform="scale(0.6)"/>
+  </g>
+</svg>
