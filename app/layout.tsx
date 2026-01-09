@@ -11,7 +11,12 @@ export const metadata: Metadata = {
   title: 'Texas Personal Injury Lawyers | Free Consultation | GetPaid.law',
   description: 'Injured in an accident? Get matched with an experienced personal injury attorney in minutes. Free case review. No fees unless you win your case.',
   icons: {
-    icon: '/images/logos/favicon.png',
+    icon: [
+      { url: '/images/logos/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/images/logos/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/logos/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/images/logos/apple-touch-icon.png',
   },
 }
 
