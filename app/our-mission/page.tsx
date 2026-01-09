@@ -5,7 +5,7 @@ import TiltCard from '@/components/TiltCard'
 
 export const metadata: Metadata = {
   title: 'Our Mission | GetPaid.law',
-  description: 'GetPaid.law was built because too many injury victims get ripped off. We connect you with attorneys who fight for YOU, not their fee.',
+  description: 'GetPaid.law was built because too many injury victims don't get the settlement they deserve. We connect you with attorneys who fight for YOU, not their fee.',
   alternates: {
     canonical: 'https://www.getpaid.law/our-mission/',
   },
@@ -22,7 +22,7 @@ export default function OurMissionPage() {
             "@context": "https://schema.org",
             "@type": "AboutPage",
             "name": "Our Mission - GetPaid.law",
-            "description": "GetPaid.law was built because too many injury victims get ripped off.",
+            "description": "GetPaid.law was built because too many injury victims don't get the settlement they deserve.",
             "url": "https://www.getpaid.law/our-mission/"
           })
         }}
@@ -36,7 +36,7 @@ export default function OurMissionPage() {
               Our <span className="text-gold">Mission</span>
             </h1>
             <p className="text-gray-light text-xl md:text-2xl leading-relaxed">
-              GetPaid.law was built because too many injury victims get ripped off. We connect you with attorneys who fight for <span className="text-gold font-semibold">YOU</span>, not their fee.
+              GetPaid.law was built because too many injury victims don't get the settlement they deserve. We connect you with attorneys who fight for <span className="text-gold font-semibold">YOU</span>, not their fee.
             </p>
           </ScrollReveal>
         </div>
@@ -50,7 +50,7 @@ export default function OurMissionPage() {
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <p className="text-gray-light text-lg mb-6 leading-relaxed">
-              When you&apos;re injured, you&apos;re vulnerable. You&apos;re dealing with pain, medical bills, and lost income. The last thing you need is to worry about whether your lawyer is actually fighting for your best interests—or just looking for a quick settlement to pad their fee.
+              When you&apos;re injured, you&apos;re vulnerable. You&apos;re dealing with pain, medical bills and lost income. The last thing you need is to worry about whether your lawyer is actually fighting for your best interests—or just looking for a quick settlement to pad their fee.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={200}>
