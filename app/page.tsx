@@ -10,6 +10,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import TiltCard from '@/components/TiltCard'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import TexasMap from '@/components/TexasMap'
+import MultiStepForm from '@/components/MultiStepForm'
 
 const settlements = [
   { amount: 13660000, display: '$13.66M', type: 'Premises Liability' },
@@ -24,17 +25,6 @@ const settlements = [
   { amount: 2300000, display: '$2.3M', type: 'Auto Accident' },
   { amount: 2200000, display: '$2.2M', type: 'Trucking Accident' },
   { amount: 1800000, display: '$1.8M', type: 'Auto Accident' },
-]
-
-const caseTypes = [
-  { value: 'Car Accident', label: 'Car Accident' },
-  { value: 'Truck Accident', label: 'Truck Accident' },
-  { value: 'Motorcycle Accident', label: 'Motorcycle Accident' },
-  { value: 'Workplace Injury', label: 'Workplace Injury' },
-  { value: 'Slip & Fall', label: 'Slip & Fall' },
-  { value: 'Wrongful Death', label: 'Wrongful Death' },
-  { value: 'Police Brutality', label: 'Police Brutality' },
-  { value: 'Other', label: 'Other' },
 ]
 
 const steps = [
@@ -141,71 +131,9 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            {/* Glassmorphism Contact Form */}
+            {/* Multi-Step Intake Form */}
             <ScrollReveal direction="right" duration={800} delay={200}>
-              <div className="glass rounded-2xl p-6 md:p-8">
-                <h2 className="text-2xl font-bold mb-2">Free Case Review</h2>
-                <p className="text-gray-light mb-6">Get matched with the right attorney in minutes.</p>
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSf.../formResponse" method="POST" target="_blank">
-                  <div className="space-y-4">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="entry.name"
-                        placeholder=""
-                        required
-                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone</label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="entry.phone"
-                        placeholder=""
-                        required
-                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="case-type" className="block text-sm font-medium mb-2">Type of Injury</label>
-                      <select
-                        id="case-type"
-                        name="entry.case-type"
-                        required
-                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
-                      >
-                        <option value="" disabled>Select one</option>
-                        {caseTypes.map((type) => (
-                          <option key={type.value} value={type.value}>{type.label}</option>
-                        ))}
-                      </select>
-                    </div>
-                    <div>
-                      <label htmlFor="story" className="block text-sm font-medium mb-2">Tell Us Your Story</label>
-                      <textarea
-                        id="story"
-                        name="entry.story"
-                        rows={3}
-                        placeholder="Briefly describe what happened..."
-                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors resize-none backdrop-blur-sm"
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      className="w-full bg-accent hover:bg-accent-hover text-black font-bold py-4 rounded-lg transition-colors text-lg"
-                    >
-                      Get What I Deserve →
-                    </button>
-                  </div>
-                  <p className="text-gray-light text-xs mt-4 text-center">
-                    By submitting, you agree to be contacted about your case. We respect your privacy.
-                  </p>
-                </form>
-              </div>
+              <MultiStepForm />
             </ScrollReveal>
           </div>
         </div>
