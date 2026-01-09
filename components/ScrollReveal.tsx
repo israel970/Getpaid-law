@@ -17,7 +17,7 @@ export default function ScrollReveal({
   delay = 0,
   duration = 700,
   className = '',
-  once = true,
+  once = false,
 }: ScrollRevealProps) {
   const [isVisible, setIsVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
