@@ -203,8 +203,36 @@ function PracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea }) {
         </div>
       </section>
 
+      {/* Common Types of Injuries */}
+      {practiceArea.injuries && practiceArea.injuries.length > 0 && (
+        <section className="py-16 px-4 bg-dark">
+          <div className="max-w-[1000px] mx-auto">
+            <ScrollReveal>
+              <div className="text-center mb-10">
+                <h2 className="text-2xl md:text-3xl font-black mb-3">Common Types of Injuries</h2>
+                <p className="text-gray-light">Our attorneys handle all types of {practiceArea.shortTitle.toLowerCase()} injuries, including:</p>
+              </div>
+            </ScrollReveal>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {practiceArea.injuries.map((injury, index) => (
+                <ScrollReveal key={injury} delay={index * 50}>
+                  <TiltCard>
+                    <div className="glass rounded-xl p-4 h-full flex items-center gap-3">
+                      <svg className="w-5 h-5 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-white font-medium text-sm">{injury}</span>
+                    </div>
+                  </TiltCard>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Location Selection */}
-      <section className="py-16 px-4 bg-dark">
+      <section className="py-16 px-4">
         <div className="max-w-[1200px] mx-auto">
           <ScrollReveal>
             <div className="text-center mb-10">
@@ -423,6 +451,34 @@ function CityPracticePage({ city, practiceArea, slug }: { city: typeof cities[0]
           </ScrollReveal>
         </div>
       </section>
+
+      {/* Common Types of Injuries */}
+      {practiceArea.injuries && practiceArea.injuries.length > 0 && (
+        <section className="py-16 px-4 bg-dark">
+          <div className="max-w-[1000px] mx-auto">
+            <ScrollReveal>
+              <div className="text-center mb-10">
+                <h2 className="text-2xl md:text-3xl font-black mb-3">Common Types of <span className="text-gold">{city.name}</span> {practiceArea.shortTitle} Injuries</h2>
+                <p className="text-gray-light">Our {city.name} attorneys handle all types of {practiceArea.shortTitle.toLowerCase()} injuries, including:</p>
+              </div>
+            </ScrollReveal>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {practiceArea.injuries.map((injury, index) => (
+                <ScrollReveal key={injury} delay={index * 50}>
+                  <TiltCard>
+                    <div className="glass rounded-xl p-4 h-full flex items-center gap-3">
+                      <svg className="w-5 h-5 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-white font-medium text-sm">{injury}</span>
+                    </div>
+                  </TiltCard>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Why You Need a Local Lawyer */}
       <section className="py-16 px-4">
