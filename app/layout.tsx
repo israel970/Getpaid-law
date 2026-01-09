@@ -18,6 +18,59 @@ export const metadata: Metadata = {
     ],
     apple: '/images/logos/apple-touch-icon.png',
   },
+  alternates: {
+    canonical: 'https://www.getpaid.law/',
+    languages: {
+      'en-US': 'https://www.getpaid.law/',
+      'es-US': 'https://www.getpaid.law/es/',
+      'x-default': 'https://www.getpaid.law/',
+    },
+  },
+}
+
+// WebSite and Organization Schema with language support
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'GetPaid.law',
+  url: 'https://www.getpaid.law',
+  description: 'Texas Personal Injury Lawyer Referral Service',
+  inLanguage: ['en-US', 'es-US'],
+  availableLanguage: [
+    {
+      '@type': 'Language',
+      name: 'English',
+      alternateName: 'en',
+    },
+    {
+      '@type': 'Language',
+      name: 'Spanish',
+      alternateName: 'es',
+    },
+  ],
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://www.getpaid.law/?s={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LegalService',
+  name: 'GetPaid.law',
+  url: 'https://www.getpaid.law',
+  logo: 'https://www.getpaid.law/images/logos/favicon.svg',
+  description: 'Texas Personal Injury Lawyer Referral Service. Free consultations, no fees unless you win.',
+  telephone: '+1-512-883-0012',
+  areaServed: {
+    '@type': 'State',
+    name: 'Texas',
+    sameAs: 'https://en.wikipedia.org/wiki/Texas',
+  },
+  availableLanguage: ['English', 'Spanish'],
+  priceRange: 'Free Consultation',
+  knowsLanguage: ['en', 'es'],
 }
 
 export default function RootLayout({
@@ -28,6 +81,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Schema.org WebSite and Organization markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MSFEBBEWP" />
         <script

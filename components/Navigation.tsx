@@ -43,32 +43,36 @@ function LanguageToggle() {
   const toggleLink = getToggleLink()
 
   return (
-    <Link href={toggleLink} className="relative flex items-center bg-dark/80 backdrop-blur-sm rounded-full p-1 border border-white/10 no-underline cursor-pointer hover:border-white/20 transition-colors">
+    <Link
+      href={toggleLink}
+      className="relative flex items-center bg-dark/80 backdrop-blur-sm rounded-full p-0.5 md:p-1 border border-white/10 no-underline cursor-pointer hover:border-white/20 active:scale-95 transition-all touch-manipulation"
+      aria-label={isSpanish ? 'Switch to English' : 'Cambiar a Español'}
+    >
       {/* Sliding pill background */}
       <div
-        className={`absolute top-1 bottom-1 w-[calc(50%-2px)] bg-gold rounded-full transition-all duration-300 ease-out shadow-lg ${
-          isSpanish ? 'left-[calc(50%+1px)]' : 'left-1'
+        className={`absolute top-0.5 md:top-1 bottom-0.5 md:bottom-1 w-[calc(50%-2px)] bg-gold rounded-full transition-all duration-300 ease-out shadow-lg ${
+          isSpanish ? 'left-[calc(50%+1px)]' : 'left-0.5 md:left-1'
         }`}
       />
 
       {/* English option */}
       <div
-        className={`relative z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors duration-300 ${
+        className={`relative z-10 flex items-center gap-1 md:gap-1.5 px-2 md:px-3 py-1.5 md:py-1.5 rounded-full text-xs md:text-sm font-semibold transition-colors duration-300 ${
           !isSpanish ? 'text-black' : 'text-gray-light'
         }`}
       >
-        <span className="text-base">🇺🇸</span>
+        <span className="text-sm md:text-base">🇺🇸</span>
         <span>EN</span>
       </div>
 
       {/* Spanish option */}
       <div
-        className={`relative z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors duration-300 ${
+        className={`relative z-10 flex items-center gap-1 md:gap-1.5 px-2 md:px-3 py-1.5 md:py-1.5 rounded-full text-xs md:text-sm font-semibold transition-colors duration-300 ${
           isSpanish ? 'text-black' : 'text-gray-light'
         }`}
       >
         {/* Realistic globe icon with green accent */}
-        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none">
+        <svg className="w-3.5 h-3.5 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none">
           {/* Ocean background */}
           <circle cx="12" cy="12" r="9" fill="#22c55e" opacity="0.2"/>
           {/* Globe outline */}
