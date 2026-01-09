@@ -90,7 +90,7 @@ export default function MultiStepFormEs() {
     form.submit()
   }
 
-  // Radio button group component
+  // Radio button group component - using gold for Spanish version
   const RadioGroup = ({
     name,
     value,
@@ -110,8 +110,8 @@ export default function MultiStepFormEs() {
           onClick={() => onChange(option.value)}
           className={`flex-1 py-3 px-4 rounded-lg border transition-all duration-200 font-medium ${
             value === option.value
-              ? 'bg-accent text-black border-accent'
-              : 'bg-black/50 border-white/10 text-white hover:border-white/30'
+              ? 'bg-gold text-black border-gold'
+              : 'bg-black/50 border-white/10 text-white hover:border-gold/50'
           }`}
         >
           {option.label}
@@ -134,7 +134,7 @@ export default function MultiStepFormEs() {
         </div>
         <div className="h-2 bg-black/50 rounded-full overflow-hidden">
           <div
-            className="h-full bg-accent transition-all duration-500 ease-out rounded-full"
+            className="h-full bg-gold transition-all duration-500 ease-out rounded-full"
             style={{ width: `${(currentStep / totalSteps) * 100}%` }}
           />
         </div>
@@ -199,7 +199,7 @@ export default function MultiStepFormEs() {
                 <select
                   value={formData.timeFrame}
                   onChange={(e) => updateFormData('timeFrame', e.target.value)}
-                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors backdrop-blur-sm"
                 >
                   <option value="">Seleccione el tiempo</option>
                   {timeFrameOptions.map(option => (
@@ -229,7 +229,7 @@ export default function MultiStepFormEs() {
                 <select
                   value={formData.caseType}
                   onChange={(e) => updateFormData('caseType', e.target.value)}
-                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors backdrop-blur-sm"
                 >
                   <option value="">Seleccione el tipo de lesión</option>
                   {caseTypes.map(type => (
@@ -246,7 +246,7 @@ export default function MultiStepFormEs() {
                   onChange={(e) => updateFormData('story', e.target.value)}
                   rows={5}
                   placeholder="Describa brevemente lo que pasó..."
-                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors resize-none backdrop-blur-sm"
+                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors resize-none backdrop-blur-sm"
                 />
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function MultiStepFormEs() {
                   value={formData.name}
                   onChange={(e) => updateFormData('name', e.target.value)}
                   required
-                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors backdrop-blur-sm"
                 />
               </div>
               <div>
@@ -281,7 +281,7 @@ export default function MultiStepFormEs() {
                   value={formData.phone}
                   onChange={(e) => updateFormData('phone', e.target.value)}
                   required
-                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors backdrop-blur-sm"
                 />
               </div>
               <div>
@@ -291,7 +291,7 @@ export default function MultiStepFormEs() {
                   value={formData.email}
                   onChange={(e) => updateFormData('email', e.target.value)}
                   required
-                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors backdrop-blur-sm"
+                  className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors backdrop-blur-sm"
                 />
               </div>
             </div>
@@ -316,7 +316,7 @@ export default function MultiStepFormEs() {
               disabled={!canProceed()}
               className={`flex-1 py-4 px-6 rounded-lg font-bold transition-all ${
                 canProceed()
-                  ? 'bg-accent hover:bg-accent-hover text-black'
+                  ? 'bg-gold hover:bg-gold/90 text-black'
                   : 'bg-gray text-gray-light cursor-not-allowed'
               }`}
             >
@@ -328,7 +328,7 @@ export default function MultiStepFormEs() {
               disabled={!canProceed()}
               className={`flex-1 py-4 px-6 rounded-lg font-bold transition-all text-lg ${
                 canProceed()
-                  ? 'bg-accent hover:bg-accent-hover text-black'
+                  ? 'bg-gold hover:bg-gold/90 text-black'
                   : 'bg-gray text-gray-light cursor-not-allowed'
               }`}
             >
