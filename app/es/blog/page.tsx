@@ -22,7 +22,7 @@ export default function SpanishBlogPage() {
       <section className="py-16 md:py-24 px-4">
         <div className="max-w-[800px] mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-black leading-tight mb-6">
-            Recursos <span className="text-accent">Legales</span>
+            Recursos <span className="text-gold">Legales</span>
           </h1>
           <p className="text-gray-light text-xl leading-relaxed">
             Guías expertas para ayudarlo a entender sus derechos, navegar el proceso legal y maximizar su compensación.
@@ -38,21 +38,21 @@ export default function SpanishBlogPage() {
               <Link
                 key={post.slug}
                 href={`/es/blog/${post.slug}`}
-                className="block bg-black border border-gray rounded-xl p-6 md:p-8 hover:border-accent transition-all group"
+                className="block bg-black border border-gray rounded-xl p-6 md:p-8 hover:border-gold transition-all group"
               >
                 <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <span className="bg-accent/15 text-accent text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full">
+                  <span className="bg-gold/15 text-gold text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full">
                     {getBlogCategoryEs(post.category)}
                   </span>
                   <span className="text-gray-light text-sm">{post.date}</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-accent transition-colors">
+                <h2 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-gold transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-gray-light mb-4 leading-relaxed">
                   {post.description}
                 </p>
-                <span className="text-accent font-semibold flex items-center gap-2">
+                <span className="text-gold font-semibold flex items-center gap-2">
                   Leer artículo
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -74,7 +74,7 @@ export default function SpanishBlogPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:512-883-0012"
-              className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+              className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -83,7 +83,7 @@ export default function SpanishBlogPage() {
             </a>
             <Link
               href="/es/contacto"
-              className="inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+              className="inline-flex items-center justify-center border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
             >
               Evaluación Gratis
             </Link>

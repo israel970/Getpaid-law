@@ -33,7 +33,7 @@ export default function SpanishContactPage() {
         <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <h1 className="text-4xl md:text-5xl font-black leading-tight mb-6">
-              Obtenga Su <span className="text-accent">Evaluación Gratis</span>
+              Obtenga Su <span className="text-gold">Evaluación Gratis</span>
             </h1>
             <p className="text-gray-light text-lg mb-8">
               Complete el formulario y un abogado se comunicará con usted dentro de 24 horas. Sin costo, sin obligación—solo respuestas honestas sobre su caso.
@@ -41,14 +41,14 @@ export default function SpanishContactPage() {
 
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-accent text-black rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-gold text-black rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold">Llame Ahora</h3>
-                  <a href="tel:512-883-0012" className="text-accent text-xl font-bold hover:text-accent-hover">(512) 883-0012</a>
+                  <a href="tel:512-883-0012" className="text-gold text-xl font-bold hover:text-gold-hover">(512) 883-0012</a>
                   <p className="text-gray-light text-sm">Disponible 24/7</p>
                 </div>
               </div>
@@ -58,25 +58,25 @@ export default function SpanishContactPage() {
               <h3 className="text-lg font-bold mb-4">Lo Que Puede Esperar</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-light">Evaluación gratis del caso sin obligación</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-light">Respuesta dentro de 24 horas</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-light">Sin honorarios a menos que gane su caso</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-light">Abogados experimentados que luchan por usted</span>
@@ -98,7 +98,7 @@ export default function SpanishContactPage() {
                       id="first-name"
                       name="entry.first-name"
                       required
-                      className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
+                      className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors"
                     />
                   </div>
                   <div>
@@ -108,7 +108,7 @@ export default function SpanishContactPage() {
                       id="last-name"
                       name="entry.last-name"
                       required
-                      className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
+                      className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors"
                     />
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function SpanishContactPage() {
                     name="entry.phone"
                     placeholder=""
                     required
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
+                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors"
                   />
                 </div>
                 <div>
@@ -130,7 +130,7 @@ export default function SpanishContactPage() {
                     id="email"
                     name="entry.email"
                     placeholder=""
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
+                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors"
                   />
                 </div>
                 <div>
@@ -139,7 +139,7 @@ export default function SpanishContactPage() {
                     id="case-type"
                     name="entry.case-type"
                     required
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors"
+                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors"
                   >
                     <option value="" disabled>Seleccione uno</option>
                     {caseTypes.map((type) => (
@@ -155,12 +155,12 @@ export default function SpanishContactPage() {
                     rows={5}
                     placeholder="Por favor describa su lesión y cómo sucedió..."
                     required
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors resize-none"
+                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors resize-none"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-accent hover:bg-accent-hover text-black font-bold py-4 rounded-lg transition-colors text-lg"
+                  className="w-full bg-gold hover:bg-gold/90 text-black font-bold py-4 rounded-lg transition-colors text-lg"
                 >
                   Obtener Evaluación Gratis →
                 </button>

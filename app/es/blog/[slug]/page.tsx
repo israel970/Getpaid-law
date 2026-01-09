@@ -161,9 +161,9 @@ export default async function SpanishBlogPostPage({ params }: PageProps) {
       {/* Breadcrumb */}
       <div className="max-w-[800px] mx-auto px-4 pt-8">
         <nav className="text-sm text-gray-light">
-          <Link href="/es" className="hover:text-accent">Inicio</Link>
+          <Link href="/es" className="hover:text-gold">Inicio</Link>
           <span className="mx-2">›</span>
-          <Link href="/es/blog" className="hover:text-accent">Blog</Link>
+          <Link href="/es/blog" className="hover:text-gold">Blog</Link>
           <span className="mx-2">›</span>
           <span className="text-white">{post.title}</span>
         </nav>
@@ -174,7 +174,7 @@ export default async function SpanishBlogPostPage({ params }: PageProps) {
         {/* Header */}
         <header className="mb-10">
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="bg-accent/15 text-accent text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full">
+            <span className="bg-gold/15 text-gold text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full">
               {getBlogCategoryEs(post.category)}
             </span>
             <span className="text-gray-light text-sm">{post.date}</span>
@@ -194,7 +194,7 @@ export default async function SpanishBlogPostPage({ params }: PageProps) {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 bg-dark border border-accent rounded-xl p-8 text-center">
+        <div className="mt-16 bg-dark border border-gold rounded-xl p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">¿Necesita Ayuda Legal?</h2>
           <p className="text-gray-light mb-6">
             Si ha sido lesionado, nuestros abogados experimentados están aquí para ayudar. Obtenga una consulta gratis hoy.
@@ -202,7 +202,7 @@ export default async function SpanishBlogPostPage({ params }: PageProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:512-883-0012"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-black font-bold py-3 px-6 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-black font-bold py-3 px-6 rounded-lg transition-colors"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -211,7 +211,7 @@ export default async function SpanishBlogPostPage({ params }: PageProps) {
             </a>
             <Link
               href="/es/contacto"
-              className="inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-black font-bold py-3 px-6 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold py-3 px-6 rounded-lg transition-colors"
             >
               Evaluación Gratis
             </Link>
@@ -231,10 +231,10 @@ export default async function SpanishBlogPostPage({ params }: PageProps) {
                 <Link
                   key={relatedPost.slug}
                   href={`/es/blog/${relatedPost.slug}`}
-                  className="bg-black border border-gray rounded-xl p-6 hover:border-accent transition-all group"
+                  className="bg-black border border-gray rounded-xl p-6 hover:border-gold transition-all group"
                 >
-                  <span className="text-accent text-xs font-semibold uppercase">{getBlogCategoryEs(relatedPost.category)}</span>
-                  <h3 className="text-lg font-bold mt-2 mb-2 group-hover:text-accent transition-colors">
+                  <span className="text-gold text-xs font-semibold uppercase">{getBlogCategoryEs(relatedPost.category)}</span>
+                  <h3 className="text-lg font-bold mt-2 mb-2 group-hover:text-gold transition-colors">
                     {relatedPost.title}
                   </h3>
                   <p className="text-gray-light text-sm line-clamp-2">{relatedPost.description}</p>

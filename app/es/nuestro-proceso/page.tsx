@@ -86,7 +86,7 @@ export default function SpanishProcessPage() {
       <section className="py-16 md:py-24 px-4">
         <div className="max-w-[800px] mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
-            Cómo <span className="text-accent">Obtener Compensación</span>
+            Cómo <span className="text-gold">Obtener Compensación</span>
           </h1>
           <p className="text-gray-light text-xl md:text-2xl leading-relaxed">
             Obtener la compensación que merece no debería ser complicado. Así es como funciona nuestro proceso.
@@ -100,7 +100,7 @@ export default function SpanishProcessPage() {
           {steps.map((step, index) => (
             <div key={step.number} className={`flex flex-col md:flex-row gap-8 ${index < steps.length - 1 ? 'mb-16 pb-16 border-b border-gray' : ''}`}>
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-accent text-black rounded-full flex items-center justify-center font-black text-2xl">
+                <div className="w-16 h-16 bg-gold text-black rounded-full flex items-center justify-center font-black text-2xl">
                   {step.number}
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function SpanishProcessPage() {
                 <ul className="space-y-3">
                   {step.details.map((detail, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-gray-light">{detail}</span>
@@ -129,17 +129,17 @@ export default function SpanishProcessPage() {
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-center">Por Qué Funciona Este Proceso</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-dark border border-gray rounded-xl p-6 text-center">
-              <div className="text-4xl font-black text-accent mb-3">$0</div>
+              <div className="text-4xl font-black text-gold mb-3">$0</div>
               <h3 className="text-lg font-bold mb-2">Costo Inicial</h3>
               <p className="text-gray-light text-sm">Nunca paga nada de su bolsillo. Nunca.</p>
             </div>
             <div className="bg-dark border border-gray rounded-xl p-6 text-center">
-              <div className="text-4xl font-black text-accent mb-3">24/7</div>
+              <div className="text-4xl font-black text-gold mb-3">24/7</div>
               <h3 className="text-lg font-bold mb-2">Disponibilidad</h3>
               <p className="text-gray-light text-sm">Estamos aquí cuando nos necesita, día o noche.</p>
             </div>
             <div className="bg-dark border border-gray rounded-xl p-6 text-center">
-              <div className="text-4xl font-black text-accent mb-3">100%</div>
+              <div className="text-4xl font-black text-gold mb-3">100%</div>
               <h3 className="text-lg font-bold mb-2">Compromiso</h3>
               <p className="text-gray-light text-sm">Nuestros abogados luchan por la máxima compensación.</p>
             </div>
@@ -178,7 +178,7 @@ export default function SpanishProcessPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:512-883-0012"
-              className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+              className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -187,7 +187,7 @@ export default function SpanishProcessPage() {
             </a>
             <Link
               href="/es/contacto"
-              className="inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+              className="inline-flex items-center justify-center border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
             >
               Evaluación Gratis
             </Link>

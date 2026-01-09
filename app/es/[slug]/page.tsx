@@ -188,13 +188,13 @@ function SpanishPracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea 
         <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6">
-              ¿Lesionado? <span className="text-accent">Obtenga la Compensación Que Merece</span>
+              ¿Lesionado? <span className="text-gold">Obtenga la Compensación Que Merece</span>
             </h1>
             <p className="text-gray-light text-lg mb-8">
               {practiceArea.description} Las compañías de seguros intentarán pagarle menos. Nuestra red de abogados experimentados lucha por la máxima compensación—y no paga nada a menos que gane.
             </p>
             <div className="flex flex-col gap-4">
-              <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+              <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
@@ -203,7 +203,7 @@ function SpanishPracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea 
               <p className="text-gray-light text-sm text-center">Consulta gratis • Disponible 24/7 • Sin honorarios a menos que gane</p>
             </div>
           </div>
-          <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
+          <div className="relative rounded-2xl overflow-hidden border-2 border-gold">
             <img
               src={`/images/heroes/${practiceArea.heroImage}`}
               alt={titleEs}
@@ -222,16 +222,16 @@ function SpanishPracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea 
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {locationsEs.map((location) => (
-              <Link key={location.slug} href={`/es/${location.slug}-${practiceArea.slug.replace('-lawyer', '')}-lawyer`} className="bg-black border border-gray rounded-xl p-6 hover:border-accent transition-all group">
+              <Link key={location.slug} href={`/es/${location.slug}-${practiceArea.slug.replace('-lawyer', '')}-lawyer`} className="bg-black border border-gray rounded-xl p-6 hover:border-gold transition-all group">
                 <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   {location.name}
                 </h3>
                 <p className="text-gray-light text-sm mb-3">{location.description}</p>
-                <span className="text-accent font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span className="text-gold font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                   Ver abogados en {location.name}
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -295,10 +295,10 @@ function SpanishPracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea 
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {relatedAreas.map((related) => (
-                <Link key={related.slug} href={`/es/${related.slug}`} className="bg-dark border border-gray rounded-xl p-6 hover:border-accent transition-all">
+                <Link key={related.slug} href={`/es/${related.slug}`} className="bg-dark border border-gray rounded-xl p-6 hover:border-gold transition-all">
                   <h3 className="text-lg font-bold mb-2">{getPracticeAreaTitleEs(related.shortTitle)}</h3>
                   <p className="text-gray-light text-sm mb-3">{related.description}</p>
-                  <span className="text-accent font-semibold text-sm">Más información →</span>
+                  <span className="text-gold font-semibold text-sm">Más información →</span>
                 </Link>
               ))}
             </div>
@@ -338,7 +338,7 @@ function SpanishPracticeAreaPage({ practiceArea }: { practiceArea: PracticeArea 
           <p className="text-gray-light text-lg mb-8">
             Cada día que espera, la evidencia desaparece. Obtenga un abogado experimentado de {shortTitleEs.toLowerCase()} en su esquina hoy.
           </p>
-          <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+          <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
@@ -378,18 +378,18 @@ function SpanishCityPracticePage({ city, practiceArea, slug }: { city: typeof ci
               ¿Lesionado en {cityNameEs}? Nuestros abogados experimentados luchan contra las compañías de seguros para obtener la máxima compensación por sus lesiones. Consulta gratis para residentes de {city.county}.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+              <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 Llame: (512) 883-0012
               </a>
-              <Link href="/es/contacto" className="inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+              <Link href="/es/contacto" className="inline-flex items-center justify-center border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
                 Consulta Gratis
               </Link>
             </div>
           </div>
-          <div className="relative rounded-2xl overflow-hidden border-2 border-accent">
+          <div className="relative rounded-2xl overflow-hidden border-2 border-gold">
             <img
               src={`/images/heroes/${city.heroImage}`}
               alt={`Abogado de ${shortTitleEs} en ${cityNameEs}`}
@@ -421,15 +421,15 @@ function SpanishCityPracticePage({ city, practiceArea, slug }: { city: typeof ci
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-black border border-gray rounded-xl p-8 text-center">
-              <div className="text-4xl md:text-5xl font-black text-accent mb-2">{cityInfo.stats.crashes}</div>
+              <div className="text-4xl md:text-5xl font-black text-gold mb-2">{cityInfo.stats.crashes}</div>
               <div className="text-gray-light">Total de Choques (2023)</div>
             </div>
             <div className="bg-black border border-gray rounded-xl p-8 text-center">
-              <div className="text-4xl md:text-5xl font-black text-accent mb-2">{cityInfo.stats.fatal}</div>
+              <div className="text-4xl md:text-5xl font-black text-gold mb-2">{cityInfo.stats.fatal}</div>
               <div className="text-gray-light">Choques Fatales</div>
             </div>
             <div className="bg-black border border-gray rounded-xl p-8 text-center">
-              <div className="text-4xl md:text-5xl font-black text-accent mb-2">{cityInfo.stats.serious}</div>
+              <div className="text-4xl md:text-5xl font-black text-gold mb-2">{cityInfo.stats.serious}</div>
               <div className="text-gray-light">Choques con Lesiones Graves</div>
             </div>
           </div>
@@ -445,7 +445,7 @@ function SpanishCityPracticePage({ city, practiceArea, slug }: { city: typeof ci
               <div key={index} className="bg-dark border border-gray rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-2">{road.name}</h3>
                 <p className="text-gray-light mb-3">{road.description}</p>
-                <p className="text-sm"><strong className="text-accent">Áreas de alto riesgo:</strong> <span className="text-gray-light">{road.hotspots}</span></p>
+                <p className="text-sm"><strong className="text-gold">Áreas de alto riesgo:</strong> <span className="text-gray-light">{road.hotspots}</span></p>
               </div>
             ))}
           </div>
@@ -473,9 +473,9 @@ function SpanishCityPracticePage({ city, practiceArea, slug }: { city: typeof ci
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {relatedPracticeAreas.map((area) => (
-              <Link key={area.slug} href={`/es/${city.slug}-${area.slug.replace('-lawyer', '')}-lawyer`} className="bg-dark border border-gray rounded-xl p-6 hover:border-accent transition-all">
+              <Link key={area.slug} href={`/es/${city.slug}-${area.slug.replace('-lawyer', '')}-lawyer`} className="bg-dark border border-gray rounded-xl p-6 hover:border-gold transition-all">
                 <h3 className="text-lg font-bold mb-2">{getPracticeAreaTitleEs(area.shortTitle)}</h3>
-                <span className="text-accent font-semibold text-sm">Más información →</span>
+                <span className="text-gold font-semibold text-sm">Más información →</span>
               </Link>
             ))}
           </div>
@@ -490,7 +490,7 @@ function SpanishCityPracticePage({ city, practiceArea, slug }: { city: typeof ci
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {relatedCities.map((relatedCity) => (
-              <Link key={relatedCity.slug} href={`/es/${relatedCity.slug}-${practiceArea.slug.replace('-lawyer', '')}-lawyer`} className="bg-black border border-gray rounded-lg p-4 text-center hover:border-accent transition-all">
+              <Link key={relatedCity.slug} href={`/es/${relatedCity.slug}-${practiceArea.slug.replace('-lawyer', '')}-lawyer`} className="bg-black border border-gray rounded-lg p-4 text-center hover:border-gold transition-all">
                 <p className="font-semibold">{getCityNameEs(relatedCity.name)}</p>
                 <p className="text-gray-light text-sm">{relatedCity.county}</p>
               </Link>
@@ -528,13 +528,13 @@ function SpanishCityPracticePage({ city, practiceArea, slug }: { city: typeof ci
             No deje que las compañías de seguros se aprovechen de usted. Obtenga un abogado experimentado de {shortTitleEs.toLowerCase()} en {cityNameEs} en su esquina hoy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+            <a href="tel:512-883-0012" className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               Llame: (512) 883-0012
             </a>
-            <Link href="/es/contacto" className="inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+            <Link href="/es/contacto" className="inline-flex items-center justify-center border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg">
               Consulta Gratis
             </Link>
           </div>
