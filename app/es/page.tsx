@@ -1,8 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import { practiceAreas } from '@/lib/practiceAreas'
 import { featuredCities } from '@/lib/cities'
 import { getPracticeAreaTitleEs, getCityNameEs } from '@/lib/practiceAreasEs'
 import Schema from '@/components/Schema'
+import MultiStepFormEs from '@/components/MultiStepFormEs'
+import ScrollReveal from '@/components/ScrollReveal'
 
 const settlements = [
   { amount: '$13,660,000', type: 'Responsabilidad de Propiedades' },
@@ -17,17 +21,6 @@ const settlements = [
   { amount: '$2,300,000', type: 'Accidente de Auto' },
   { amount: '$2,200,000', type: 'Accidente de Camión' },
   { amount: '$1,800,000', type: 'Accidente de Auto' },
-]
-
-const caseTypes = [
-  { value: 'Accidente de Auto', label: 'Accidente de Auto' },
-  { value: 'Accidente de Camión', label: 'Accidente de Camión' },
-  { value: 'Accidente de Motocicleta', label: 'Accidente de Motocicleta' },
-  { value: 'Lesión Laboral', label: 'Lesión Laboral' },
-  { value: 'Resbalón y Caída', label: 'Resbalón y Caída' },
-  { value: 'Muerte Injusta', label: 'Muerte Injusta' },
-  { value: 'Brutalidad Policial', label: 'Brutalidad Policial' },
-  { value: 'Otro', label: 'Otro' },
 ]
 
 const steps = [
@@ -78,70 +71,10 @@ export default function SpanishHomePage() {
             <p className="text-gray-light text-sm mt-4">Consulta gratis • Disponible 24/7 • Sin honorarios a menos que gane</p>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-dark border border-gray rounded-2xl p-6 md:p-8">
-            <h2 className="text-2xl font-bold mb-2">Evaluación Gratis del Caso</h2>
-            <p className="text-gray-light mb-6">Conéctese con el abogado correcto en minutos.</p>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSf.../formResponse" method="POST" target="_blank">
-              <div className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">Nombre</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="entry.name"
-                    placeholder=""
-                    required
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="entry.phone"
-                    placeholder=""
-                    required
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="case-type" className="block text-sm font-medium mb-2">Tipo de Lesión</label>
-                  <select
-                    id="case-type"
-                    name="entry.case-type"
-                    required
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors"
-                  >
-                    <option value="" disabled>Seleccione uno</option>
-                    {caseTypes.map((type) => (
-                      <option key={type.value} value={type.value}>{type.label}</option>
-                    ))}
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="story" className="block text-sm font-medium mb-2">Cuéntenos Su Historia</label>
-                  <textarea
-                    id="story"
-                    name="entry.story"
-                    rows={3}
-                    placeholder="Describa brevemente lo que pasó..."
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors resize-none"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-accent hover:bg-accent-hover text-black font-bold py-4 rounded-lg transition-colors text-lg"
-                >
-                  Obtener Lo Que Merezco →
-                </button>
-              </div>
-              <p className="text-gray-light text-xs mt-4 text-center">
-                Al enviar, acepta ser contactado sobre su caso. Respetamos su privacidad.
-              </p>
-            </form>
-          </div>
+          {/* Multi-Step Intake Form */}
+          <ScrollReveal direction="right" duration={800} delay={200}>
+            <MultiStepFormEs />
+          </ScrollReveal>
         </div>
       </section>
 
