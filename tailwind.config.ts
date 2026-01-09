@@ -20,6 +20,10 @@ const config: Config = {
           DEFAULT: '#22c55e',
           hover: '#16a34a',
         },
+        gold: {
+          DEFAULT: '#FFB800',
+          hover: '#E6A600',
+        },
         red: '#ef4444',
       },
       fontFamily: {
