@@ -5,7 +5,7 @@ import TiltCard from '@/components/TiltCard'
 
 export const metadata: Metadata = {
   title: 'Our Mission | GetPaid.law',
-  description: 'GetPaid.law was built because too many injury victims don't get the settlement they deserve. We connect you with attorneys who fight for YOU, not their fee.',
+  description: "GetPaid.law was built because too many injury victims don't get the settlement they deserve. We connect you with attorneys who fight for YOU, not their fee.",
   alternates: {
     canonical: 'https://www.getpaid.law/our-mission/',
   },

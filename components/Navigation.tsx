@@ -9,48 +9,69 @@ function LanguageToggle() {
   const pathname = usePathname()
   const isSpanish = pathname.startsWith('/es')
 
-  const getToggleLink = () => {
-    if (isSpanish) {
-      // Spanish to English
-      if (pathname === '/es') return '/'
-      if (pathname === '/es/nuestra-mision') return '/our-mission'
-      if (pathname === '/es/nuestro-proceso') return '/our-process'
-      if (pathname === '/es/socios') return '/partners'
-      if (pathname === '/es/contacto') return '/contact'
-      if (pathname === '/es/gracias') return '/thank-you'
-      if (pathname === '/es/blog') return '/blog'
-      if (pathname.startsWith('/es/blog/')) return pathname.replace('/es/blog/', '/blog/')
-      // Practice area pages
-      if (pathname.startsWith('/es/')) {
-        const rest = pathname.substring(4) // Remove '/es/'
-        return '/' + rest
-      }
-      return '/'
-    } else {
-      // English to Spanish
-      if (pathname === '/') return '/es'
-      if (pathname === '/our-mission') return '/es/nuestra-mision'
-      if (pathname === '/our-process') return '/es/nuestro-proceso'
-      if (pathname === '/partners') return '/es/socios'
-      if (pathname === '/contact') return '/es/contacto'
-      if (pathname === '/thank-you') return '/es/gracias'
-      if (pathname === '/blog') return '/es/blog'
-      if (pathname.startsWith('/blog/')) return '/es' + pathname
-      // Practice area and city pages
-      return '/es' + pathname
+  const getEnglishLink = () => {
+    if (!isSpanish) return pathname
+    if (pathname === '/es') return '/'
+    if (pathname === '/es/nuestra-mision') return '/our-mission'
+    if (pathname === '/es/nuestro-proceso') return '/our-process'
+    if (pathname === '/es/socios') return '/partners'
+    if (pathname === '/es/contacto') return '/contact'
+    if (pathname === '/es/gracias') return '/thank-you'
+    if (pathname === '/es/blog') return '/blog'
+    if (pathname.startsWith('/es/blog/')) return pathname.replace('/es/blog/', '/blog/')
+    if (pathname.startsWith('/es/')) {
+      const rest = pathname.substring(4)
+      return '/' + rest
     }
+    return '/'
+  }
+
+  const getSpanishLink = () => {
+    if (isSpanish) return pathname
+    if (pathname === '/') return '/es'
+    if (pathname === '/our-mission') return '/es/nuestra-mision'
+    if (pathname === '/our-process') return '/es/nuestro-proceso'
+    if (pathname === '/partners') return '/es/socios'
+    if (pathname === '/contact') return '/es/contacto'
+    if (pathname === '/thank-you') return '/es/gracias'
+    if (pathname === '/blog') return '/es/blog'
+    if (pathname.startsWith('/blog/')) return '/es' + pathname
+    return '/es' + pathname
   }
 
   return (
-    <Link href={getToggleLink()} className="flex items-center gap-2 no-underline">
-      <span className={`text-sm font-medium ${!isSpanish ? 'text-white' : 'text-gray-light'}`}>EN</span>
-      <div className="relative w-12 h-6 bg-gray rounded-sm p-0.5 cursor-pointer transition-colors hover:bg-dark">
-        <div className={`absolute top-0.5 w-5 h-5 bg-accent rounded-sm shadow-md transition-transform duration-300 ${
-          isSpanish ? 'translate-x-6' : 'translate-x-0.5'
-        }`} />
-      </div>
-      <span className={`text-sm font-medium ${isSpanish ? 'text-white' : 'text-gray-light'}`}>ES</span>
-    </Link>
+    <div className="relative flex items-center bg-dark/80 backdrop-blur-sm rounded-full p-1 border border-white/10">
+      {/* Sliding pill background */}
+      <div
+        className={`absolute top-1 bottom-1 w-[calc(50%-2px)] bg-gold rounded-full transition-all duration-300 ease-out shadow-lg ${
+          isSpanish ? 'left-[calc(50%+1px)]' : 'left-1'
+        }`}
+      />
+
+      {/* English option */}
+      <Link
+        href={getEnglishLink()}
+        className={`relative z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold no-underline transition-colors duration-300 ${
+          !isSpanish ? 'text-black' : 'text-gray-light hover:text-white'
+        }`}
+      >
+        <span className="text-base">🇺🇸</span>
+        <span>EN</span>
+      </Link>
+
+      {/* Spanish option */}
+      <Link
+        href={getSpanishLink()}
+        className={`relative z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold no-underline transition-colors duration-300 ${
+          isSpanish ? 'text-black' : 'text-gray-light hover:text-white'
+        }`}
+      >
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        </svg>
+        <span>ES</span>
+      </Link>
+    </div>
   )
 }
 
