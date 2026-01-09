@@ -3,28 +3,28 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-// City coordinates normalized to SVG viewBox (0-400)
+// City coordinates mapped to the Texas SVG viewBox
 const cityCoordinates: Record<string, { x: number; y: number; name: string }> = {
-  'el-paso': { x: 45, y: 195, name: 'El Paso' },
-  'amarillo': { x: 130, y: 55, name: 'Amarillo' },
-  'lubbock': { x: 135, y: 115, name: 'Lubbock' },
-  'midland': { x: 115, y: 175, name: 'Midland' },
-  'odessa': { x: 105, y: 180, name: 'Odessa' },
-  'abilene': { x: 175, y: 155, name: 'Abilene' },
-  'waco': { x: 230, y: 195, name: 'Waco' },
-  'dallas': { x: 255, y: 145, name: 'Dallas' },
-  'fort-worth': { x: 240, y: 150, name: 'Fort Worth' },
-  'plano': { x: 260, y: 138, name: 'Plano' },
-  'arlington': { x: 248, y: 155, name: 'Arlington' },
-  'irving': { x: 250, y: 148, name: 'Irving' },
-  'tyler': { x: 295, y: 165, name: 'Tyler' },
-  'austin': { x: 225, y: 235, name: 'Austin' },
-  'san-antonio': { x: 200, y: 270, name: 'San Antonio' },
-  'houston': { x: 290, y: 265, name: 'Houston' },
-  'corpus-christi': { x: 230, y: 335, name: 'Corpus Christi' },
-  'laredo': { x: 155, y: 330, name: 'Laredo' },
-  'mcallen': { x: 185, y: 375, name: 'McAllen' },
-  'brownsville': { x: 205, y: 390, name: 'Brownsville' },
+  'el-paso': { x: 62, y: 340, name: 'El Paso' },
+  'amarillo': { x: 200, y: 95, name: 'Amarillo' },
+  'lubbock': { x: 210, y: 175, name: 'Lubbock' },
+  'midland': { x: 185, y: 280, name: 'Midland' },
+  'odessa': { x: 170, y: 285, name: 'Odessa' },
+  'abilene': { x: 295, y: 250, name: 'Abilene' },
+  'waco': { x: 385, y: 310, name: 'Waco' },
+  'dallas': { x: 420, y: 215, name: 'Dallas' },
+  'fort-worth': { x: 390, y: 225, name: 'Fort Worth' },
+  'plano': { x: 430, y: 200, name: 'Plano' },
+  'arlington': { x: 400, y: 230, name: 'Arlington' },
+  'irving': { x: 410, y: 218, name: 'Irving' },
+  'tyler': { x: 490, y: 260, name: 'Tyler' },
+  'austin': { x: 380, y: 385, name: 'Austin' },
+  'san-antonio': { x: 340, y: 445, name: 'San Antonio' },
+  'houston': { x: 500, y: 420, name: 'Houston' },
+  'corpus-christi': { x: 395, y: 555, name: 'Corpus Christi' },
+  'laredo': { x: 270, y: 555, name: 'Laredo' },
+  'mcallen': { x: 325, y: 635, name: 'McAllen' },
+  'brownsville': { x: 365, y: 660, name: 'Brownsville' },
 }
 
 export default function TexasMap() {
@@ -38,66 +38,64 @@ export default function TexasMap() {
   return (
     <div className="relative w-full max-w-2xl mx-auto">
       <svg
-        viewBox="0 0 400 420"
+        viewBox="0 0 620 720"
         className="w-full h-auto"
         style={{ filter: 'drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3))' }}
       >
-        {/* Texas State Outline */}
+        {/* Accurate Texas State Outline */}
         <path
-          d="M 45 50
-             L 190 50
-             L 190 45
-             L 260 45
-             L 260 50
-             L 265 50
-             L 265 55
-             L 275 55
-             L 280 60
-             L 290 65
-             L 300 68
-             L 310 70
-             L 320 75
-             L 330 85
-             L 335 95
-             L 340 110
-             L 345 125
-             L 348 145
-             L 350 165
-             L 352 185
-             L 350 200
-             L 345 215
-             L 335 230
-             L 325 245
-             L 315 260
-             L 305 275
-             L 295 290
-             L 285 305
-             L 275 320
-             L 265 335
-             L 250 345
-             L 235 355
-             L 220 370
-             L 210 385
-             L 200 395
-             L 185 400
-             L 165 395
-             L 145 375
-             L 130 355
-             L 115 335
-             L 100 310
-             L 90 285
-             L 75 260
-             L 60 235
-             L 50 210
-             L 40 185
-             L 35 160
-             L 35 130
-             L 38 100
-             L 42 70
-             L 45 50 Z"
+          d="M 178 18
+             L 178 155
+             L 103 155
+             L 103 178
+             L 78 178
+             L 78 262
+             L 65 280
+             L 52 315
+             L 45 355
+             L 52 395
+             L 72 435
+             L 105 478
+             L 148 518
+             L 195 548
+             L 235 565
+             L 265 585
+             L 290 615
+             L 315 648
+             L 345 668
+             L 385 678
+             L 425 665
+             L 455 635
+             L 472 598
+             L 485 558
+             L 508 525
+             L 538 498
+             L 565 478
+             L 582 455
+             L 588 425
+             L 578 395
+             L 558 368
+             L 545 338
+             L 545 305
+             L 558 275
+             L 575 248
+             L 585 218
+             L 582 188
+             L 565 162
+             L 538 142
+             L 505 132
+             L 468 128
+             L 432 118
+             L 398 98
+             L 368 72
+             L 345 48
+             L 328 28
+             L 318 18
+             L 178 18 Z"
           fill="#1f1f1f"
           stroke="#FFB800"
-          strokeWidth="2"
+          strokeWidth="3"
+          strokeLinejoin="round"
           className="transition-all duration-300"
         />
 
@@ -109,7 +107,7 @@ export default function TexasMap() {
               <circle
                 cx={city.x}
                 cy={city.y}
-                r={16}
+                r={22}
                 fill="rgba(34, 197, 94, 0.3)"
                 className="animate-pulse"
               />
@@ -119,40 +117,38 @@ export default function TexasMap() {
             <circle
               cx={city.x}
               cy={city.y}
-              r={hoveredCity === slug ? 10 : 7}
+              r={hoveredCity === slug ? 12 : 8}
               fill={hoveredCity === slug ? '#22c55e' : '#FFB800'}
-              stroke={hoveredCity === slug ? '#22c55e' : '#FFB800'}
+              stroke={hoveredCity === slug ? '#16a34a' : '#E6A600'}
               strokeWidth="2"
               className="cursor-pointer transition-all duration-300"
               onMouseEnter={() => setHoveredCity(slug)}
               onMouseLeave={() => setHoveredCity(null)}
               onClick={() => handleCityClick(slug)}
               style={{
-                filter: hoveredCity === slug ? 'drop-shadow(0 0 8px rgba(34, 197, 94, 0.8))' : 'none',
+                filter: hoveredCity === slug ? 'drop-shadow(0 0 10px rgba(34, 197, 94, 0.9))' : 'drop-shadow(0 0 4px rgba(255, 184, 0, 0.5))',
               }}
             />
 
             {/* City label on hover */}
             {hoveredCity === slug && (
               <g>
-                {/* Label background */}
                 <rect
-                  x={city.x - 40}
-                  y={city.y - 32}
-                  width={80}
-                  height={20}
-                  rx={4}
-                  fill="rgba(10, 10, 10, 0.9)"
+                  x={city.x - 55}
+                  y={city.y - 42}
+                  width={110}
+                  height={28}
+                  rx={6}
+                  fill="rgba(10, 10, 10, 0.95)"
                   stroke="#22c55e"
-                  strokeWidth="1"
+                  strokeWidth="2"
                 />
-                {/* Label text */}
                 <text
                   x={city.x}
-                  y={city.y - 18}
+                  y={city.y - 22}
                   textAnchor="middle"
                   fill="white"
-                  fontSize="11"
+                  fontSize="14"
                   fontWeight="600"
                   className="pointer-events-none"
                 >
