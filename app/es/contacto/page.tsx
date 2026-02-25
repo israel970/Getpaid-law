@@ -1,4 +1,6 @@
 import { Metadata } from 'next'
+import { Suspense } from 'react'
+import ContactFormPrefillEs from '@/components/ContactFormPrefillEs'
 
 export const metadata: Metadata = {
   title: 'Contáctenos | Consulta Gratis | GetPaid.law',
@@ -149,14 +151,9 @@ export default function SpanishContactPage() {
                 </div>
                 <div>
                   <label htmlFor="story" className="block text-sm font-medium mb-2">Cuéntenos Qué Pasó</label>
-                  <textarea
-                    id="story"
-                    name="entry.story"
-                    rows={5}
-                    placeholder="Por favor describa su lesión y cómo sucedió..."
-                    required
-                    className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors resize-none"
-                  />
+                  <Suspense fallback={<textarea id="story" name="entry.story" rows={5} placeholder="Por favor describa su lesión y cómo sucedió..." required className="w-full bg-gray border border-gray rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors resize-none" />}>
+                    <ContactFormPrefillEs />
+                  </Suspense>
                 </div>
                 <button
                   type="submit"

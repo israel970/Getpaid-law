@@ -11,6 +11,7 @@ import TiltCard from '@/components/TiltCard'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import TexasMap from '@/components/TexasMap'
 import MultiStepForm from '@/components/MultiStepForm'
+import HeroSection from '@/components/HeroSection'
 
 const settlements = [
   { amount: 13660000, display: '$13.66M', type: 'Premises Liability' },
@@ -88,56 +89,8 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Video Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-        {/* Video Background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          poster="/images/heroes/hero-poster.jpg"
-        >
-          <source src="https://cdn.coverr.co/videos/coverr-traffic-at-night-510/1080p.mp4" type="video/mp4" />
-        </video>
-
-        {/* Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
-
-        {/* Hero Content */}
-        <div className="relative z-10 w-full py-16 md:py-24 px-4">
-          <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <ScrollReveal direction="left" duration={800}>
-              <div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
-                  Injured? <span className="text-accent">Get What You Deserve.</span>
-                </h1>
-                <p className="text-gray-light text-lg md:text-xl mb-8">
-                  Insurance companies have armies of lawyers. Now you do too. We connect you with top personal injury attorneys nationwide—for free.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a
-                    href="tel:512-883-0012"
-                    className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
-                  >
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    Call Now: (512) 883-0012
-                  </a>
-                </div>
-                <p className="text-gray-light text-sm mt-4">Free consultation • Available 24/7 • No fee unless you win</p>
-              </div>
-            </ScrollReveal>
-
-            {/* Multi-Step Intake Form */}
-            <ScrollReveal direction="right" duration={800} delay={200}>
-              <MultiStepForm />
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section with Scrolling Background */}
+      <HeroSection lang="en" />
 
       {/* As Seen On - Media Logo Ticker */}
       <section className="py-8 bg-black border-y border-gray/50 overflow-hidden">

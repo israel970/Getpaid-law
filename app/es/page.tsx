@@ -7,6 +7,7 @@ import { getPracticeAreaTitleEs, getCityNameEs } from '@/lib/practiceAreasEs'
 import Schema from '@/components/Schema'
 import MultiStepFormEs from '@/components/MultiStepFormEs'
 import ScrollReveal from '@/components/ScrollReveal'
+import HeroSection from '@/components/HeroSection'
 
 const settlements = [
   { amount: '$13,660,000', type: 'Responsabilidad de Propiedades' },
@@ -47,36 +48,8 @@ export default function SpanishHomePage() {
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 px-4">
-        <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
-              ¿Lesionado? <span className="text-gold">Obtenga Lo Que Merece.</span>
-            </h1>
-            <p className="text-gray-light text-lg md:text-xl mb-8">
-              Las compañías de seguros tienen ejércitos de abogados. Ahora usted también. Lo conectamos con los mejores abogados de lesiones personales a nivel nacional—gratis.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="tel:512-883-0012"
-                className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-black font-bold py-4 px-8 rounded-lg transition-colors text-lg"
-              >
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                Llame Ahora: (512) 883-0012
-              </a>
-            </div>
-            <p className="text-gray-light text-sm mt-4">Consulta gratis • Disponible 24/7 • Sin honorarios a menos que gane</p>
-          </div>
-
-          {/* Multi-Step Intake Form */}
-          <ScrollReveal direction="right" duration={800} delay={200}>
-            <MultiStepFormEs />
-          </ScrollReveal>
-        </div>
-      </section>
+      {/* Hero Section with Scrolling Background */}
+      <HeroSection lang="es" />
 
       {/* How It Works */}
       <section className="py-16 md:py-20 px-4 bg-dark">

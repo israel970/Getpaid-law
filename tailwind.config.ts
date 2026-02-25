@@ -31,9 +31,24 @@ const config: Config = {
       },
       animation: {
         scroll: 'scroll 30s linear infinite',
+        'city-scroll-left': 'city-scroll-left 45s linear infinite',
+        'city-scroll-right': 'city-scroll-right 40s linear infinite',
+        'city-scroll-left-slow': 'city-scroll-left-slow 55s linear infinite',
       },
       keyframes: {
         scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'city-scroll-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'city-scroll-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'city-scroll-left-slow': {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },

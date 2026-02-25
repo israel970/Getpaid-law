@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
+import { Suspense } from 'react'
 import ScrollReveal from '@/components/ScrollReveal'
+import ContactFormPrefill from '@/components/ContactFormPrefill'
 
 export const metadata: Metadata = {
   title: 'Free Consultation | Contact Us | GetPaid.law',
@@ -170,13 +172,9 @@ export default function ContactPage() {
 
                 <div>
                   <label htmlFor="story" className="block text-sm font-medium mb-2">Tell Us What Happened</label>
-                  <textarea
-                    id="story"
-                    name="story"
-                    rows={4}
-                    placeholder="Describe your injury and how it happened..."
-                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors resize-none backdrop-blur-sm"
-                  />
+                  <Suspense fallback={<textarea id="story" name="story" rows={4} placeholder="Describe your injury and how it happened..." className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-accent transition-colors resize-none backdrop-blur-sm" />}>
+                    <ContactFormPrefill />
+                  </Suspense>
                 </div>
 
                 <button

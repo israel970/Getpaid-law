@@ -100,3 +100,13 @@ body > * {
 .animate-wiggle {
   animation: wiggle 0.5s ease-in-out;
 }
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll,
+  .animate-city-scroll-left,
+  .animate-city-scroll-right,
+  .animate-city-scroll-left-slow {
+    animation: none !important;
+  }
+}
